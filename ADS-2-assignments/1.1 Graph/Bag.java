@@ -51,8 +51,10 @@ public class Bag<Item> implements Iterable<Item> {
     public int size() {
         return num;
     }
-   /**
-     * Add the item to the bag.
+    /**
+     * add method.
+     *
+     * @param      item  The item
      */
     public void add(final Item item) {
         Node oldfirst = first;
@@ -62,9 +64,9 @@ public class Bag<Item> implements Iterable<Item> {
         num++;
     }
     /**
-     * Return an iterator that iterates over the items in the bag.
+     * Iterator function.
      *
-     * @return     { description_of_the_return_value }
+     * @return     Iterator.
      */
     public Iterator<Item> iterator()  {
         return new ListIterator();  
