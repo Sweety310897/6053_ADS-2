@@ -1,5 +1,8 @@
 import java.util.Arrays;
 import java.io.*;
+/**
+ * Interface for graph.
+ */
 interface Graph {
     public int V();
     public int E();
@@ -7,13 +10,24 @@ interface Graph {
     public Iterable<Integer> arr(int v);
     public boolean hasEdge(int v, int w);
 }
+/**
+ * Class for graph rep.
+ */
 class GraphRep implements Graph {
 	int vertex;
     int edge;
     Bag<Integer>[] arr;
+    /**
+     * Constructs the object.
+     */
     GraphRep() {
 
     }
+    /**
+     * Constructs the object.
+     *
+     * @param      ver   The version
+     */
     public GraphRep(int ver) {
         this.vertex = ver;
         this.edge = 0;
@@ -22,17 +36,38 @@ class GraphRep implements Graph {
             arr[i] = new Bag<Integer>();
         }
     }
+    /**
+     * V().
+     *
+     * @return     vertex.
+     */
 	public int V() {
 		return vertex;
     }
+    /**
+     * E().
+     *
+     * @return     edge.
+     */
 	public int E() {
 		return edge;
     }
-
+    /**
+     * { function_description }
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Iterable<Integer> arr(int v) {
         return arr[v];
     }
-
+    /**
+     * Adds an edge.
+     * time complexity - O(1).
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     */
 	public void addEdge(int v, int w) {
 		if (v == w) {
         	return;
@@ -44,7 +79,14 @@ class GraphRep implements Graph {
             arr[w].add(v); 
         }
     }
-	
+	/**
+     * Determines if it has edge.
+     *
+     * @param      v     { parameter_description }
+     * @param      w     { parameter_description }
+     *time complexity - O(E)
+     * @return     True if has edge, False otherwise.
+     */
 	public boolean hasEdge(int v, int w) {
 		for(int k :arr[v]) {
 				if (k==w) {
@@ -53,6 +95,14 @@ class GraphRep implements Graph {
 		}
 		return false;
     }
+    /**
+     * matrix.
+     *
+     * @param      v          { parameter_description }
+     * @param      e          { parameter_description }
+     *time complexity - O(V^2).
+     * @throws     Exception  { exception_description }
+     */
     public void matrixRep(int v, int e) throws Exception {
     	if (e <= 1 && v <= 1) {
     		System.out.println(V() + " vertices" + ", " + E() + " edges");
@@ -75,6 +125,15 @@ class GraphRep implements Graph {
     		}
     	}
     }
+    /**
+     * list rep.
+     *
+     * @param      v          { parameter_description }
+     * @param      e          { parameter_description }
+     * @param      n1         The n 1
+     * time complexity - O(V+E).
+     * @throws     Exception  { exception_description }
+     */
     public void listRep(int v, int e, String[] n1) throws Exception {
     	if (e <= 1 && v <= 1) {
     		System.out.println(V() + " vertices" + ", " + E() + " edges");
