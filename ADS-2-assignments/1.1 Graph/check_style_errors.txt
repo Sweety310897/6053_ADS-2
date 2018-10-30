@@ -74,6 +74,5 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:4:33: Parameter args should be final. [FinalParameters]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:11:22: 'while' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:13: Line is longer than 80 characters (found 86). [LineLength]
 Audit done.
-Checkstyle ends with 8 errors.
+Checkstyle ends with 7 errors.

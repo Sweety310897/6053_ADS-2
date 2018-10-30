@@ -10,7 +10,8 @@ public class Solution {
 		GraphRep obj = new GraphRep(v);
 		while(sc.hasNext()) {
 			String[] n2 = sc.nextLine().split(" ");
-			obj.addEdge(Integer.parseInt(n2[0]), Integer.parseInt(n2[1]));
+			obj.addEdge(Integer.parseInt(n2[0]),
+				Integer.parseInt(n2[1]));
 		}
 		switch (token) {
 			case "Matrix":
