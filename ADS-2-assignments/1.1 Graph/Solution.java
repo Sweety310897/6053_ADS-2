@@ -1,7 +1,20 @@
 import java.util.Scanner;
-
+/**
+ * Class for solution.
+ */
 public class Solution {
-	public static void main(String[] args) {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+		//constrcutor.
+	}
+	/**
+	 * Main function.
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		String token = sc.nextLine();
 		int v = Integer.parseInt(sc.nextLine());

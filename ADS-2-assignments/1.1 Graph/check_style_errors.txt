@@ -68,11 +68,8 @@ Audit done.
 Checkstyle ends with 54 errors.
 Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:3: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:3:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:4:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:4:33: Parameter args should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:11:22: 'while' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:5: Class Solution should be declared as final. [FinalClass]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\1.1 Graph\Solution.java:24:22: 'while' is not followed by whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 4 errors.
