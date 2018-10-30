@@ -1,3 +1,5 @@
+import java.util.Arrays;
+import java.io.*;
 interface Graph {
     public int V();
     public int E();
@@ -80,12 +82,15 @@ class GraphRep implements Graph {
     	} else {
     		System.out.println(V() + " vertices" + ", " + E() + " edges");
     		for (int i = 0; i < n1.length; i++) {
-			String str = "";
-			str = n1[i] + ": ";
-			for (int k : arr(i)) {
-				str = str + n1[k] + " ";
-			}
-			System.out.println(str);
+				String str = "";
+				str = n1[i] + ": ";
+				//System.out.println(str);
+				for (int k : arr(i)) {
+					//System.out.println((arr(i)) + "arr");
+					str = str + n1[k] + " ";
+					//System.out.println(str + "this is in for loop");
+				}
+				System.out.println(str);
 			}
     	}
     }
