@@ -1,11 +1,3 @@
-/*************************************************************************
- *  Compilation:  javac Bag.java
- *  Execution:    java Bag < input.txt
- *
- *  A generic bag or multiset, implemented using a linked list.
- *
- *************************************************************************/
-
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 /**
