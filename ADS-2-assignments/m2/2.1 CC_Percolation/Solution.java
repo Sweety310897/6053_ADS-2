@@ -13,7 +13,7 @@ class Percolation {
         grid = new boolean[size][size];
 	}
 	public void open(int i,int j) {
-        grid[i][j] = true;
+        grid[i-1][j-1] = true;
         if (i == 1) {
             g.addEdge(component(i, j), top);
         }

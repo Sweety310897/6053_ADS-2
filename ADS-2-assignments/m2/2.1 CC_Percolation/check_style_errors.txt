@@ -99,6 +99,10 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:15:26: Parameter i should be final. [FinalParameters]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:15:32: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:15:32: Parameter j should be final. [FinalParameters]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:16:15: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:16:16: '-' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:16:20: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:16:21: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:37:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:37:31: Parameter i should be final. [FinalParameters]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:37:38: Parameter j should be final. [FinalParameters]
@@ -145,4 +149,4 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:122:22: 'while' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:126:35: ',' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 64 errors.
+Checkstyle ends with 68 errors.
