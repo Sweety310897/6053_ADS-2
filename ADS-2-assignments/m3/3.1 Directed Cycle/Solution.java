@@ -11,7 +11,7 @@ public class Solution {
 			String[] temp = scan.nextLine().split(" ");
 			
 			g.addEdge(Integer.parseInt(temp[0]),Integer.parseInt(temp[1]));
-			System.out.println(temp[0] + "temp0" + temp[1] + "temp1");
+			//System.out.println(temp[0] + "temp0" + temp[1] + "temp1");
 			//System.out.println("hello");
 		}
 		//g.matrixRep(vertices, edges);
