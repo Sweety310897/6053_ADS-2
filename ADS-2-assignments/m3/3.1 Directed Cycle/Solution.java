@@ -5,7 +5,7 @@ public class Solution {
 		int vertices = scan.nextInt();
 		GraphRep g = new GraphRep(vertices);
 		int edges = scan.nextInt();
-		Cycle finder = new Cycle(g);
+		
 		scan.nextLine();
 		while(scan.hasNext()) {
 			String[] temp = scan.nextLine().split(" ");
@@ -17,13 +17,12 @@ public class Solution {
 		}
         //In in = new In(args[0]);
         //Graph G = new Graph(in);
-        
+        Cycle finder = new Cycle(g);
         if (finder.hasCycle()) {
-            for (int v : finder.cycle()) {
-                //System.out.print(v + " ");
-                System.out.println("Cycle exists.");
-            }
-            
+            // for (int v : finder.cycle()) {
+            //     System.out.print(v + " " + "hi");
+            // }
+            System.out.println("Cycle exists.");
         }
         else {
             System.out.println("Cycle doesn't exists.");
