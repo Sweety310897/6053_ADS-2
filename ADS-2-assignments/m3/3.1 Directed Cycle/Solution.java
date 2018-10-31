@@ -20,9 +20,9 @@ public class Solution {
         
         if (finder.hasCycle()) {
             for (int v : finder.cycle()) {
-                System.out.print(v + " ");
+                //System.out.print(v + " ");
             }
-            System.out.println();
+            System.out.println("Cycle exists.");
         }
         else {
             System.out.println("Cycle doesn't exists.");
