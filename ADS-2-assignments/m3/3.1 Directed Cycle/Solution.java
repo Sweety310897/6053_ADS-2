@@ -19,10 +19,10 @@ public class Solution {
         //Graph G = new Graph(in);
         Cycle finder = new Cycle(g);
         if (finder.hasCycle()) {
-            for (int v : finder.cycle()) {
-                //System.out.print(v + " " + "hi");
-                System.out.println("Cycle exists.");
-            }
+            // for (int v : finder.cycle()) {
+            //     //System.out.print(v + " " + "hi");
+            //     System.out.println("Cycle exists.");
+            // }
             System.out.println("Cycle exists.");
         }
         else {
