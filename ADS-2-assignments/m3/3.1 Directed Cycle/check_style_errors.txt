@@ -108,16 +108,17 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:3:33: Parameter args should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:9:22: 'while' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:11: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:12: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:12:61: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:13: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:25:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:29: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:10:22: 'while' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:12: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:13: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:13:61: ',' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:14: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:20: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:26:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:30: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:31: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 15 errors.
 Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:7: Line has trailing spaces. [RegexpSingleline]
