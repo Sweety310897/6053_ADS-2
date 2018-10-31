@@ -18,18 +18,21 @@ public class Solution {
         //In in = new In(args[0]);
         //Graph G = new Graph(in);
         Cycle finder = new Cycle(g);
-        // if(finder.hasParallelEdges(g)) {
-        // 	System.out.println("Cycle exists.");
-        // }
-        // if(finder.hasSelfLoop(g)) {
-        // 	System.out.println("Cycle exists.");
-        // }
+        if(finder.hasParallelEdges(g)) {
+        	System.out.println("Cycle exists.");
+            return;
+        }
+        if(finder.hasSelfLoop(g)) {
+        	System.out.println("Cycle exists.");
+            return;
+        }
         if (finder.hasCycle()) {
             // for (int v : finder.cycle()) {
             //     //System.out.print(v + " " + "hi");
             //     System.out.println("Cycle exists.");
             // }
             System.out.println("Cycle exists.");
+            return;
         }
         else {
             System.out.println("Cycle doesn't exists.");
