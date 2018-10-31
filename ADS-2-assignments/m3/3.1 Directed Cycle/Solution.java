@@ -14,7 +14,7 @@ public class Solution {
 			System.out.println(temp[0] + "temp0" + temp[1] + "temp1");
 			//System.out.println("hello");
 		}
-		g.matrixRep(vertices, edges);
+		//g.matrixRep(vertices, edges);
         //In in = new In(args[0]);
         //Graph G = new Graph(in);
         Cycle finder = new Cycle(g);
