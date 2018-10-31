@@ -38,7 +38,7 @@ public class Cycle {
 
     // does this graph have two parallel edges?
     // side effect: initialize cycle to be two parallel edges
-    private boolean hasParallelEdges(Graph G) {
+    public boolean hasParallelEdges(Graph G) {
         marked = new boolean[G.V()];
 
         for (int v = 0; v < G.V(); v++) {
