@@ -13,7 +13,7 @@ class Percolation {
         grid = new boolean[size][size];
 	}
 	public void open(int i,int j) {
-        grid[i][j] = true;
+        grid[i - 1][j - 1] = true;
         if (i == 1) {
             g.addEdge(component(i, j), top);
         }
@@ -117,16 +117,16 @@ public class Solution {
 		Scanner sc = new Scanner(System.in);
 		int size = sc.nextInt();
 		Percolation p = new Percolation(size);
-        GraphRep g = new GraphRep(size);
+        //GraphRep g = new GraphRep(size);
 		
 		while(sc.hasNext()) {
             int n1 = sc.nextInt();
             int n2 = sc.nextInt();
-            g.addEdge(n1-1,n2-1);
+            //g.addEdge(n1-1,n2-1);
 			p.open(n1-1,n2-1);
 		}
         //System.out.println(size);
-        DepthFirstSearch d = new DepthFirstSearch(g, size-2);
+        //DepthFirstSearch d = new DepthFirstSearch(g, size-2);
 		System.out.println(p.percolates());
 	}
 }
