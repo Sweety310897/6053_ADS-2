@@ -119,10 +119,11 @@ public class Solution {
 		while(sc.hasNext()) {
             int n1 = sc.nextInt();
             int n2 = sc.nextInt();
-            g.addEdge(n1,n2);
-			p.open(n1,n2);
+            g.addEdge(n1-1,n2-1);
+			p.open(n1-1,n2-1);
 		}
-        DepthFirstSearch d = new DepthFirstSearch(g, size);
+        //System.out.println(size);
+        DepthFirstSearch d = new DepthFirstSearch(g, size-1);
 		System.out.println(p.percolates());
 	}
 }

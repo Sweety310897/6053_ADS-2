@@ -1,11 +1,9 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 false
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 25
-	at GraphRep.addEdge(Graph.java:83)
-	at Solution.main(Solution.java:122)
+false
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -13,9 +11,9 @@ Expected Output:
 false
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 13
-	at GraphRep.addEdge(Graph.java:83)
-	at Solution.main(Solution.java:122)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at Percolation.open(Solution.java:16)
+	at Solution.main(Solution.java:123)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -23,21 +21,17 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 1 is not between 0 and 0
-	at DepthFirstSearch.validateVertex(Solution.java:92)
-	at DepthFirstSearch.<init>(Solution.java:64)
-	at Solution.main(Solution.java:125)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at Percolation.open(Solution.java:16)
+	at Solution.main(Solution.java:123)
 ----------------------------------------
 
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 false
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 1 is not between 0 and 0
-	at DepthFirstSearch.validateVertex(Solution.java:92)
-	at DepthFirstSearch.<init>(Solution.java:64)
-	at Solution.main(Solution.java:125)
+false
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -45,9 +39,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
-	at GraphRep.addEdge(Graph.java:83)
-	at Solution.main(Solution.java:122)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at Percolation.open(Solution.java:16)
+	at Solution.main(Solution.java:123)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -55,10 +49,9 @@ Expected Output:
 false
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 2 is not between 0 and 1
-	at DepthFirstSearch.validateVertex(Solution.java:92)
-	at DepthFirstSearch.<init>(Solution.java:64)
-	at Solution.main(Solution.java:125)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at Percolation.open(Solution.java:16)
+	at Solution.main(Solution.java:123)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -66,9 +59,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 3
-	at GraphRep.addEdge(Graph.java:83)
-	at Solution.main(Solution.java:122)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at Percolation.open(Solution.java:16)
+	at Solution.main(Solution.java:123)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -76,10 +69,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
-	at GraphRep.hasEdge(Graph.java:95)
-	at GraphRep.addEdge(Graph.java:79)
-	at Solution.main(Solution.java:122)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at Percolation.open(Solution.java:16)
+	at Solution.main(Solution.java:123)
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -87,9 +79,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 5
-	at GraphRep.addEdge(Graph.java:83)
-	at Solution.main(Solution.java:122)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at Percolation.open(Solution.java:16)
+	at Solution.main(Solution.java:123)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -97,9 +89,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 6
-	at GraphRep.addEdge(Graph.java:83)
-	at Solution.main(Solution.java:122)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at Percolation.open(Solution.java:16)
+	at Solution.main(Solution.java:123)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -107,10 +99,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 7
-	at GraphRep.hasEdge(Graph.java:95)
-	at GraphRep.addEdge(Graph.java:79)
-	at Solution.main(Solution.java:122)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at Percolation.open(Solution.java:16)
+	at Solution.main(Solution.java:123)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -118,9 +109,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
-	at GraphRep.addEdge(Graph.java:83)
-	at Solution.main(Solution.java:122)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at Percolation.open(Solution.java:16)
+	at Solution.main(Solution.java:123)
 ----------------------------------------
 
 ########## Testcase 12: Failed ##########
@@ -128,9 +119,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
-	at GraphRep.addEdge(Graph.java:83)
-	at Solution.main(Solution.java:122)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at Percolation.open(Solution.java:16)
+	at Solution.main(Solution.java:123)
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########
@@ -138,9 +129,9 @@ Expected Output:
 false
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 13
-	at GraphRep.addEdge(Graph.java:83)
-	at Solution.main(Solution.java:122)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at Percolation.open(Solution.java:16)
+	at Solution.main(Solution.java:123)
 ----------------------------------------
 
 ########## Testcase 14: Failed ##########
@@ -148,10 +139,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 10
-	at GraphRep.hasEdge(Graph.java:95)
-	at GraphRep.addEdge(Graph.java:79)
-	at Solution.main(Solution.java:122)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at Percolation.open(Solution.java:16)
+	at Solution.main(Solution.java:123)
 ----------------------------------------
 
 ########## Testcase 15: Failed ##########
@@ -159,10 +149,9 @@ Expected Output:
 false
 
 Your Output: 
-Exception in thread "main" java.lang.IllegalArgumentException: vertex 50 is not between 0 and 49
-	at DepthFirstSearch.validateVertex(Solution.java:92)
-	at DepthFirstSearch.<init>(Solution.java:64)
-	at Solution.main(Solution.java:125)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at Percolation.open(Solution.java:16)
+	at Solution.main(Solution.java:123)
 ----------------------------------------
 
 ########## Testcase 16: Failed ##########
@@ -170,9 +159,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 20
-	at GraphRep.addEdge(Graph.java:83)
-	at Solution.main(Solution.java:122)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at Percolation.open(Solution.java:16)
+	at Solution.main(Solution.java:123)
 ----------------------------------------
 
 ########## Testcase 17: Failed ##########
@@ -180,9 +169,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 50
-	at GraphRep.addEdge(Graph.java:83)
-	at Solution.main(Solution.java:122)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at Percolation.open(Solution.java:16)
+	at Solution.main(Solution.java:123)
 ----------------------------------------
 
 ########## Testcase 18: Failed ##########
@@ -190,10 +179,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 60
-	at GraphRep.hasEdge(Graph.java:95)
-	at GraphRep.addEdge(Graph.java:79)
-	at Solution.main(Solution.java:122)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at Percolation.open(Solution.java:16)
+	at Solution.main(Solution.java:123)
 ----------------------------------------
 
 ########## Testcase 19: Failed ##########
@@ -201,9 +189,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 47
-	at GraphRep.addEdge(Graph.java:83)
-	at Solution.main(Solution.java:122)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at Percolation.open(Solution.java:16)
+	at Solution.main(Solution.java:123)
 ----------------------------------------
 
 ########## Testcase 20: Failed ##########
@@ -211,9 +199,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 60
-	at GraphRep.addEdge(Graph.java:83)
-	at Solution.main(Solution.java:122)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at Percolation.open(Solution.java:16)
+	at Solution.main(Solution.java:123)
 ----------------------------------------
 
 ########## Testcase 21: Failed ##########
@@ -221,9 +209,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 13
-	at GraphRep.addEdge(Graph.java:83)
-	at Solution.main(Solution.java:122)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at Percolation.open(Solution.java:16)
+	at Solution.main(Solution.java:123)
 ----------------------------------------
 
 ########## Testcase 22: Failed ##########
@@ -231,9 +219,9 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 101
-	at GraphRep.addEdge(Graph.java:83)
-	at Solution.main(Solution.java:122)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at Percolation.open(Solution.java:16)
+	at Solution.main(Solution.java:123)
 ----------------------------------------
 
 ########## Testcase 23: Failed ##########
@@ -241,9 +229,8 @@ Expected Output:
 true
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 98
-	at GraphRep.hasEdge(Graph.java:95)
-	at GraphRep.addEdge(Graph.java:79)
-	at Solution.main(Solution.java:122)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
+	at Percolation.open(Solution.java:16)
+	at Solution.main(Solution.java:123)
 ----------------------------------------
 
