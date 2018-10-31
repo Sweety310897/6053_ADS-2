@@ -76,7 +76,7 @@ class GraphRep implements Graph {
             edge++;
 
             adj[v].add(w);
-            adj[w].add(v); 
+            //adj[w].add(v); 
         }
     }
 	/**
@@ -96,28 +96,28 @@ class GraphRep implements Graph {
 		return false;
     }
     
-    // public void matrixRep(int v, int e) throws Exception {
-    // 	if (e <= 1 && v <= 1) {
-    // 		System.out.println(V() + " vertices" + ", " + E() + " edges");
-    // 		throw new Exception("No edges");
-    // 	} else {
-    // 		System.out.println(V() + " vertices" + ", " + E() + " edges");
-    // 		int[][] mat = new int[v][v];
-    // 		for (int i = 0; i  < v; i++) {
-    // 			for (int j = 0; j < v; j++) {
-    // 				if (hasEdge(i, j)) {
-    // 					mat[i][j] = 1;
-		  //   		}
-    // 			}
-    // 		}
-    // 		for (int i = 0; i < v; i++) {
-    // 			for (int j = 0; j < v; j++) {
-    // 				System.out.print(mat[i][j] + " ");
-    // 			}
-    // 			System.out.println();
-    // 		}
-    // 	}
-    // }
+    public void matrixRep(int v, int e) throws Exception {
+    	if (e <= 1 && v <= 1) {
+    		System.out.println(V() + " vertices" + ", " + E() + " edges");
+    		throw new Exception("No edges");
+    	} else {
+    		System.out.println(V() + " vertices" + ", " + E() + " edges");
+    		int[][] mat = new int[v][v];
+    		for (int i = 0; i  < v; i++) {
+    			for (int j = 0; j < v; j++) {
+    				if (hasEdge(i, j)) {
+    					mat[i][j] = 1;
+		    		}
+    			}
+    		}
+    		for (int i = 0; i < v; i++) {
+    			for (int j = 0; j < v; j++) {
+    				System.out.print(mat[i][j] + " ");
+    			}
+    			System.out.println();
+    		}
+    	}
+    }
     
    //  public void listRep(int v, int e, String[] n1) throws Exception {
    //  	if (e <= 1 && v <= 1) {

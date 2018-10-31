@@ -3,7 +3,7 @@ Expected Output:
 Cycle doesn't exists.
 
 Your Output: 
-Cycle exists.
+
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -11,7 +11,7 @@ Expected Output:
 Cycle doesn't exists.
 
 Your Output: 
-Cycle exists.
+
 ----------------------------------------
 
 ########## Testcase 2: Passed ##########
@@ -30,12 +30,12 @@ Your Output:
 Cycle doesn't exists.
 ----------------------------------------
 
-########## Testcase 4: Passed ##########
+########## Testcase 4: Failed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
-Cycle exists.
+
 ----------------------------------------
 
 ########## Testcase 5: Passed ##########
