@@ -26,12 +26,15 @@ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: -1
 	at Solution.main(Solution.java:123)
 ----------------------------------------
 
-########## Testcase 3: Passed ##########
+########## Testcase 3: Failed ##########
 Expected Output: 
 false
 
 Your Output: 
-false
+Exception in thread "main" java.lang.IllegalArgumentException: vertex -1 is not between 0 and 0
+	at DepthFirstSearch.validateVertex(Solution.java:92)
+	at DepthFirstSearch.<init>(Solution.java:64)
+	at Solution.main(Solution.java:126)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
