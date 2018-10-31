@@ -40,9 +40,10 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:14: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:17: 'for' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:18: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:25:5: Class 'Cycle' looks like designed for extension (can be subclassed), but the method 'hasSelfLoop' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Cycle' final or making the method 'hasSelfLoop' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:25:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:25:33: Parameter G should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:25:39: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:25:32: Parameter G should be final. [FinalParameters]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:25:38: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:41:5: Class 'Cycle' looks like designed for extension (can be subclassed), but the method 'hasParallelEdges' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Cycle' final or making the method 'hasParallelEdges' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:41:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:41:37: Parameter G should be final. [FinalParameters]
@@ -55,7 +56,7 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:89: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Cycle.java:94:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 Audit done.
-Checkstyle ends with 24 errors.
+Checkstyle ends with 25 errors.
 Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Graph.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Graph.java:1:8: Unused import - java.util.Arrays. [UnusedImports]
@@ -116,10 +117,10 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:13:61: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:14: Line is longer than 80 characters (found 84). [LineLength]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:21:11: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:24: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:31:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:35: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:36: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:24:11: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:33:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:37: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Solution.java:38: Line has trailing spaces. [RegexpSingleline]
 Audit done.
 Checkstyle ends with 17 errors.
 Starting audit...

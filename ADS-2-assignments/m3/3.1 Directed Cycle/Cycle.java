@@ -22,7 +22,7 @@ public class Cycle {
 
     // does this graph have a self loop?
     // side effect: initialize cycle to be self loop
-    private boolean hasSelfLoop(Graph G) {
+    public boolean hasSelfLoop(Graph G) {
         for (int v = 0; v < G.V(); v++) {
             for (int w : G.adj(v)) {
                 if (v == w) {

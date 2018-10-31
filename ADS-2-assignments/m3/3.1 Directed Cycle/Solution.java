@@ -21,7 +21,9 @@ public class Solution {
         if(finder.hasParallelEdges(g)) {
         	System.out.println("Cycle exists.");
         }
-        
+        if(finder.hasSelfLoop(g)) {
+        	System.out.println("Cycle exists.");
+        }
         if (finder.hasCycle()) {
             // for (int v : finder.cycle()) {
             //     //System.out.print(v + " " + "hi");
