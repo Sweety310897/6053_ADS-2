@@ -18,6 +18,7 @@ Your Output:
 6temp04temp1
 6temp09temp1
 7temp06temp1
+Cycle doesn't exists.
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -40,6 +41,7 @@ Your Output:
 6temp04temp1
 6temp09temp1
 7temp06temp1
+Cycle doesn't exists.
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -69,7 +71,7 @@ Your Output:
 6temp04temp1
 6temp09temp1
 7temp06temp1
-Cycle exists.
+Cycle doesn't exists.
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -92,6 +94,7 @@ Your Output:
 2temp00temp1
 2temp03temp1
 3temp03temp1
+Cycle doesn't exists.
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -121,7 +124,7 @@ Your Output:
 6temp04temp1
 6temp09temp1
 7temp06temp1
-Cycle exists.
+Cycle doesn't exists.
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########

@@ -4,7 +4,7 @@ public class Solution {
 		Scanner scan = new Scanner(System.in);
 		int vertices = scan.nextInt();
 		GraphRep g = new GraphRep(vertices);
-		
+		Cycle finder = new Cycle(g);
 		int edges = scan.nextInt();
 		scan.nextLine();
 		while(scan.hasNext()) {
@@ -17,7 +17,7 @@ public class Solution {
 		//g.matrixRep(vertices, edges);
         //In in = new In(args[0]);
         //Graph G = new Graph(in);
-        Cycle finder = new Cycle(g);
+        
         if (finder.hasCycle()) {
             // for (int v : finder.cycle()) {
             //     //System.out.print(v + " " + "hi");
