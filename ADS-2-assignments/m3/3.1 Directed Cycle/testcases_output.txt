@@ -3,7 +3,35 @@ Expected Output:
 Cycle doesn't exists.
 
 Your Output: 
-
+2temp03temp1
+0temp06temp1
+0temp01temp1
+2temp00temp1
+11temp012temp1
+9temp012temp1
+9temp010temp1
+9temp011temp1
+3temp05temp1
+8temp07temp1
+5temp04temp1
+0temp05temp1
+6temp04temp1
+6temp09temp1
+7temp06temp1
+13 vertices, 15 edges
+0 1 0 0 0 1 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 
+1 0 0 1 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 1 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 1 0 0 0 0 0 0 0 0 
+0 0 0 0 1 0 0 0 0 1 0 0 0 
+0 0 0 0 0 0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 1 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 1 1 1 
+0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 1 
+0 0 0 0 0 0 0 0 0 0 0 0 0
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -11,14 +39,82 @@ Expected Output:
 Cycle doesn't exists.
 
 Your Output: 
-
+2temp03temp1
+0temp06temp1
+0temp01temp1
+2temp00temp1
+11temp012temp1
+9temp012temp1
+9temp010temp1
+9temp011temp1
+3temp05temp1
+8temp07temp1
+5temp04temp1
+0temp05temp1
+6temp04temp1
+6temp09temp1
+7temp06temp1
+13 vertices, 15 edges
+0 1 0 0 0 1 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 
+1 0 0 1 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 1 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 1 0 0 0 0 0 0 0 0 
+0 0 0 0 1 0 0 0 0 1 0 0 0 
+0 0 0 0 0 0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 1 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 1 1 1 
+0 0 0 0 0 0 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 1 
+0 0 0 0 0 0 0 0 0 0 0 0 0
 ----------------------------------------
 
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
+4temp02temp1
+2temp03temp1
+3temp02temp1
+6temp00temp1
+0temp01temp1
+2temp00temp1
+11temp012temp1
+12temp09temp1
+9temp010temp1
+9temp011temp1
+7temp09temp1
+10temp012temp1
+11temp04temp1
+4temp03temp1
+3temp05temp1
+6temp08temp1
+8temp06temp1
+5temp04temp1
+0temp05temp1
+6temp04temp1
+6temp09temp1
+7temp06temp1
+13 vertices, 22 edges
+0 1 0 0 0 1 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 
+1 0 0 1 0 0 0 0 0 0 0 0 0 
+0 0 1 0 0 1 0 0 0 0 0 0 0 
+0 0 1 1 0 0 0 0 0 0 0 0 0 
+0 0 0 0 1 0 0 0 0 0 0 0 0 
+1 0 0 0 1 0 0 0 1 1 0 0 0 
+0 0 0 0 0 0 1 0 0 1 0 0 0 
+0 0 0 0 0 0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 1 1 0 
+0 0 0 0 0 0 0 0 0 0 0 0 1 
+0 0 0 0 1 0 0 0 0 0 0 0 1 
+0 0 0 0 0 0 0 0 0 1 0 0 0 
+Cycle exists.
+Cycle exists.
+Cycle exists.
+Cycle exists.
 Cycle exists.
 ----------------------------------------
 
@@ -27,7 +123,11 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-Cycle doesn't exists.
+0temp00temp1
+1 vertices, 0 edges
+Exception in thread "main" java.lang.Exception: No edges
+	at GraphRep.matrixRep(Graph.java:102)
+	at Solution.main(Solution.java:17)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -35,22 +135,79 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
-
+0temp01temp1
+0temp02temp1
+1temp02temp1
+2temp00temp1
+2temp03temp1
+3temp03temp1
+4 vertices, 5 edges
+0 1 1 0 
+0 0 1 0 
+1 0 0 1 
+0 0 0 0
 ----------------------------------------
 
-########## Testcase 5: Passed ##########
+########## Testcase 5: Failed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
+4temp02temp1
+2temp03temp1
+3temp02temp1
+6temp00temp1
+0temp01temp1
+2temp00temp1
+11temp012temp1
+12temp09temp1
+9temp010temp1
+9temp011temp1
+7temp09temp1
+10temp012temp1
+11temp04temp1
+4temp03temp1
+3temp05temp1
+6temp08temp1
+8temp06temp1
+5temp04temp1
+0temp05temp1
+6temp04temp1
+6temp09temp1
+7temp06temp1
+13 vertices, 22 edges
+0 1 0 0 0 1 0 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 0 0 0 
+1 0 0 1 0 0 0 0 0 0 0 0 0 
+0 0 1 0 0 1 0 0 0 0 0 0 0 
+0 0 1 1 0 0 0 0 0 0 0 0 0 
+0 0 0 0 1 0 0 0 0 0 0 0 0 
+1 0 0 0 1 0 0 0 1 1 0 0 0 
+0 0 0 0 0 0 1 0 0 1 0 0 0 
+0 0 0 0 0 0 1 0 0 0 0 0 0 
+0 0 0 0 0 0 0 0 0 0 1 1 0 
+0 0 0 0 0 0 0 0 0 0 0 0 1 
+0 0 0 0 1 0 0 0 0 0 0 0 1 
+0 0 0 0 0 0 0 0 0 1 0 0 0 
+Cycle exists.
+Cycle exists.
+Cycle exists.
+Cycle exists.
 Cycle exists.
 ----------------------------------------
 
-########## Testcase 6: Passed ##########
+########## Testcase 6: Failed ##########
 Expected Output: 
 Cycle doesn't exists.
 
 Your Output: 
+0temp01temp1
+1temp02temp1
+1temp02temp1
+3 vertices, 2 edges
+0 1 0 
+0 0 1 
+0 0 0 
 Cycle doesn't exists.
 ----------------------------------------
 
@@ -59,6 +216,13 @@ Expected Output:
 Cycle exists.
 
 Your Output: 
+0temp01temp1
+1temp02temp1
+2temp01temp1
+3 vertices, 3 edges
+0 1 0 
+0 0 1 
+0 1 0 
 Cycle doesn't exists.
 ----------------------------------------
 

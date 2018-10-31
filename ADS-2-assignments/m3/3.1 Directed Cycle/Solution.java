@@ -11,17 +11,18 @@ public class Solution {
 			String[] temp = scan.nextLine().split(" ");
 			
 			g.addEdge(Integer.parseInt(temp[0]),Integer.parseInt(temp[1]));
-			//System.out.println(temp[0] + "temp0" + temp[1] + "temp1");
+			System.out.println(temp[0] + "temp0" + temp[1] + "temp1");
 			//System.out.println("hello");
 		}
-		//g.matrixRep(vertices, edges);
+		g.matrixRep(vertices, edges);
         //In in = new In(args[0]);
         //Graph G = new Graph(in);
         Cycle finder = new Cycle(g);
         if (finder.hasCycle()) {
-            // for (int v : finder.cycle()) {
-            //     //System.out.print(v + " " + "hi");
-            // }
+            for (int v : finder.cycle()) {
+                //System.out.print(v + " " + "hi");
+                System.out.println("Cycle exists.");
+            }
             System.out.println("Cycle exists.");
         }
         else {
