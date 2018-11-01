@@ -156,15 +156,15 @@ class DepthFirstSearch {
     /**
      * Constructs the object.
      *
-     * @param      G     { parameter_description }
+     * @param      gph     { parameter_description }
      * @param      s     { parameter_description }
      */
-    DepthFirstSearch(final GraphRep Gph, final int s) {
+    DepthFirstSearch(final GraphRep gph, final int s) {
         this.s = s;
-        edgeTo = new int[Gph.V()];
-        marked = new boolean[Gph.V()];
+        edgeTo = new int[gph.V()];
+        marked = new boolean[gph.V()];
         validateVertex(s);
-        dfs(Gph, s);
+        dfs(gph, s);
     }
     /**
      * dfs.
