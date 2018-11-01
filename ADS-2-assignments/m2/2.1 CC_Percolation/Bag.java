@@ -16,12 +16,21 @@ public class Bag<Item> implements Iterable<Item> {
     private Node first;    // beginning of bag
     // helper linked list class
     private class Node {
+        /**
+         * { var_description }
+         */
         private Item item;
+        /**
+         * { var_description }
+         */
         private Node next;
     }
 
    /**
      * Create an empty stack.
+     */
+    /**
+     * Constructs the object.
      */
     public Bag() {
         first = null;
@@ -31,6 +40,11 @@ public class Bag<Item> implements Iterable<Item> {
    /**
      * Is the BAG empty?
      */
+    /**
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
         return first == null;
     }
@@ -38,12 +52,22 @@ public class Bag<Item> implements Iterable<Item> {
    /**
      * Return the number of items in the bag.
      */
+    /**
+     * size.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int size() {
         return N;
     }
 
    /**
      * Add the item to the bag.
+     */
+    /**
+     * add.
+     *
+     * @param      item  The item
      */
     public void add(Item item) {
         Node oldfirst = first;

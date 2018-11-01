@@ -2,14 +2,11 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Bag.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Bag.java:12:17: Name 'N' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Bag.java:18: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Bag.java:19:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Bag.java:20:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Bag.java:34: Expected @return tag. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Bag.java:41: Expected @return tag. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Bag.java:48:21: Parameter item should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Bag.java:48:26: Expected @param tag for 'item'. [JavadocMethod]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Bag.java:19: First sentence should end with a period. [JavadocStyle]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Bag.java:23: First sentence should end with a period. [JavadocStyle]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Bag.java:72:21: Parameter item should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 Audit done.
 Starting audit...
