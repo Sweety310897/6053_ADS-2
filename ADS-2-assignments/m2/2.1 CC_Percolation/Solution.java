@@ -161,8 +161,8 @@ class DepthFirstSearch {
      */
     DepthFirstSearch(final GraphRep gph, final int s1) {
         this.s = s1;
-        edgeTo = new int[gph.V()];
-        marked = new boolean[gph.V()];
+        edgeTo = new int[gph.ve()];
+        marked = new boolean[gph.ve()];
         validateVertex(s1);
         dfs(gph, s1);
     }
