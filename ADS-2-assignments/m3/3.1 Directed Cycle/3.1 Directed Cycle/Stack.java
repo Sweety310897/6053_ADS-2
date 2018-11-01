@@ -105,14 +105,17 @@ public class Stack<Item> implements Iterable<Item> {
        
 
    /**
-     * Return an iterator to the stack that iterates through the items in LIFO order.
+     * Return an iterator to the stack that iterates through the items in LIFO
+     * order.
+     *
+     * @return     { description_of_the_return_value }
      */
     public Iterator<Item> iterator()  { return new ListIterator();  }
-
+    /
     // an iterator, doesn't implement remove() since it's optional
     private class ListIterator implements Iterator<Item> {
         /**
-         * { var_description }
+         * { var_description }.
          */
         private Node current = first;
         /**
@@ -135,7 +138,7 @@ public class Stack<Item> implements Iterable<Item> {
          * @return     { description_of_the_return_value }
          */
         public Item next() {
-            if (!hasNext()) { 
+            if (!hasNext()) {
                 throw new NoSuchElementException();
             }
             Item item = current.item;
