@@ -1,11 +1,21 @@
 public class Digraph {
     private static final String NEWLINE = System.getProperty("line.separator");
-
+    /**
+     * { var_description }
+     */
     private final int V;           // number of vertices in this digraph
+    /**
+     * { var_description }
+     */
     private int E;                 // number of edges in this digraph
+    /**
+     * { var_description }
+     */
     private Bag<Integer>[] adj;    // adj[v] = adjacency list for vertex v
+    /**
+     * { var_description }
+     */
     private int[] indegree;        // indegree[v] = indegree of vertex v
-    
     /**
      * Initializes an empty digraph with <em>V</em> vertices.
      *
@@ -13,7 +23,10 @@ public class Digraph {
      * @throws IllegalArgumentException if {@code V < 0}
      */
     public Digraph(int V) {
-        if (V < 0) throw new IllegalArgumentException("Number of vertices in a Digraph must be nonnegative");
+        if (V < 0) {
+            throw new IllegalArgumentException(
+            "Number of vertices in a Digraph must be nonnegative");
+        }
         this.V = V;
         this.E = 0;
         indegree = new int[V];
@@ -30,8 +43,9 @@ public class Digraph {
     public Digraph(Digraph G) {
         this(G.V());
         this.E = G.E();
-        for (int v = 0; v < V; v++)
+        for (int v = 0; v < V; v++) {
             this.indegree[v] = G.indegree(v);
+        }
         for (int v = 0; v < G.V(); v++) {
             // reverse so that adjacency list is in same order as original
             Stack<Integer> reverse = new Stack<Integer>();
@@ -43,7 +57,6 @@ public class Digraph {
             }
         }
     }
-        
     /**
      * Returns the number of vertices in this digraph.
      *
