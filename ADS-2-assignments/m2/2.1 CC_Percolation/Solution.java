@@ -4,47 +4,50 @@ import java.util.Stack;
  * Class for percolation.
  */
 class Percolation {
-	/**
-	 * grid.
-	 */
-	boolean[][] grid;
-	/**
-	 * top.
-	 */
-	int top = 0;
-	/**
-	 * bottom.
-	 */
-	int bottom;
-	/**
-	 * size.
-	 */
-	int size;
-	/**
-	 * g.
-	 */
-	GraphRep g;
-	/**
-	 * Constructs the object.
-	 *
-	 * @param      n     { parameter_description }
-	 */
-	Percolation(int n) {
-		size = n;
+    /**
+     * grid.
+     */
+    boolean[][] grid;
+    /**
+     * top.
+     */
+    private int top = 0;
+    /**
+     * bottom.
+     */
+    int bottom;
+    /**
+     * size.
+     */
+    int size;
+    /**
+     * g.
+     */
+    GraphRep g;
+    /**
+     * Constructs the object.
+     *
+     * @param      n     { parameter_description }
+     */
+    Percolation(final int n) {
+        size = n;
         bottom = size * size + 1;
         g = new GraphRep(size * size + 2);
         grid = new boolean[size][size];
-	}
-	/**
-	 * open.
-	 *
-	 * @param      i     { parameter_description }
-	 * @param      j     { parameter_description }
-	 */
-	public void open(int i,int j) {
-        grid[i-1][j-1] = true;
+    }
+    public int gettop() {
+        return this.top;
+    }
+    /**
+     * open.
+     *
+     * @param      i     { parameter_description }
+     * @param      j     { parameter_description }
+     */
+    public void open(final int i, final int j) {
+        grid[i - 1][j - 1] = true;
         if (i == 1) {
-            g.addEdge(component(i, j), top);
+            g.addEdge(component(i, j), gettop());
         }
         if (i == size) {
             g.addEdge(component(i, j), bottom);
@@ -71,44 +74,44 @@ class Percolation {
      *
      * @return     True if open, False otherwise.
      */
-	public boolean isOpen(int i, int j) {
+    public boolean isOpen(final int i, final int j) {
         return grid[i - 1][j - 1];
-	}
-	/**
-	 * Determines if full.
-	 *
-	 * @param      i     { parameter_description }
-	 * @param      j     { parameter_description }
-	 *
-	 * @return     True if full, False otherwise.
-	 */
-	public boolean isFull(int i, int j) {
+    }
+    /**
+     * Determines if full.
+     *
+     * @param      i     { parameter_description }
+     * @param      j     { parameter_description }
+     *
+     * @return     True if full, False otherwise.
+     */
+    public boolean isFull(final int i, final int j) {
         if (0 < i && i <= size && 0 < j && j <= size) {
-            return g.hasEdge(top, component(i, j));
+            return g.hasEdge(gettop(), component(i, j));
         } else {
             throw new IndexOutOfBoundsException();
         }
-	}
-	/**
-	 * percolates.
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	public boolean percolates() {
-        DepthFirstSearch obj = new DepthFirstSearch(g,top);
+    }
+    /**
+     * percolates.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public boolean percolates() {
+        DepthFirstSearch obj = new DepthFirstSearch(g, gettop());
         return obj.hasPathTo(bottom);
         //return g.hasEdge(top, bottom);
 
-	}
-	/**
-	 * component.
-	 *
-	 * @param      i     { parameter_description }
-	 * @param      j     { parameter_description }
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	private int component(final int i, final int j) {
+    }
+    /**
+     * component.
+     *
+     * @param      i     { parameter_description }
+     * @param      j     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private int component(final int i, final int j) {
         return size * (i - 1) + j;
     }
 
@@ -117,10 +120,10 @@ class Percolation {
  * Class for depth first search.
  */
 class DepthFirstSearch {
-	/**
-	 * marked.
-	 */
-	private boolean[] marked;    // marked[v] = is there an s-v path?
+    /**
+     * marked.
+     */
+    private boolean[] marked;    // marked[v] = is there an s-v path?
     /**
      * edgeTo.
      */
@@ -178,7 +181,7 @@ class DepthFirstSearch {
     public Iterable<Integer> pathTo(final int v) {
         validateVertex(v);
         if (!hasPathTo(v)) {
-        	return null;
+            return null;
         }
         Stack<Integer> path = new Stack<Integer>();
         for (int x = v; x != s; x = edgeTo[x]) {
@@ -196,7 +199,7 @@ class DepthFirstSearch {
         int V = marked.length;
         if (v < 0 || v >= V) {
             throw new IllegalArgumentException(
-            	"vertex " + v + " is not between 0 and " + (V - 1));
+                "vertex " + v + " is not between 0 and " + (V - 1));
         }
     // }
     // public void display(GraphRep G) {
@@ -221,30 +224,30 @@ class DepthFirstSearch {
  * Class for solution.
  */
 public final class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	private Solution() {
-		//constructor.
-	}
-	/**
-	 * main.
-	 *
-	 * @param      args  The arguments
-	 */
-	public static void main(final String[] args) {
-		Scanner sc = new Scanner(System.in);
-		int size = sc.nextInt();
-		Percolation p = new Percolation(size);
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+        //constructor.
+    }
+    /**
+     * main.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        Percolation p = new Percolation(size);
         //GraphRep g = new GraphRep(size);
-		while (sc.hasNext()) {
+        while (sc.hasNext()) {
             int n1 = sc.nextInt();
             int n2 = sc.nextInt();
             //g.addEdge(n1-1,n2-1);
-			p.open(n1, n2);
-		}
+            p.open(n1, n2);
+        }
         //System.out.println(size);
         //DepthFirstSearch d = new DepthFirstSearch(g, size-2);
-		System.out.println(p.percolates());
-	}
+        System.out.println(p.percolates());
+    }
 }
