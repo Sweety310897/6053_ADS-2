@@ -1,17 +1,17 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 Cycle doesn't exists.
 
 Your Output: 
-
+Cycle doesn't exists.
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 Cycle doesn't exists.
 
 Your Output: 
-
+Cycle doesn't exists.
 ----------------------------------------
 
 ########## Testcase 2: Passed ##########
@@ -30,12 +30,12 @@ Your Output:
 Cycle doesn't exists.
 ----------------------------------------
 
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
-
+Cycle exists.
 ----------------------------------------
 
 ########## Testcase 5: Passed ##########
@@ -54,11 +54,11 @@ Your Output:
 Cycle doesn't exists.
 ----------------------------------------
 
-########## Testcase 7: Failed ##########
+########## Testcase 7: Passed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
-Cycle doesn't exists.
+Cycle exists.
 ----------------------------------------
 

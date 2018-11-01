@@ -9,7 +9,7 @@ public class DirectedCycle {
      * finds such a cycle.
      * @param G the digraph
      */
-    public DirectedCycle(Digraph G) {
+    public DirectedCycle(GraphRep G) {
         marked  = new boolean[G.V()];
         onStack = new boolean[G.V()];
         edgeTo  = new int[G.V()];
@@ -18,7 +18,7 @@ public class DirectedCycle {
     }
 
     // check that algorithm computes either the topological order or finds a directed cycle
-    private void dfs(Digraph G, int v) {
+    private void dfs(GraphRep G, int v) {
         onStack[v] = true;
         marked[v] = true;
         for (int w : G.adj(v)) {
@@ -89,23 +89,23 @@ public class DirectedCycle {
      *
      * @param args the command-line arguments
      */
-    public static void main(String[] args) {
-        In in = new In(args[0]);
-        Digraph G = new Digraph(in);
+    // public static void main(String[] args) {
+    //     In in = new In(args[0]);
+    //     Digraph G = new Digraph(in);
 
-        DirectedCycle finder = new DirectedCycle(G);
-        if (finder.hasCycle()) {
-            StdOut.print("Directed cycle: ");
-            for (int v : finder.cycle()) {
-                StdOut.print(v + " ");
-            }
-            StdOut.println();
-        }
+    //     DirectedCycle finder = new DirectedCycle(G);
+    //     if (finder.hasCycle()) {
+    //         StdOut.print("Directed cycle: ");
+    //         for (int v : finder.cycle()) {
+    //             StdOut.print(v + " ");
+    //         }
+    //         StdOut.println();
+    //     }
 
-        else {
-            StdOut.println("No directed cycle");
-        }
-        StdOut.println();
-    }
+    //     else {
+    //         StdOut.println("No directed cycle");
+    //     }
+    //     StdOut.println();
+    // }
 
 }
