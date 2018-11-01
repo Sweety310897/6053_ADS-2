@@ -14,11 +14,14 @@ Your Output:
 Cycle doesn't exists.
 ----------------------------------------
 
-########## Testcase 2: Passed ##########
+########## Testcase 2: Failed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
+2000000000000000
+2000000000000000
+1000000000000000
 Cycle exists.
 ----------------------------------------
 
@@ -30,19 +33,23 @@ Your Output:
 Cycle doesn't exists.
 ----------------------------------------
 
-########## Testcase 4: Passed ##########
+########## Testcase 4: Failed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
+1000000000000000
 Cycle exists.
 ----------------------------------------
 
-########## Testcase 5: Passed ##########
+########## Testcase 5: Failed ##########
 Expected Output: 
 Cycle exists.
 
 Your Output: 
+2000000000000000
+2000000000000000
+1000000000000000
 Cycle exists.
 ----------------------------------------
 

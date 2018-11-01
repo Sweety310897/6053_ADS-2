@@ -14,7 +14,9 @@ public class DirectedCycle {
         onStack = new boolean[G.V()];
         edgeTo  = new int[G.V()];
         for (int v = 0; v < G.V(); v++)
-            if (!marked[v] && cycle == null) dfs(G, v);
+            if (!marked[v] && cycle == null) {
+                dfs(G, v);
+            }
     }
 
     // check that algorithm computes either the topological order or finds a directed cycle
@@ -22,9 +24,11 @@ public class DirectedCycle {
         onStack[v] = true;
         marked[v] = true;
         for (int w : G.adj(v)) {
-
             // short circuit if directed cycle found
-            if (cycle != null) return;
+            if (cycle != null) {
+                System.out.println(w+"000000000000000");
+                return;
+            }
 
             // found new vertex, so recur
             else if (!marked[w]) {
@@ -40,7 +44,7 @@ public class DirectedCycle {
                 }
                 cycle.push(w);
                 cycle.push(v);
-                assert check();
+                // assert check();
             }
         }
         onStack[v] = false;
@@ -65,24 +69,24 @@ public class DirectedCycle {
 
 
     // certify that digraph has a directed cycle if it reports one
-    private boolean check() {
+    // private boolean check() {
 
-        if (hasCycle()) {
-            // verify cycle
-            int first = -1, last = -1;
-            for (int v : cycle()) {
-                if (first == -1) first = v;
-                last = v;
-            }
-            if (first != last) {
-                System.err.printf("cycle begins with %d and ends with %d\n", first, last);
-                return false;
-            }
-        }
+    //     if (hasCycle()) {
+    //         // verify cycle
+    //         int first = -1, last = -1;
+    //         for (int v : cycle()) {
+    //             if (first == -1) first = v;
+    //             last = v;
+    //         }
+    //         if (first != last) {
+    //             System.err.printf("cycle begins with %d and ends with %d\n", first, last);
+    //             return false;
+    //         }
+    //     }
 
 
-        return true;
-    }
+    //     return true;
+    // }
 
     /**
      * Unit tests the {@code DirectedCycle} data type.
