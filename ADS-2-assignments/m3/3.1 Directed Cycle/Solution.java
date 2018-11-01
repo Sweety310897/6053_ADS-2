@@ -1,12 +1,13 @@
 import java.util.Scanner;
 /**
- * Class for solution.
+ * main class.
  */
-final class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
     private Solution() {
+        // default constructor is not used.
     }
     /**
      * main function.
@@ -14,25 +15,25 @@ final class Solution {
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int v = Integer.parseInt(sc.nextLine());
-        Digraph g = new Digraph(v);
-        int e = Integer.parseInt(sc.nextLine());
-        while (sc.hasNext()) {
-            //String tokens = sc.nextLine();
-            String[] input = sc.nextLine().split(" ");
-            g.addEdge(Integer.parseInt(input[0]), Integer.parseInt(input[1]));
+        Scanner scan = new Scanner(System.in);
+        int vertices = Integer.parseInt(scan.nextLine());
+        int edges = Integer.parseInt(scan.nextLine());
+        Digraph digraph = new Digraph(vertices);
+        while (edges > 0) {
+            String[] tokens = scan.nextLine().split(" ");
+            int a = Integer.parseInt(tokens[0]);
+            int b = Integer.parseInt(tokens[1]);
+            digraph.addEdge(a, b);
+            edges--;
         }
-        Cycle c = new Cycle(g);
-        if (c.hasCycle()) {
+        DirectedCycle dcycle = new DirectedCycle(digraph);
+        if (dcycle.hasCycle()) {
             System.out.println("Cycle exists.");
         } else {
             System.out.println("Cycle doesn't exists.");
         }
     }
 }
-
-
 
 
 

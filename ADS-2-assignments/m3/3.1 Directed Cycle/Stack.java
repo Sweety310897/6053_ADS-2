@@ -1,47 +1,28 @@
-/*************************************************************************
- *  Compilation:  javac Stack.java
- *  Execution:    java Stack < input.txt
- *
- *  A generic stack, implemented using a linked list. Each stack
- *  element is of type Item.
- *  
- *  % more tobe.txt 
- *  to be or not to - be - - that - - - is
- *
- *  % java Stack < tobe.txt
- *  to be not that or be (2 left on stack)
- *
- *************************************************************************/
-
 import java.util.Iterator;
 import java.util.NoSuchElementException;
-
-
 /**
- *  The <tt>Stack</tt> class represents a last-in-first-out (LIFO) stack of generic items.
- *  It supports the usual <em>push</em> and <em>pop</em> operations, along with methods
- *  for peeking at the top item, testing if the stack is empty, and iterating through
- *  the items in LIFO order.
- *  <p>
- *  All stack operations except iteration are constant time.
- *  <p>
- *  For additional documentation, see <a href="/algs4/13stacks">Section 1.3</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
+ * List of .
+ *
+ * @param      <Item>  The item
  */
 public class Stack<Item> implements Iterable<Item> {
     /**
-     * N.
+     * n.
      */
-    private int N;  
+    private int n;          // size of the stack
     /**
-     * first.
-     */// size of the stack
+     *first.
+     */
     private Node first;     // top of stack
 
-    //
-    // helper linked list class /* private class Node { /**
-    //          * item. */
-    //
+    // helper linked list class
+    /**
+     *class.
+     */
+    private class Node {
+        /**
+         * item.
+         */
         private Item item;
         /**
          * next.
@@ -52,9 +33,12 @@ public class Stack<Item> implements Iterable<Item> {
    /**
      * Create an empty stack.
      */
+    /**
+     * Constructs the object.
+     */
     public Stack() {
         first = null;
-        N = 0;
+        n = 0;
     }
 
    /**
@@ -68,6 +52,7 @@ public class Stack<Item> implements Iterable<Item> {
     public boolean isEmpty() {
         return first == null;
     }
+
    /**
      * Return the number of items in the stack.
      */
@@ -77,10 +62,10 @@ public class Stack<Item> implements Iterable<Item> {
      * @return     { description_of_the_return_value }
      */
     public int size() {
-        return N;
+        return n;
     }
 
-    /**
+   /**
      * Add the item to the stack.
      */
     /**
@@ -93,7 +78,7 @@ public class Stack<Item> implements Iterable<Item> {
         first = new Node();
         first.item = item;
         first.next = oldfirst;
-        N++;
+        n++;
     }
 
    /**
@@ -111,9 +96,11 @@ public class Stack<Item> implements Iterable<Item> {
         }
         Item item = first.item;        // save item to return
         first = first.next;            // delete first node
-        N--;
+        n--;
         return item;                   // return the saved item
     }
+
+
    /**
      * Return the item most recently added to the stack.
      * Throw an exception if no such item exists because the stack is empty.
@@ -145,12 +132,10 @@ public class Stack<Item> implements Iterable<Item> {
         }
         return s.toString();
     }
-    /**
-     * Return an iterator to the stack that
-     * iterates through the items in LIFO order.
-     */
-    /**
-     * Iterator.
+
+   /**
+     * Return an iterator to the stack that iterates through the items in LIFO
+     * order.
      *
      * @return     { description_of_the_return_value }
      */
@@ -159,11 +144,11 @@ public class Stack<Item> implements Iterable<Item> {
     }
     // an iterator, doesn't implement remove() since it's optional
     /**
-     * class.
+     *class.
      */
     private class ListIterator implements Iterator<Item> {
         /**
-         * current.
+         * { var_description }.
          */
         private Node current = first;
         /**
@@ -171,7 +156,7 @@ public class Stack<Item> implements Iterable<Item> {
          *
          * @return     True if has next, False otherwise.
          */
-        public boolean hasNext() {
+        public boolean hasNext()  {
             return current != null;
         }
         /**
@@ -194,6 +179,8 @@ public class Stack<Item> implements Iterable<Item> {
             return item;
         }
     }
+
+
    /**
      * A test client.
      */
@@ -207,7 +194,6 @@ public class Stack<Item> implements Iterable<Item> {
         StdOut.println("(" + s.size() + " left on stack)");
     }*/
 }
-
 
 
 
