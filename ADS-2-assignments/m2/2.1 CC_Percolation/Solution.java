@@ -172,12 +172,12 @@ class DepthFirstSearch {
      * @param      G     { parameter_description }
      * @param      v     { parameter_description }
      */
-    private void dfs(final GraphRep G, final int v) {
+    private void dfs(final GraphRep g1, final int v) {
         marked[v] = true;
-        for (int w : G.adj(v)) {
+        for (int w : g1.adj(v)) {
             if (!marked[w]) {
                 edgeTo[w] = v;
-                dfs(G, w);
+                dfs(g1, w);
             }
         }
     }
@@ -272,3 +272,9 @@ public final class Solution {
         System.out.println(p.percolates());
     }
 }
+
+
+
+
+
+
