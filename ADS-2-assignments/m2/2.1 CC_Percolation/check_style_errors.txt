@@ -68,7 +68,7 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:83: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:94:32: Parameter v should be final. [FinalParameters]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:94:39: Parameter w should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:95:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:95:20: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:96:38: '==' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:96:40: '==' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:110:27: Parameter v should be final. [FinalParameters]
@@ -81,8 +81,9 @@ Audit done.
 Checkstyle ends with 47 errors.
 Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:162:52: 's' hides a field. [HiddenField]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:160:8: Unused @param tag for 's'. [JavadocMethod]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:162:52: Expected @param tag for 's1'. [JavadocMethod]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:175:37: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:220:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 5 errors.
