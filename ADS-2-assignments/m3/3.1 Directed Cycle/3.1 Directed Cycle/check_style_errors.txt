@@ -22,8 +22,11 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Digraph.java:30:28: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Digraph.java:33: 'for' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Digraph.java:46: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Digraph.java:52:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Digraph.java:60:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Digraph.java:63: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 19 errors.
+Checkstyle ends with 22 errors.
 Starting audit...
 Audit done.
 Starting audit...

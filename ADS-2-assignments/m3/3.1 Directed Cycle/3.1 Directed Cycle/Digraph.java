@@ -28,11 +28,11 @@ public class Digraph {
      * @param  G the digraph to copy
      */
     public Digraph(Digraph G) {
-        this(G.ve());
-        this.E = G.ed();
+        this(G.V());
+        this.E = G.E();
         for (int v = 0; v < V; v++)
             this.indegree[v] = G.indegree(v);
-        for (int v = 0; v < G.ve(); v++) {
+        for (int v = 0; v < G.V(); v++) {
             // reverse so that adjacency list is in same order as original
             Stack<Integer> reverse = new Stack<Integer>();
             for (int w : G.adj[v]) {
@@ -49,7 +49,7 @@ public class Digraph {
      *
      * @return the number of vertices in this digraph
      */
-    public int ve() {
+    public int V() {
         return V;
     }
     /**
@@ -57,11 +57,11 @@ public class Digraph {
      *
      * @return the number of edges in this digraph
      */
-    public int ed() {
+    public int E() {
         return E;
     }
     /**
-     * { function_description }.
+     * { function_description }
      *
      * @param      v     { parameter_description }
      */
