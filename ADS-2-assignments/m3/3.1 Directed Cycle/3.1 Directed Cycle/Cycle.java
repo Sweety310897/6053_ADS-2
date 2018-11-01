@@ -23,28 +23,37 @@ public class Cycle {
      * finds such a cycle.
      * @param G the digraph
      */
-    public Cycle(Digraph G) {
-        marked  = new boolean[G.V()];
-        onStack = new boolean[G.V()];
-        edgeTo  = new int[G.V()];
-        for (int v = 0; v < G.V(); v++) {
+    /**
+     * Constructs the object.
+     *
+     * @param      G     { parameter_description }
+     */
+    public Cycle(final Digraph gph) {
+        marked  = new boolean[gph.V()];
+        onStack = new boolean[gph.V()];
+        edgeTo  = new int[gph.V()];
+        for (int v = 0; v < gph.V(); v++) {
             if (!marked[v] && cycle == null) {
-                dfs(G, v);
+                dfs(gph, v);
             }
         }
     }
-    private void dfs(Digraph G, int v) {
+    /**
+     * dfs.
+     *
+     * @param      G     { parameter_description }
+     * @param      v     { parameter_description }
+     */
+    private void dfs(final Digraph gph1, final int v) {
         onStack[v] = true;
         marked[v] = true;
-        for (int w : G.adj(v)) {
+        for (int w : gph1.adj(v)) {
             if (cycle != null) {
                 return;
-            }
-            else if (!marked[w]) {
+            } else if (!marked[w]) {
                 edgeTo[w] = v;
-                dfs(G, w);
-            }
-            else if (onStack[w]) {
+                dfs(gph1, w);
+            } else if (onStack[w]) {
                 cycle = new Stack<Integer>();
                 for (int x = v; x != w; x = edgeTo[x]) {
                     cycle.push(x);
@@ -63,8 +72,14 @@ public class Cycle {
         return cycle != null;
     }
     /**
-     * Returns a directed cycle if the digraph has a directed cycle, and {@code null} otherwise.
+     * Returns a directed cycle if the digraph
+     * has a directed cycle, and {@code null} otherwise.
      *
+     */
+    /**
+     * { function_description }
+     *
+     * @return     { description_of_the_return_value }
      */
     public Iterable<Integer> cycle() {
         return cycle;
