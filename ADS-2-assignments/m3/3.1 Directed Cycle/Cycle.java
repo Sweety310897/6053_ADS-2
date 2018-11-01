@@ -1,101 +1,50 @@
+/**
+ * Class for cycle.
+ */
 public class Cycle {
-    private boolean[] marked;
+    /**
+     * { var_description }
+     */
+    private boolean[] marked;// marked[v] = has vertex v been marked?
+    /**
+     * { item_description }
+     */
     private int[] edgeTo;
+    /**
+     * { var_description }
+     */
+    private boolean[] onStack;
+    /**
+     * { var_description }
+     */
     private Stack<Integer> cycle;
-
     /**
-     * Determines whether the undirected graph {@code G} has a cycle and,
-     * if so, finds such a cycle.
-     *
-     * @param G the undirected graph
+     * Determines whether the digraph {@code G} has a directed cycle and, if so,
+     * finds such a cycle.
+     * @param G the digraph
      */
-    public Cycle(Graph G) {
-        if (hasSelfLoop(G)) return;
-        if (hasParallelEdges(G)) return;
-        marked = new boolean[G.V()];
-        edgeTo = new int[G.V()];
-        for (int v = 0; v < G.V(); v++)
-            if (!marked[v])
-                dfs(G, -1, v);
-    }
-
-
-    // does this graph have a self loop?
-    // side effect: initialize cycle to be self loop
-    public boolean hasSelfLoop(Graph G) {
+    public Cycle(Digraph G) {
+        marked  = new boolean[G.V()];
+        onStack = new boolean[G.V()];
+        edgeTo  = new int[G.V()];
         for (int v = 0; v < G.V(); v++) {
-            for (int w : G.adj(v)) {
-                if (v == w) {
-                    cycle = new Stack<Integer>();
-                    cycle.push(v);
-                    cycle.push(v);
-                    return true;
-                }
+            if (!marked[v] && cycle == null) {
+                dfs(G, v);
             }
         }
-        return false;
     }
-
-    // does this graph have two parallel edges?
-    // side effect: initialize cycle to be two parallel edges
-    public boolean hasParallelEdges(Graph G) {
-        marked = new boolean[G.V()];
-
-        for (int v = 0; v < G.V(); v++) {
-
-            // check for parallel edges incident to v
-            for (int w : G.adj(v)) {
-                if (marked[w]) {
-                    cycle = new Stack<Integer>();
-                    cycle.push(v);
-                    cycle.push(w);
-                    cycle.push(v);
-                    return true;
-                }
-                marked[w] = true;
-            }
-
-            // reset so marked[v] = false for all v
-            for (int w : G.adj(v)) {
-                marked[w] = false;
-            }
-        }
-        return false;
-    }
-
-    /**
-     * Returns true if the graph {@code G} has a cycle.
-     *
-     * @return {@code true} if the graph has a cycle; {@code false} otherwise
-     */
-    public boolean hasCycle() {
-        return cycle != null;
-    }
-
-     /**
-     * Returns a cycle in the graph {@code G}.
-     * @return a cycle if the graph {@code G} has a cycle,
-     *         and {@code null} otherwise
-     */
-    public Iterable<Integer> cycle() {
-        return cycle;
-    }
-
-    private void dfs(Graph G, int u, int v) {
+    private void dfs(Digraph G, int v) {
+        onStack[v] = true;
         marked[v] = true;
         for (int w : G.adj(v)) {
-
-            // short circuit if cycle already found
-            if (cycle != null) return;
-
-            if (!marked[w]) {
-                edgeTo[w] = v;
-                dfs(G, v, w);
+            if (cycle != null) {
+                return;
             }
-
-            // check for cycle (but disregard reverse of edge leading to v)
-            else if (w != u) {
-                
+            else if (!marked[w]) {
+                edgeTo[w] = v;
+                dfs(G, w);
+            }
+            else if (onStack[w]) {
                 cycle = new Stack<Integer>();
                 for (int x = v; x != w; x = edgeTo[x]) {
                     cycle.push(x);
@@ -104,27 +53,20 @@ public class Cycle {
                 cycle.push(v);
             }
         }
+        onStack[v] = false;
     }
-
     /**
-     * Unit tests the {@code Cycle} data type.
-     *
-     * @param args the command-line arguments
+     * Does the digraph have a directed cycle?
+     * @return true or false
      */
-    // public static void main(String[] args) {
-    //     In in = new In(args[0]);
-    //     Graph G = new Graph(in);
-    //     Cycle finder = new Cycle(G);
-    //     if (finder.hasCycle()) {
-    //         for (int v : finder.cycle()) {
-    //             System.out.print(v + " ");
-    //         }
-    //         System.out.println();
-    //     }
-    //     else {
-    //         System.out.println("Graph is acyclic");
-    //     }
-    // }
-
-
+    public boolean hasCycle() {
+        return cycle != null;
+    }
+    /**
+     * Returns a directed cycle if the digraph has a directed cycle, and {@code null} otherwise.
+     *
+     */
+    public Iterable<Integer> cycle() {
+        return cycle;
+    }
 }

@@ -1,43 +1,33 @@
 import java.util.Scanner;
-public class Solution {
-	public static void main(String[] args) throws Exception {
-		Scanner scan = new Scanner(System.in);
-		int vertices = scan.nextInt();
-		GraphRep g = new GraphRep(vertices);
-		
-		int edges = scan.nextInt();
-		scan.nextLine();
-		while(scan.hasNext()) {
-			String[] temp = scan.nextLine().split(" ");
-			
-			g.addEdge(Integer.parseInt(temp[0]),Integer.parseInt(temp[1]));
-			//System.out.println(temp[0] + "temp0" + temp[1] + "temp1");
-			//System.out.println("hello");
-		}
-		//g.matrixRep(vertices, edges);
-        //In in = new In(args[0]);
-        //Graph G = new Graph(in);
-        DirectedCycle finder = new DirectedCycle(g);
-        // if(finder.hasParallelEdges(g)) {
-        // 	System.out.println("Cycle exists.");
-        //     return;
-        // }
-        // if(finder.hasSelfLoop(g)) {
-        // 	System.out.println("Cycle exists.");
-        //     return;
-        //}
-        if (finder.hasCycle()) {
-            // for (int v : finder.cycle()) {
-            //     //System.out.print(v + " " + "hi");
-            //     System.out.println("Cycle exists.");
-            // }
-            System.out.println("Cycle exists.");
-            return;
+/**
+ * Class for solution.
+ */
+final class Solution {
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
+    }
+    /**
+     * main function.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int v = Integer.parseInt(sc.nextLine());
+        Digraph gph = new Digraph(v);
+        int e = Integer.parseInt(sc.nextLine());
+        while (sc.hasNext()) {
+            String tokens = sc.nextLine();
+            String[] tok = tokens.split(" ");
+            gph.addEdge(Integer.parseInt(tok[0]), Integer.parseInt(tok[1]));
         }
-        else {
+        Cycle c = new Cycle(gph);
+        if (c.hasCycle()) {
+            System.out.println("Cycle exists.");
+        } else {
             System.out.println("Cycle doesn't exists.");
         }
-    
-		
-	}
+    }
 }

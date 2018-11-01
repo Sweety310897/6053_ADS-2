@@ -26,7 +26,6 @@ public class DirectedCycle {
         for (int w : G.adj(v)) {
             // short circuit if directed cycle found
             if (cycle != null) {
-                System.out.println(w+"000000000000000");
                 return;
             }
 
