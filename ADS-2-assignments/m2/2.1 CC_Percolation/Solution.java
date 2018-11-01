@@ -157,7 +157,7 @@ class DepthFirstSearch {
      * Constructs the object.
      *
      * @param      gph     { parameter_description }
-     * @param      s     { parameter_description }
+     * @param      s1     { parameter_description }
      */
     DepthFirstSearch(final GraphRep gph, final int s1) {
         this.s = s1;
@@ -217,10 +217,10 @@ class DepthFirstSearch {
      * @param      v     { parameter_description }
      */
     private void validateVertex(final int v) {
-        int V = marked.length;
-        if (v < 0 || v >= V) {
+        int v1 = marked.length;
+        if (v < 0 || v >= v1) {
             throw new IllegalArgumentException(
-                "vertex " + v + " is not between 0 and " + (V - 1));
+                "vertex " + v + " is not between 0 and " + (v1 - 1));
         }
     // }
     // public void display(GraphRep G) {
