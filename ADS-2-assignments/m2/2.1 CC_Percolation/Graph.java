@@ -8,7 +8,7 @@ interface Graph {
     public int ed();
     public void addEdge(int v, int w);
     public boolean hasEdge(int v, int w);
-    public Iterable<Integer> adj(int v);
+    Iterable<Integer> adj(int v);
 }
 /**
  * Class for graph rep.
@@ -28,7 +28,7 @@ class GraphRep implements Graph {
      *
      * @param      ver   The version
      */
-    public GraphRep(int ver) {
+    GraphRep(final int ver) {
         this.vertex = ver;
         this.edge = 0;
         adj = (Bag<Integer>[]) new Bag[ver];
@@ -138,7 +138,7 @@ class GraphRep implements Graph {
      * O(n) - time
      * @throws     Exception  { exception_description }
      */
-    public void listRep(final int v,final int e,
+    public void listRep(final int v, final int e,
         final String[] n1) throws Exception {
     	if (e <= 1 && v <= 1) {
     		System.out.println(ve() + " vertices" + ", " + ed() + " edges");
