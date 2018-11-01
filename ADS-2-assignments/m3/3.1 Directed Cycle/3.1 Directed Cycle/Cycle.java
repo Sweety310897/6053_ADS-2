@@ -3,30 +3,31 @@
  */
 public class Cycle {
     /**
-     * { var_description }
+     * { var_description }.
      */
-    private boolean[] marked;// marked[v] = has vertex v been marked?
+    private boolean[] marked;
+    // marked[v] = has vertex v been marked?
     /**
-     * { item_description }
+     * { item_description }.
      */
     private int[] edgeTo;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private boolean[] onStack;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private Stack<Integer> cycle;
     /**
      * Determines whether the digraph {@code G} has a directed cycle and, if so,
      * finds such a cycle.
-     * @param G the digraph
+     * @param gph the digraph
      */
     /**
      * Constructs the object.
      *
-     * @param      G     { parameter_description }
+     * @param      gph     { parameter_description }
      */
     public Cycle(final Digraph gph) {
         marked  = new boolean[gph.V()];
@@ -41,7 +42,7 @@ public class Cycle {
     /**
      * dfs.
      *
-     * @param      G     { parameter_description }
+     * @param      gph1     { parameter_description }
      * @param      v     { parameter_description }
      */
     private void dfs(final Digraph gph1, final int v) {
@@ -77,7 +78,7 @@ public class Cycle {
      *
      */
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @return     { description_of_the_return_value }
      */
@@ -85,3 +86,8 @@ public class Cycle {
         return cycle;
     }
 }
+
+
+
+
+
