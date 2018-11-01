@@ -14,8 +14,8 @@ interface Graph {
  * Class for graph rep.
  */
 class GraphRep implements Graph {
-	int vertex;
-    int edge;
+	private int vertex;
+    private int edge;
     Bag<Integer>[] adj;
     /**
      * Constructs the object.
@@ -37,12 +37,28 @@ class GraphRep implements Graph {
         }
     }
     /**
+     * getvertex.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int getvertex() {
+        return this.vertex;
+    }
+    /**
+     * getedge.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int getedge() {
+        return this.edge;
+    }
+    /**
      * V().
      *
      * @return     vertex.
      */
 	public int ve() {
-		return vertex;
+		return getvertex();
     }
     // public Iterable<Integer> adj(int v) {
     //     return arr[v];
@@ -53,7 +69,7 @@ class GraphRep implements Graph {
      * @return     edge.
      */
 	public int ed() {
-		return edge;
+		return getedge();
     }
     /**
      * { function_description }.

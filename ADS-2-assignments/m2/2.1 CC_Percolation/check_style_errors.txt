@@ -44,12 +44,10 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:11:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:17:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:17:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:17:13: Variable 'vertex' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:18:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:18:9: Variable 'edge' must be private and have accessor methods. [VisibilityModifier]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:19:17: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Graph.java:19:20: Variable 'adj' must be private and have accessor methods. [VisibilityModifier]
 Audit done.
-Checkstyle ends with 19 errors.
+Checkstyle ends with 17 errors.
 Starting audit...
 Audit done.
