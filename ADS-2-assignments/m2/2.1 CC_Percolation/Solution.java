@@ -169,7 +169,7 @@ class DepthFirstSearch {
     /**
      * dfs.
      *
-     * @param      G     { parameter_description }
+     * @param      g1     { parameter_description }
      * @param      v     { parameter_description }
      */
     private void dfs(final GraphRep g1, final int v) {
