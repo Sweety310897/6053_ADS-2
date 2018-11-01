@@ -9,12 +9,12 @@ public class Digraph {
     /**
      * { var_description }.
      */
-    private final int V;
+    private final int ver;
     // number of vertices in this digraph.
     /**
      * { var_description }.
      */
-    private int E;
+    private int ed;
     // number of edges in this digraph.
     /**
      * { var_description }.
@@ -29,19 +29,19 @@ public class Digraph {
     /**
      * Initializes an empty digraph with <em>V</em> vertices.
      *
-     * @param  V the number of vertices
+     * @param  ver the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
-    public Digraph(int V) {
-        if (V < 0) {
+    public Digraph(int ver) {
+        if (ver < 0) {
             throw new IllegalArgumentException(
             "Number of vertices in a Digraph must be nonnegative");
         }
-        this.V = V;
-        this.E = 0;
-        indegree = new int[V];
-        adj = (Bag<Integer>[]) new Bag[V];
-        for (int v = 0; v < V; v++) {
+        this.ver = ver;
+        this.ed = 0;
+        indegree = new int[ver];
+        adj = (Bag<Integer>[]) new Bag[ver];
+        for (int v = 0; v < ver; v++) {
             adj[v] = new Bag<Integer>();
         }
     }
@@ -50,16 +50,16 @@ public class Digraph {
      *
      * @param  G the digraph to copy
      */
-    public Digraph(Digraph G) {
-        this(G.V());
-        this.E = G.E();
-        for (int v = 0; v < V; v++) {
-            this.indegree[v] = G.indegree(v);
+    public Digraph(Digraph gph) {
+        this(gph.V());
+        this.ed = gph.E();
+        for (int v = 0; v < ver; v++) {
+            this.indegree[v] = gph.indegree(v);
         }
-        for (int v = 0; v < G.V(); v++) {
+        for (int v = 0; v < gph.V(); v++) {
             // reverse so that adjacency list is in same order as original
             Stack<Integer> reverse = new Stack<Integer>();
-            for (int w : G.adj[v]) {
+            for (int w : gph.adj[v]) {
                 reverse.push(w);
             }
             for (int w : reverse) {
@@ -73,7 +73,7 @@ public class Digraph {
      * @return the number of vertices in this digraph
      */
     public int V() {
-        return V;
+        return ver;
     }
     /**
      * Returns the number of edges in this digraph.
@@ -81,7 +81,7 @@ public class Digraph {
      * @return the number of edges in this digraph
      */
     public int E() {
-        return E;
+        return ed;
     }
     /**
      * { function_description }.
@@ -89,9 +89,9 @@ public class Digraph {
      * @param      v     { parameter_description }
      */
     private void validateVertex(final int v) {
-        if (v < 0 || v >= V) {
+        if (v < 0 || v >= ver) {
             throw new IllegalArgumentException("vertex " + v
-                + " is not between 0 and " + (V - 1));
+                + " is not between 0 and " + (ver - 1));
         }
     }
 
@@ -107,7 +107,7 @@ public class Digraph {
         validateVertex(w);
         adj[v].add(w);
         indegree[w]++;
-        E++;
+        ed++;
     }
 
     /**
