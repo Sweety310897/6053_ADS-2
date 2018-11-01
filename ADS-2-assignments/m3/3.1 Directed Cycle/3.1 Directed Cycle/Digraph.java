@@ -32,12 +32,12 @@ public class Digraph {
      * @param  ver the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
-    public Digraph(int ver) {
-        if (ver < 0) {
+    public Digraph(int ver1) {
+        if (ver1 < 0) {
             throw new IllegalArgumentException(
             "Number of vertices in a Digraph must be nonnegative");
         }
-        this.ver = ver;
+        this.ver = ver1;
         this.ed = 0;
         indegree = new int[ver];
         adj = (Bag<Integer>[]) new Bag[ver];
@@ -48,9 +48,9 @@ public class Digraph {
     /**
      * Initializes a new digraph that is a deep copy of the specified digraph.
      *
-     * @param  G the digraph to copy
+     * @param  gph the digraph to copy
      */
-    public Digraph(Digraph gph) {
+    public Digraph(final Digraph gph) {
         this(gph.V());
         this.ed = gph.E();
         for (int v = 0; v < ver; v++) {
