@@ -61,7 +61,7 @@ public class Digraph {
         return E;
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      v     { parameter_description }
      */
