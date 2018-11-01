@@ -118,13 +118,5 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:78: Expected @return tag. [JavadocMethod]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:79: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:91: Expected @return tag. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:92: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:99: Expected @return tag. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:101: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:106: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:108: Expected @return tag. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:108: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:112: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:122: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 29 errors.
+Checkstyle ends with 21 errors.

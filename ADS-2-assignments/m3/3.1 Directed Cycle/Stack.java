@@ -89,26 +89,43 @@ public class Stack<Item> implements Iterable<Item> {
      * Throw an exception if no such item exists because the stack is empty.
      */
     public Item peek() {
-        if (isEmpty()) throw new RuntimeException("Stack underflow");
+        if (isEmpty()) {
+            throw new RuntimeException("Stack underflow");
+        }
         return first.item;
     }
 
    /**
      * Return string representation.
      */
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        for (Item item : this)
+        for (Item item : this) {
             s.append(item + " ");
+        }
         return s.toString();
     }
     /**
-     * Return an iterator to the stack that iterates through the items in LIFO order.
+     * Return an iterator to the stack that
+     * iterates through the items in LIFO order.
      */
-    public Iterator<Item> iterator() { 
+    /**
+     * Iterator.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public Iterator<Item> iterator() {
         return new ListIterator();
     }
     // an iterator, doesn't implement remove() since it's optional
+    /**
+     * class.
+     */
     private class ListIterator implements Iterator<Item> {
         /**
          * current.
@@ -119,7 +136,7 @@ public class Stack<Item> implements Iterable<Item> {
          *
          * @return     True if has next, False otherwise.
          */
-        public boolean hasNext() { 
+        public boolean hasNext() {
             return current != null;
         }
         /**
