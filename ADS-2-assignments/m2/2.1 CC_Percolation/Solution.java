@@ -65,7 +65,7 @@ class DepthFirstSearch {
      * @param      G     { parameter_description }
      * @param      s     { parameter_description }
      */
-    public DepthFirstSearch(GraphRep G, int s) {
+    public DepthFirstSearch(final GraphRep G, final int s) {
         this.s = s;
         edgeTo = new int[G.V()];
         marked = new boolean[G.V()];
