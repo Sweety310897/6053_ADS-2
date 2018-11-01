@@ -22,17 +22,17 @@ public class Digraph {
     private Bag<Integer>[] adj;
     // adj[v] = adjacency list for vertex v.
     /**
-     * { var_description }
+     * { var_description }.
      */
     private int[] indegree;
     // indegree[v] = indegree of vertex v.
     /**
      * Initializes an empty digraph with <em>V</em> vertices.
      *
-     * @param  ver the number of vertices
+     * @param  ver1 the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
-    public Digraph(int ver1) {
+    public Digraph(final int ver1) {
         if (ver1 < 0) {
             throw new IllegalArgumentException(
             "Number of vertices in a Digraph must be nonnegative");
