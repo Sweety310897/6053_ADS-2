@@ -57,6 +57,11 @@ public class Bag<Item> implements Iterable<Item> {
    /**
      * Return an iterator that iterates over the items in the bag.
      */
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Iterator<Item> iterator()  {
         return new ListIterator();
     }
@@ -67,7 +72,7 @@ public class Bag<Item> implements Iterable<Item> {
      */
     private class ListIterator implements Iterator<Item> {
         /**
-         * { var_description }
+         * { var_description }.
          */
         private Node current = first;
         /**
