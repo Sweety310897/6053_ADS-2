@@ -29,12 +29,24 @@ import java.util.NoSuchElementException;
  *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
  */
 public class Stack<Item> implements Iterable<Item> {
-    private int N;          // size of the stack
+    /**
+     * N.
+     */
+    private int N;  
+    /**
+     * first.
+     */// size of the stack
     private Node first;     // top of stack
 
     // helper linked list class
     private class Node {
+        /**
+         * item.
+         */
         private Item item;
+        /**
+         * next.
+         */
         private Node next;
     }
 
@@ -49,12 +61,21 @@ public class Stack<Item> implements Iterable<Item> {
    /**
      * Is the stack empty?
      */
+    /**
+     * Determines if empty.
+     *
+     * @return     True if empty, False otherwise.
+     */
     public boolean isEmpty() {
         return first == null;
     }
-
    /**
      * Return the number of items in the stack.
+     */
+    /**
+     * size.
+     *
+     * @return     { description_of_the_return_value }
      */
     public int size() {
         return N;
@@ -63,7 +84,12 @@ public class Stack<Item> implements Iterable<Item> {
     /**
      * Add the item to the stack.
      */
-    public void push(Item item) {
+    /**
+     * push.
+     *
+     * @param      item  The item
+     */
+    public void push(final Item item) {
         Node oldfirst = first;
         first = new Node();
         first.item = item;
