@@ -59,6 +59,12 @@ class DepthFirstSearch {
 	private boolean[] marked;    // marked[v] = is there an s-v path?
     private int[] edgeTo;        // edgeTo[v] = last edge on s-v path
     private final int s;         // source vertex
+    /**
+     * Constructs the object.
+     *
+     * @param      G     { parameter_description }
+     * @param      s     { parameter_description }
+     */
     public DepthFirstSearch(GraphRep G, int s) {
         this.s = s;
         edgeTo = new int[G.V()];
@@ -66,7 +72,12 @@ class DepthFirstSearch {
         validateVertex(s);
         dfs(G, s);
     }
-
+    /**
+     * dfs.
+     *
+     * @param      G     { parameter_description }
+     * @param      v     { parameter_description }
+     */
     private void dfs(GraphRep G, int v) {
         marked[v] = true;
         for (int w : G.adj(v)) {
@@ -76,11 +87,25 @@ class DepthFirstSearch {
             }
         }
     }
-    public boolean hasPathTo(int v) {
+    /**
+     * Determines if it has path to.
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     True if has path to, False otherwise.
+     */
+    public boolean hasPathTo(final int v) {
         validateVertex(v);
         return marked[v];
     }
-    public Iterable<Integer> pathTo(int v) {
+    /**
+     * { function_description }
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public Iterable<Integer> pathTo(final int v) {
         validateVertex(v);
         if (!hasPathTo(v)) return null;
         Stack<Integer> path = new Stack<Integer>();
@@ -89,10 +114,17 @@ class DepthFirstSearch {
         path.push(s);
         return path;
     }
+    /**
+     * validate.
+     *
+     * @param      v     { parameter_description }
+     */
     private void validateVertex(int v) {
         int V = marked.length;
-        if (v < 0 || v >= V)
-            throw new IllegalArgumentException("vertex " + v + " is not between 0 and " + (V-1));
+        if (v < 0 || v >= V) {
+            throw new IllegalArgumentException(
+            	"vertex " + v + " is not between 0 and " + (V - 1));
+        }
     // }
     // public void display(GraphRep G) {
     //     for (int v = 0; v < G.V(); v++) {
@@ -112,18 +144,26 @@ class DepthFirstSearch {
     // }
     }
 }
-public class Solution {
-	public static void main(String[] args) {
+/**
+ * Class for solution.
+ */
+public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+		//constructor.
+	}
+	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int size = sc.nextInt();
 		Percolation p = new Percolation(size);
         //GraphRep g = new GraphRep(size);
-		
-		while(sc.hasNext()) {
+		while (sc.hasNext()) {
             int n1 = sc.nextInt();
             int n2 = sc.nextInt();
             //g.addEdge(n1-1,n2-1);
-			p.open(n1,n2);
+			p.open(n1, n2);
 		}
         //System.out.println(size);
         //DepthFirstSearch d = new DepthFirstSearch(g, size-2);
