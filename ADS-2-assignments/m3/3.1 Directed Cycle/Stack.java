@@ -60,7 +60,7 @@ public class Stack<Item> implements Iterable<Item> {
         return N;
     }
 
-   /**
+    /**
      * Add the item to the stack.
      */
     public void push(Item item) {
@@ -75,18 +75,28 @@ public class Stack<Item> implements Iterable<Item> {
      * Delete and return the item most recently added to the stack.
      * Throw an exception if no such item exists because the stack is empty.
      */
+    /**
+     * pop.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public Item pop() {
-        if (isEmpty()) throw new RuntimeException("Stack underflow");
+        if (isEmpty()) {
+            throw new RuntimeException("Stack underflow");
+        }
         Item item = first.item;        // save item to return
         first = first.next;            // delete first node
         N--;
         return item;                   // return the saved item
     }
-
-
    /**
      * Return the item most recently added to the stack.
      * Throw an exception if no such item exists because the stack is empty.
+     */
+    /**
+     * peek.
+     *
+     * @return     { description_of_the_return_value }
      */
     public Item peek() {
         if (isEmpty()) {

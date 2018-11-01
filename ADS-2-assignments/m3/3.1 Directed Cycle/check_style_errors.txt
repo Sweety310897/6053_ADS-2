@@ -115,8 +115,5 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:59: Expected @return tag. [JavadocMethod]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:66:22: Parameter item should be final. [FinalParameters]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:66:27: Expected @param tag for 'item'. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:78: Expected @return tag. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:79: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\Stack.java:91: Expected @return tag. [JavadocMethod]
 Audit done.
-Checkstyle ends with 21 errors.
+Checkstyle ends with 18 errors.
