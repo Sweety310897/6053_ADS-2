@@ -41,9 +41,10 @@ public class Bag<Item> implements Iterable<Item> {
     public int size() {
         return N;
     }
-
-   /**
-     * Add the item to the bag.
+    /**
+     * add.
+     *
+     * @param      item  The item
      */
     public void add(Item item) {
         Node oldfirst = first;
@@ -52,28 +53,45 @@ public class Bag<Item> implements Iterable<Item> {
         first.next = oldfirst;
         N++;
     }
-
-
-   /**
-     * Return an iterator that iterates over the items in the bag.
+    /**
+     * Iterator.
+     *
+     * @return     { description_of_the_return_value }
      */
     public Iterator<Item> iterator()  {
         return new ListIterator();  
     }
 
-    // an iterator, doesn't implement remove() since it's optional
-    private class ListIterator implements Iterator<Item> {
-        private Node current = first;
-
-        public boolean hasNext()  { return current != null;                     }
-        public void remove()      { throw new UnsupportedOperationException();  }
-
+    //
+    // an iterator, doesn't implement remove() since it's optional /* private
+    // class ListIterator implements Iterator<Item> { private Node current =
+    // first; /**
+    //          * Determines if it has next.
+    //          * { list_item_description }
+    //          * { list_item_description }
+    //
+    // @return     True if has next, False otherwise. */
+    //
+        public boolean hasNext() {
+            return current != null;
+        }
+        /**
+         * remove.
+         */
+        public void remove() { 
+            throw new UnsupportedOperationException();
+        }
+        /**
+         * next.
+         *
+         * @return     { description_of_the_return_value }
+         */
         public Item next() {
             if (!hasNext()) {
                 throw new NoSuchElementException();
             }
             Item item = current.item;
-            current = current.next; 
+            current = current.next;
             return item;
         }
     }
