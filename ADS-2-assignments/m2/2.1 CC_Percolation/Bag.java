@@ -58,11 +58,17 @@ public class Bag<Item> implements Iterable<Item> {
      * Return an iterator that iterates over the items in the bag.
      */
     public Iterator<Item> iterator()  {
-        return new ListIterator();  
+        return new ListIterator();
     }
 
-    // an iterator, doesn't implement remove() since it's optional
+    // an iterator, doesn't implement remove() since it's optional.
+    /**
+     * Class for list iterator.
+     */
     private class ListIterator implements Iterator<Item> {
+        /**
+         * { var_description }
+         */
         private Node current = first;
         /**
          * Determines if it has next.
@@ -75,7 +81,7 @@ public class Bag<Item> implements Iterable<Item> {
         /**
          * remove.
          */
-        public void remove() { 
+        public void remove() {
             throw new UnsupportedOperationException();
         }
         /**
