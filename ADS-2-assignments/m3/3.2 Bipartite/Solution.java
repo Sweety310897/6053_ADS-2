@@ -9,7 +9,7 @@ public class Solution {
             String[] input = scan.nextLine().split(" ");
             int v = Integer.parseInt(input[0]);
             int w = Integer.parseInt(input[1]);
-            g.addEdge(v, w);
+            g.addEdge(vertices, edges);
             edges--;
         }
         Bipartite bi = new Bipartite(g);
