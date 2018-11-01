@@ -14,8 +14,17 @@ interface Graph {
  * Class for graph rep.
  */
 class GraphRep implements Graph {
-	private int vertex;
+	/**
+    vertex.n }
+     */
+    private int vertex;
+    /**
+     * edge.
+     */
     private int edge;
+    /**
+     * adj.
+     */
     Bag<Integer>[] adj;
     /**
      * Constructs the object.
