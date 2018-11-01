@@ -1,21 +1,31 @@
+/**
+ * Class for digraph.
+ */
 public class Digraph {
+    /**
+     * { var_description }.
+     */
     private static final String NEWLINE = System.getProperty("line.separator");
     /**
-     * { var_description }
+     * { var_description }.
      */
-    private final int V;           // number of vertices in this digraph
+    private final int V;
+    // number of vertices in this digraph.
+    /**
+     * { var_description }.
+     */
+    private int E;
+    // number of edges in this digraph.
+    /**
+     * { var_description }.
+     */
+    private Bag<Integer>[] adj;
+    // adj[v] = adjacency list for vertex v.
     /**
      * { var_description }
      */
-    private int E;                 // number of edges in this digraph
-    /**
-     * { var_description }
-     */
-    private Bag<Integer>[] adj;    // adj[v] = adjacency list for vertex v
-    /**
-     * { var_description }
-     */
-    private int[] indegree;        // indegree[v] = indegree of vertex v
+    private int[] indegree;
+    // indegree[v] = indegree of vertex v.
     /**
      * Initializes an empty digraph with <em>V</em> vertices.
      *
