@@ -107,13 +107,7 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Stack.java:110: Expected @return tag. [JavadocMethod]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Stack.java:110:39: '{' at column 39 should have line break after. [LeftCurly]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Stack.java:113: Missing a Javadoc comment. [JavadocType]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Stack.java:114:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Stack.java:115: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Stack.java:115:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Stack.java:116: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Stack.java:116:35: '{' at column 35 should have line break after. [LeftCurly]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Stack.java:118:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Stack.java:119: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Stack.java:121: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Stack.java:114: First sentence should end with a period. [JavadocStyle]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m3\3.1 Directed Cycle\3.1 Directed Cycle\Stack.java:138: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 37 errors.
+Checkstyle ends with 31 errors.
