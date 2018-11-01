@@ -92,7 +92,7 @@ class GraphRep implements Graph {
     }
     /**
      * V().
-     * 
+     *
      * @return     vertex.
      */
     public int ve() {
