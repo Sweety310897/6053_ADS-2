@@ -54,7 +54,7 @@ public class Graph {
 
     /**
      * Adds an edge.
-     *
+     * time complexity - O(1).
      * @param      v1     Integer variable.
      * @param      w     Integer variable.
      */
