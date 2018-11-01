@@ -15,7 +15,7 @@ public class WordNet {
         while(sc.hasNext()) {
             String[] synsetsinput = sc.nextLine().split(",");
             count++;
-            map.put(synsetsinput[0],synsetsinput[1]);
+            //map.put(synsetsinput[0],synsetsinput[1]);
         }
         Digraph g = new Digraph(count);
         Scanner sc1 = new Scanner(hypernyms);

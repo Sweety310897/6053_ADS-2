@@ -18,8 +18,9 @@ Expected Output:
 14: 13
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at WordNet.<init>(WordNet.java:18)
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+	at WordNet.<init>(WordNet.java:23)
 	at Solution.main(Solution.java:9)
 ----------------------------------------
 
@@ -29,8 +30,9 @@ distance = 7, ancestor = entity
 distance = 10, ancestor = entity
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at WordNet.<init>(WordNet.java:18)
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+	at WordNet.<init>(WordNet.java:23)
 	at Solution.main(Solution.java:9)
 ----------------------------------------
 
@@ -44,8 +46,9 @@ distance = 7, ancestor = lipid lipide lipoid
 distance = 1, ancestor = animal_oil
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at WordNet.<init>(WordNet.java:18)
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+	at WordNet.<init>(WordNet.java:23)
 	at Solution.main(Solution.java:9)
 ----------------------------------------
 
@@ -56,8 +59,9 @@ distance = 13, ancestor = thing
 distance = 2, ancestor = wax
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at WordNet.<init>(WordNet.java:18)
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+	at WordNet.<init>(WordNet.java:23)
 	at Solution.main(Solution.java:9)
 ----------------------------------------
 
@@ -70,8 +74,9 @@ distance = 0, ancestor = e
 distance = 0, ancestor = f
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at WordNet.<init>(WordNet.java:18)
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+	at WordNet.<init>(WordNet.java:23)
 	at Solution.main(Solution.java:9)
 ----------------------------------------
 
@@ -89,8 +94,9 @@ distance = 2, ancestor = j
 distance = 1, ancestor = k
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at WordNet.<init>(WordNet.java:18)
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+	at WordNet.<init>(WordNet.java:23)
 	at Solution.main(Solution.java:9)
 ----------------------------------------
 
@@ -105,8 +111,9 @@ distance = 3, ancestor = h
 distance = 1, ancestor = h
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at WordNet.<init>(WordNet.java:18)
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+	at WordNet.<init>(WordNet.java:23)
 	at Solution.main(Solution.java:9)
 ----------------------------------------
 
@@ -124,8 +131,9 @@ distance = 3, ancestor = f
 distance = 4, ancestor = f
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at WordNet.<init>(WordNet.java:18)
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+	at WordNet.<init>(WordNet.java:23)
 	at Solution.main(Solution.java:9)
 ----------------------------------------
 
@@ -142,8 +150,9 @@ Expected Output:
 7:
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at WordNet.<init>(WordNet.java:18)
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+	at WordNet.<init>(WordNet.java:23)
 	at Solution.main(Solution.java:9)
 ----------------------------------------
 
@@ -152,8 +161,9 @@ Expected Output:
 Multiple roots
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at WordNet.<init>(WordNet.java:18)
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+	at WordNet.<init>(WordNet.java:23)
 	at Solution.main(Solution.java:9)
 ----------------------------------------
 
@@ -162,8 +172,9 @@ Expected Output:
 Multiple roots
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at WordNet.<init>(WordNet.java:18)
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+	at WordNet.<init>(WordNet.java:23)
 	at Solution.main(Solution.java:9)
 ----------------------------------------
 
@@ -172,8 +183,9 @@ Expected Output:
 IllegalArgumentException
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at WordNet.<init>(WordNet.java:18)
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+	at WordNet.<init>(WordNet.java:23)
 	at Solution.main(Solution.java:9)
 ----------------------------------------
 
@@ -182,8 +194,9 @@ Expected Output:
 IllegalArgumentException
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at WordNet.<init>(WordNet.java:18)
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+	at WordNet.<init>(WordNet.java:23)
 	at Solution.main(Solution.java:9)
 ----------------------------------------
 
@@ -208,8 +221,9 @@ distance = 0, ancestor = era epoch
 distance = 8, ancestor = abstraction abstract_entity
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at WordNet.<init>(WordNet.java:18)
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+	at WordNet.<init>(WordNet.java:23)
 	at Solution.main(Solution.java:9)
 ----------------------------------------
 
@@ -218,8 +232,9 @@ Expected Output:
 Cycle detected
 
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at WordNet.<init>(WordNet.java:18)
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
+	at WordNet.<init>(WordNet.java:23)
 	at Solution.main(Solution.java:9)
 ----------------------------------------
 

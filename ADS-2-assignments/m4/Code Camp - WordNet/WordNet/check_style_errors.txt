@@ -476,8 +476,7 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:10: Line is longer than 80 characters (found 136). [LineLength]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:13: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:15:14: 'while' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:18:37: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:22:14: 'while' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\WordNet.java:38: Line is longer than 80 characters (found 95). [LineLength]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 11 errors.
