@@ -25,7 +25,7 @@ public class Solution {
         // if(finder.hasSelfLoop(g)) {
         // 	System.out.println("Cycle exists.");
         //     return;
-        // }
+        //}
         if (finder.hasCycle()) {
             // for (int v : finder.cycle()) {
             //     //System.out.print(v + " " + "hi");
