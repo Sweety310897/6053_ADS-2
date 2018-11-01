@@ -92,7 +92,7 @@ public class Stack<Item> implements Iterable<Item> {
      */
     public Item pop() {
         if (isEmpty()) {
-        	throw new RuntimeException("Stack underflow");
+            throw new RuntimeException("Stack underflow");
         }
         Item item = first.item;        // save item to return
         first = first.next;            // delete first node
@@ -112,7 +112,7 @@ public class Stack<Item> implements Iterable<Item> {
      */
     public Item peek() {
         if (isEmpty()) {
-        	throw new RuntimeException("Stack underflow");
+            throw new RuntimeException("Stack underflow");
         }
         return first.item;
     }
@@ -140,7 +140,7 @@ public class Stack<Item> implements Iterable<Item> {
      * @return     { description_of_the_return_value }
      */
     public Iterator<Item> iterator() {
-    	return new ListIterator();
+        return new ListIterator();
     }
     // an iterator, doesn't implement remove() since it's optional
     /**
