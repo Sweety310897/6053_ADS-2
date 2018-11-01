@@ -7,7 +7,6 @@ interface Graph {
     public int V();
     public int E();
     public void addEdge(int v, int w);
-    //public Iterable<Integer> arr(int v);
     public boolean hasEdge(int v, int w);
     public Iterable<Integer> adj(int v);
 }
@@ -17,7 +16,7 @@ interface Graph {
 class GraphRep implements Graph {
 	int vertex;
     int edge;
-    Bag<Integer>[] arr;
+    Bag<Integer>[] adj;
     /**
      * Constructs the object.
      */
@@ -32,9 +31,9 @@ class GraphRep implements Graph {
     public GraphRep(int ver) {
         this.vertex = ver;
         this.edge = 0;
-        arr = (Bag<Integer>[]) new Bag[ver];
+        adj = (Bag<Integer>[]) new Bag[ver];
         for (int i = 0; i < vertex; i++) {
-            arr[i] = new Bag<Integer>();
+            adj[i] = new Bag<Integer>();
         }
     }
     /**
@@ -45,9 +44,9 @@ class GraphRep implements Graph {
 	public int V() {
 		return vertex;
     }
-    public Iterable<Integer> adj(int v) {
-        return arr[v];
-    }
+    // public Iterable<Integer> adj(int v) {
+    //     return arr[v];
+    // }
     /**
      * E().
      *
@@ -63,8 +62,8 @@ class GraphRep implements Graph {
      *
      * @return     { description_of_the_return_value }
      */
-    public Iterable<Integer> arr(int v) {
-        return arr[v];
+    public Iterable<Integer> adj(int v) {
+        return adj[v];
     }
     /**
      * Adds an edge.
@@ -79,8 +78,8 @@ class GraphRep implements Graph {
 		if (!hasEdge(v,w)) {
             edge++;
 
-            arr[v].add(w);
-            arr[w].add(v); 
+            adj[v].add(w);
+            adj[w].add(v); 
         }
     }
 	/**
@@ -92,7 +91,7 @@ class GraphRep implements Graph {
      * @return     True if has edge, False otherwise.
      */
 	public boolean hasEdge(int v, int w) {
-		for(int k :arr[v]) {
+		for(int k :adj[v]) {
 				if (k==w) {
 					return true;
 				}
@@ -148,7 +147,7 @@ class GraphRep implements Graph {
 				String str = "";
 				str = n1[i] + ": ";
 				//System.out.println(str);
-				for (int k : arr(i)) {
+				for (int k : adj(i)) {
 					//System.out.println((arr(i)) + "arr");
 					str = str + n1[k] + " ";
 					//System.out.println(str + "this is in for loop");
