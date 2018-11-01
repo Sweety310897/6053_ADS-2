@@ -123,14 +123,7 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:68:38: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:68:41: Parameter s should be final. [FinalParameters]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:68:45: 's' hides a field. [HiddenField]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:81:22: Parameter G should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:81:31: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:81:34: Parameter v should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:101: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:110: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:112: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:122:33: Parameter v should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:123:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:157:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:81:37: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:126:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 Audit done.
-Checkstyle ends with 52 errors.
+Checkstyle ends with 45 errors.

@@ -78,7 +78,7 @@ class DepthFirstSearch {
      * @param      G     { parameter_description }
      * @param      v     { parameter_description }
      */
-    private void dfs(GraphRep G, int v) {
+    private void dfs(final GraphRep G, final int v) {
         marked[v] = true;
         for (int w : G.adj(v)) {
             if (!marked[w]) {
@@ -99,7 +99,7 @@ class DepthFirstSearch {
         return marked[v];
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      v     { parameter_description }
      *
@@ -107,10 +107,13 @@ class DepthFirstSearch {
      */
     public Iterable<Integer> pathTo(final int v) {
         validateVertex(v);
-        if (!hasPathTo(v)) return null;
+        if (!hasPathTo(v)) {
+        	return null;
+        }
         Stack<Integer> path = new Stack<Integer>();
-        for (int x = v; x != s; x = edgeTo[x])
+        for (int x = v; x != s; x = edgeTo[x]) {
             path.push(x);
+        }
         path.push(s);
         return path;
     }
@@ -119,7 +122,7 @@ class DepthFirstSearch {
      *
      * @param      v     { parameter_description }
      */
-    private void validateVertex(int v) {
+    private void validateVertex(final int v) {
         int V = marked.length;
         if (v < 0 || v >= V) {
             throw new IllegalArgumentException(
@@ -154,6 +157,11 @@ public final class Solution {
 	private Solution() {
 		//constructor.
 	}
+	/**
+	 * main.
+	 *
+	 * @param      args  The arguments
+	 */
 	public static void main(final String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int size = sc.nextInt();
