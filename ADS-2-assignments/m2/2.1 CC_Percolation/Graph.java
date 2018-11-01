@@ -68,7 +68,7 @@ class GraphRep implements Graph {
     }
     /**
      * Adds an edge.
-     *
+     *time complexity - O(1).
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
      */
@@ -85,7 +85,7 @@ class GraphRep implements Graph {
     }
 	/**
      * Determines if it has edge.
-     *
+     *time complexity - O(n).
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
      *
@@ -104,7 +104,7 @@ class GraphRep implements Graph {
      *
      * @param      v          { parameter_description }
      * @param      e          { parameter_description }
-     *
+     *time complexity - O(V^2).
      * @throws     Exception  { exception_description }
      */
     public void matrixRep(int v, int e) throws Exception {
@@ -135,7 +135,7 @@ class GraphRep implements Graph {
      * @param      v          { parameter_description }
      * @param      e          { parameter_description }
      * @param      n1         The n 1
-     *n - time
+     * O(n) - time
      * @throws     Exception  { exception_description }
      */
     public void listRep(int v, int e, String[] n1) throws Exception {
