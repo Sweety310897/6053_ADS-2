@@ -52,7 +52,7 @@ public class Digraph {
      */
     public Digraph(final Digraph gph) {
         this(gph.V());
-        this.ed = gph.E();
+        this.ed = gph.getEdge();
         for (int v = 0; v < ver; v++) {
             this.indegree[v] = gph.indegree(v);
         }
@@ -80,7 +80,7 @@ public class Digraph {
      *
      * @return the number of edges in this digraph
      */
-    public int E() {
+    public int getEdge() {
         return ed;
     }
     /**
