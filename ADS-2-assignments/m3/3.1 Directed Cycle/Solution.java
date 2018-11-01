@@ -32,7 +32,7 @@ public class Solution {
             //     System.out.println("Cycle exists.");
             // }
             System.out.println("Cycle exists.");
-            //return;
+            return;
         }
         else {
             System.out.println("Cycle doesn't exists.");
