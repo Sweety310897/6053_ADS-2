@@ -7,7 +7,7 @@ class Percolation {
     /**
      * grid.
      */
-    boolean[][] grid;
+    private boolean[][] grid;
     /**
      * top.
      */
@@ -23,7 +23,7 @@ class Percolation {
     /**
      * g.
      */
-    GraphRep g;
+    private GraphRep g;
     /**
      * Constructs the object.
      *
@@ -43,9 +43,19 @@ class Percolation {
     public int gettop() {
         return this.top;
     }
+    /**
+     * getbottom.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int getbottom() {
         return this.bottom;
     }
+    /**
+     * getsize.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int getsize() {
         return this.size;
     }
@@ -60,8 +70,8 @@ class Percolation {
         if (i == 1) {
             g.addEdge(component(i, j), gettop());
         }
-        if (i == size) {
-            g.addEdge(component(i, j), bottom);
+        if (i == getsize()) {
+            g.addEdge(component(i, j), getbottom());
         }
 
         if (j > 1 && isOpen(i, j - 1)) {
@@ -73,7 +83,7 @@ class Percolation {
         if (i > 1 && isOpen(i - 1, j)) {
             g.addEdge(component(i, j), component(i - 1, j));
         }
-        if (i < size && isOpen(i + 1, j)) {
+        if (i < getsize() && isOpen(i + 1, j)) {
             g.addEdge(component(i, j), component(i + 1, j));
         }
     }
@@ -97,7 +107,7 @@ class Percolation {
      * @return     True if full, False otherwise.
      */
     public boolean isFull(final int i, final int j) {
-        if (0 < i && i <= size && 0 < j && j <= size) {
+        if (0 < i && i <= getsize() && 0 < j && j <= getsize()) {
             return g.hasEdge(gettop(), component(i, j));
         } else {
             throw new IndexOutOfBoundsException();
@@ -110,7 +120,7 @@ class Percolation {
      */
     public boolean percolates() {
         DepthFirstSearch obj = new DepthFirstSearch(g, gettop());
-        return obj.hasPathTo(bottom);
+        return obj.hasPathTo(getbottom());
         //return g.hasEdge(top, bottom);
 
     }
@@ -123,7 +133,7 @@ class Percolation {
      * @return     { description_of_the_return_value }
      */
     private int component(final int i, final int j) {
-        return size * (i - 1) + j;
+        return getsize() * (i - 1) + j;
     }
 
 }

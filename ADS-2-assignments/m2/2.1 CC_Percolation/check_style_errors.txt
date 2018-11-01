@@ -81,13 +81,9 @@ Audit done.
 Checkstyle ends with 47 errors.
 Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:10:17: Variable 'grid' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:26:14: Variable 'g' must be private and have accessor methods. [VisibilityModifier]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:46:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:49:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:152:37: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:152:50: 's' hides a field. [HiddenField]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:165:37: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:210:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:162:37: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:162:50: 's' hides a field. [HiddenField]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:175:37: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m2\2.1 CC_Percolation\Solution.java:220:13: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
 Audit done.
-Checkstyle ends with 9 errors.
+Checkstyle ends with 5 errors.
