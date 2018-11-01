@@ -38,11 +38,10 @@ public class Stack<Item> implements Iterable<Item> {
      */// size of the stack
     private Node first;     // top of stack
 
-    // helper linked list class
-    private class Node {
-        /**
-         * item.
-         */
+    //
+    // helper linked list class /* private class Node { /**
+    //          * item. */
+    //
         private Item item;
         /**
          * next.
