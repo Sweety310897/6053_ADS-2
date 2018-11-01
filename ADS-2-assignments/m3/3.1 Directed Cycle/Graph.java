@@ -92,7 +92,7 @@ class GraphRep implements Graph {
     }
     /**
      * V().
-     *
+     * 
      * @return     vertex.
      */
     public int ve() {
@@ -138,7 +138,7 @@ class GraphRep implements Graph {
     }
     /**
      * Determines if it has edge.
-     *time complexity - O(n).
+     *time complexity - O(V).
      * @param      v     { parameter_description }
      * @param      w     { parameter_description }
      *
@@ -189,7 +189,7 @@ class GraphRep implements Graph {
      * @param      v          { parameter_description }
      * @param      e          { parameter_description }
      * @param      n1         The n 1
-     * O(n) - time
+     * time complexity - O(V+E).
      * @throws     Exception  { exception_description }
      */
     public void listRep(final int v, final int e,

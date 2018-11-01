@@ -93,7 +93,7 @@ public class Digraph {
 
     /**
      * Adds the directed edge v→w to this digraph.
-     *
+     * time complexity - O(n).
      * @param      v     the tail vertex
      * @param      w     the head vertex
      */
@@ -133,7 +133,7 @@ public class Digraph {
     /**
      * Returns the number of directed edges incident to vertex.
      * This is known as the indegree of vertex.
-     *
+     * time complexity
      * @param  v the vertex
      * @return the indegree of vertex
      */

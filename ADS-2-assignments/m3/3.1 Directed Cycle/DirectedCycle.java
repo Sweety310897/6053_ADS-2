@@ -63,7 +63,7 @@ public class DirectedCycle {
     }
     /**
      * Determines if it has cycle.
-     *
+     * time complexity - O(1).
      * @return     True if has cycle, False otherwise.
      */
     public boolean hasCycle() {
