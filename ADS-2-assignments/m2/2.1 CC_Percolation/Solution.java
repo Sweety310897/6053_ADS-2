@@ -55,9 +55,21 @@ class Percolation {
     }
 
 }
+/**
+ * Class for depth first search.
+ */
 class DepthFirstSearch {
+	/**
+	 * marked.
+	 */
 	private boolean[] marked;    // marked[v] = is there an s-v path?
+    /**
+     * edgeTo.
+     */
     private int[] edgeTo;        // edgeTo[v] = last edge on s-v path
+    /**
+     * s.
+     */
     private final int s;         // source vertex
     /**
      * Constructs the object.
@@ -65,7 +77,7 @@ class DepthFirstSearch {
      * @param      G     { parameter_description }
      * @param      s     { parameter_description }
      */
-    public DepthFirstSearch(final GraphRep G, final int s) {
+    DepthFirstSearch(final GraphRep G, final int s) {
         this.s = s;
         edgeTo = new int[G.V()];
         marked = new boolean[G.V()];
