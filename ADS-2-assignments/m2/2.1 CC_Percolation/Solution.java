@@ -15,11 +15,11 @@ class Percolation {
     /**
      * bottom.
      */
-    int bottom;
+    private int bottom;
     /**
      * size.
      */
-    int size;
+    private int size;
     /**
      * g.
      */
@@ -35,8 +35,19 @@ class Percolation {
         g = new GraphRep(size * size + 2);
         grid = new boolean[size][size];
     }
+    /**
+     * gettop.
+     *
+     * @return     { description_of_the_return_value }
+     */
     public int gettop() {
         return this.top;
+    }
+    public int getbottom() {
+        return this.bottom;
+    }
+    public int getsize() {
+        return this.size;
     }
     /**
      * open.
