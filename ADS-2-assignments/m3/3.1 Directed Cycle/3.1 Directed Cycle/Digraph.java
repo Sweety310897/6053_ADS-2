@@ -51,12 +51,12 @@ public class Digraph {
      * @param  gph the digraph to copy
      */
     public Digraph(final Digraph gph) {
-        this(gph.getVertices());
-        this.ed = gph.getEdges();
+        this(gph.V());
+        this.ed = gph.E();
         for (int v = 0; v < ver; v++) {
             this.indegree[v] = gph.indegree(v);
         }
-        for (int v = 0; v < gph.getVertices(); v++) {
+        for (int v = 0; v < gph.V(); v++) {
             // reverse so that adjacency list is in same order as original
             Stack<Integer> reverse = new Stack<Integer>();
             for (int w : gph.adj[v]) {
@@ -72,7 +72,7 @@ public class Digraph {
      *
      * @return the number of vertices in this digraph
      */
-    public int getVertices() {
+    public int V() {
         return ver;
     }
     /**
@@ -80,7 +80,7 @@ public class Digraph {
      *
      * @return the number of edges in this digraph
      */
-    public int getEdges() {
+    public int E() {
         return ed;
     }
     /**
