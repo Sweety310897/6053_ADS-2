@@ -1,17 +1,46 @@
 import java.util.Scanner;
 import java.util.Stack;
+/**
+ * Class for percolation.
+ */
 class Percolation {
+	/**
+	 * grid.
+	 */
 	boolean[][] grid;
+	/**
+	 * top.
+	 */
 	int top = 0;
+	/**
+	 * bottom.
+	 */
 	int bottom;
+	/**
+	 * size.
+	 */
 	int size;
+	/**
+	 * g.
+	 */
 	GraphRep g;
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      n     { parameter_description }
+	 */
 	Percolation(int n) {
 		size = n;
         bottom = size * size + 1;
         g = new GraphRep(size * size + 2);
         grid = new boolean[size][size];
 	}
+	/**
+	 * open.
+	 *
+	 * @param      i     { parameter_description }
+	 * @param      j     { parameter_description }
+	 */
 	public void open(int i,int j) {
         grid[i-1][j-1] = true;
         if (i == 1) {
@@ -34,9 +63,25 @@ class Percolation {
             g.addEdge(component(i, j), component(i + 1, j));
         }
     }
+    /**
+     * Determines if open.
+     *
+     * @param      i     { parameter_description }
+     * @param      j     { parameter_description }
+     *
+     * @return     True if open, False otherwise.
+     */
 	public boolean isOpen(int i, int j) {
         return grid[i - 1][j - 1];
 	}
+	/**
+	 * Determines if full.
+	 *
+	 * @param      i     { parameter_description }
+	 * @param      j     { parameter_description }
+	 *
+	 * @return     True if full, False otherwise.
+	 */
 	public boolean isFull(int i, int j) {
         if (0 < i && i <= size && 0 < j && j <= size) {
             return g.hasEdge(top, component(i, j));
@@ -44,13 +89,26 @@ class Percolation {
             throw new IndexOutOfBoundsException();
         }
 	}
+	/**
+	 * percolates.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public boolean percolates() {
         DepthFirstSearch obj = new DepthFirstSearch(g,top);
         return obj.hasPathTo(bottom);
         //return g.hasEdge(top, bottom);
 
 	}
-	private int component(int i, int j) {
+	/**
+	 * component.
+	 *
+	 * @param      i     { parameter_description }
+	 * @param      j     { parameter_description }
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	private int component(final int i, final int j) {
         return size * (i - 1) + j;
     }
 
