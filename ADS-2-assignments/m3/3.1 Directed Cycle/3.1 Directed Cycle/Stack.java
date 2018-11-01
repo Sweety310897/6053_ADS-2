@@ -111,7 +111,6 @@ public class Stack<Item> implements Iterable<Item> {
      * @return     { description_of_the_return_value }
      */
     public Iterator<Item> iterator()  { return new ListIterator();  }
-    /
     // an iterator, doesn't implement remove() since it's optional
     private class ListIterator implements Iterator<Item> {
         /**
