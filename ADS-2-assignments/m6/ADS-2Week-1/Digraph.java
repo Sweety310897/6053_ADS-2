@@ -192,7 +192,7 @@ public class Digraph {
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public int outdegree(int v) {
-        validateVertex(v);
+        //validateVertex(v);
         return adj[v].size();
     }
 
@@ -205,7 +205,7 @@ public class Digraph {
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public int indegree(int v) {
-        validateVertex(v);
+        //validateVertex(v);
         return indegree[v];
     }
 
