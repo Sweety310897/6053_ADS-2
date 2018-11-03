@@ -19,7 +19,7 @@ public class Solution {
 				while(scan.hasNext()) {
 				String[] inputQ = scan.nextLine().split(" ");
 				obj.sap(inputQ[0],inputQ[1]);
-				System.out.println("distance = "+obj.distance(inputQ[0],inputQ[1]) +", ancestor = " + obj.sap(inputQ[0],inputQ[1]));
+				System.out.println("distance = "+obj.distance(inputQ[0],inputQ[1]) +", ancestor = " +obj.sap(inputQ[0],inputQ[1]));
 			    }
 			}
 
