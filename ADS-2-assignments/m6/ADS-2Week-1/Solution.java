@@ -7,6 +7,7 @@ class PageRank {
 		dg = g;
 		System.out.println("im");
 		pr = 1/dg.V();
+		System.out.println("hel");
 		for(int i = 0; i < dg.V()-1; i++) {
 			getPR(dg.V());
 		}

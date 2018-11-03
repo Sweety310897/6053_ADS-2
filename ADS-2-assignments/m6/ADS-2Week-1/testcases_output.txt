@@ -19,11 +19,12 @@ Your Output:
 3: 2 
 
 im
+hel
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
 	at Digraph.outdegree(Digraph.java:196)
-	at PageRank.getPR(Solution.java:20)
-	at PageRank.<init>(Solution.java:11)
-	at Solution.main(Solution.java:57)
+	at PageRank.getPR(Solution.java:21)
+	at PageRank.<init>(Solution.java:12)
+	at Solution.main(Solution.java:58)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -47,11 +48,12 @@ Your Output:
 3: 0 
 
 im
+hel
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
 	at Digraph.outdegree(Digraph.java:196)
-	at PageRank.getPR(Solution.java:20)
-	at PageRank.<init>(Solution.java:11)
-	at Solution.main(Solution.java:57)
+	at PageRank.getPR(Solution.java:21)
+	at PageRank.<init>(Solution.java:12)
+	at Solution.main(Solution.java:58)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -75,11 +77,12 @@ Your Output:
 3: 0 
 
 im
+hel
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
 	at Digraph.outdegree(Digraph.java:196)
-	at PageRank.getPR(Solution.java:20)
-	at PageRank.<init>(Solution.java:11)
-	at Solution.main(Solution.java:57)
+	at PageRank.getPR(Solution.java:21)
+	at PageRank.<init>(Solution.java:12)
+	at Solution.main(Solution.java:58)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -115,11 +118,12 @@ Your Output:
 7: 0 
 
 im
+hel
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
 	at Digraph.outdegree(Digraph.java:196)
-	at PageRank.getPR(Solution.java:20)
-	at PageRank.<init>(Solution.java:11)
-	at Solution.main(Solution.java:57)
+	at PageRank.getPR(Solution.java:21)
+	at PageRank.<init>(Solution.java:12)
+	at Solution.main(Solution.java:58)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -141,7 +145,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:49)
+	at Solution.main(Solution.java:50)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -167,7 +171,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:49)
+	at Solution.main(Solution.java:50)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -191,11 +195,12 @@ Your Output:
 3: 0 
 
 im
+hel
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
 	at Digraph.outdegree(Digraph.java:196)
-	at PageRank.getPR(Solution.java:20)
-	at PageRank.<init>(Solution.java:11)
-	at Solution.main(Solution.java:57)
+	at PageRank.getPR(Solution.java:21)
+	at PageRank.<init>(Solution.java:12)
+	at Solution.main(Solution.java:58)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -217,7 +222,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:49)
+	at Solution.main(Solution.java:50)
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -241,11 +246,12 @@ Your Output:
 3: 0 
 
 im
+hel
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
 	at Digraph.outdegree(Digraph.java:196)
-	at PageRank.getPR(Solution.java:20)
-	at PageRank.<init>(Solution.java:11)
-	at Solution.main(Solution.java:57)
+	at PageRank.getPR(Solution.java:21)
+	at PageRank.<init>(Solution.java:12)
+	at Solution.main(Solution.java:58)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -267,7 +273,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:49)
+	at Solution.main(Solution.java:50)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -285,11 +291,12 @@ Your Output:
 1: 0 
 
 im
+hel
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
 	at Digraph.outdegree(Digraph.java:196)
-	at PageRank.getPR(Solution.java:20)
-	at PageRank.<init>(Solution.java:11)
-	at Solution.main(Solution.java:57)
+	at PageRank.getPR(Solution.java:21)
+	at PageRank.<init>(Solution.java:12)
+	at Solution.main(Solution.java:58)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -331,6 +338,6 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "q
 	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
 	at java.base/java.lang.Integer.parseInt(Integer.java:652)
 	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at Solution.main(Solution.java:49)
+	at Solution.main(Solution.java:50)
 ----------------------------------------
 
