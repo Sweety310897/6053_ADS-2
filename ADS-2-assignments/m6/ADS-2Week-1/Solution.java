@@ -37,7 +37,7 @@ public class Solution {
 	public static void main(String[] args) {
 		// read the first line of the input to get the number of vertices
 		Scanner s = new Scanner(System.in);
-		int vertices = s.nextInt();
+		int vertices = Integer.parseInt(s.nextLine());
 		Digraph graph = new Digraph(vertices);
 		while (s.hasNext()) {
             String[] n2 = s.nextLine().split(" ");//"0" "5"

@@ -12,11 +12,12 @@ Expected Output:
 3 - 0.0
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:662)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at Solution.main(Solution.java:44)
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
+	at Digraph.validateVertex(Digraph.java:156)
+	at Digraph.outdegree(Digraph.java:195)
+	at PageRank.getPR(Solution.java:18)
+	at PageRank.<init>(Solution.java:10)
+	at Solution.main(Solution.java:51)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -33,11 +34,12 @@ Expected Output:
 3 - 0.09090909090909086
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:662)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at Solution.main(Solution.java:44)
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
+	at Digraph.validateVertex(Digraph.java:156)
+	at Digraph.outdegree(Digraph.java:195)
+	at PageRank.getPR(Solution.java:18)
+	at PageRank.<init>(Solution.java:10)
+	at Solution.main(Solution.java:51)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -54,11 +56,12 @@ Expected Output:
 3 - 0.07692307692307687
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:662)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at Solution.main(Solution.java:44)
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
+	at Digraph.validateVertex(Digraph.java:156)
+	at Digraph.outdegree(Digraph.java:195)
+	at PageRank.getPR(Solution.java:18)
+	at PageRank.<init>(Solution.java:10)
+	at Solution.main(Solution.java:51)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -83,11 +86,12 @@ Expected Output:
 7 - 0.02941176470588232
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:662)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at Solution.main(Solution.java:44)
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 8 is not between 0 and 7
+	at Digraph.validateVertex(Digraph.java:156)
+	at Digraph.outdegree(Digraph.java:195)
+	at PageRank.getPR(Solution.java:18)
+	at PageRank.<init>(Solution.java:10)
+	at Solution.main(Solution.java:51)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -108,10 +112,7 @@ Expected Output:
 5 - 0.07936507936507975
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:662)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
 	at Solution.main(Solution.java:44)
 ----------------------------------------
 
@@ -137,10 +138,7 @@ Expected Output:
 7 - 0.051470588235294074
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:662)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
 	at Solution.main(Solution.java:44)
 ----------------------------------------
 
@@ -158,11 +156,12 @@ Expected Output:
 3 - 0.25
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:662)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at Solution.main(Solution.java:44)
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
+	at Digraph.validateVertex(Digraph.java:156)
+	at Digraph.outdegree(Digraph.java:195)
+	at PageRank.getPR(Solution.java:18)
+	at PageRank.<init>(Solution.java:10)
+	at Solution.main(Solution.java:51)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -183,10 +182,7 @@ Expected Output:
 5 - 0.12499999999999999
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:662)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
 	at Solution.main(Solution.java:44)
 ----------------------------------------
 
@@ -204,11 +200,12 @@ Expected Output:
 3 - 0.25
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:662)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at Solution.main(Solution.java:44)
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 4 is not between 0 and 3
+	at Digraph.validateVertex(Digraph.java:156)
+	at Digraph.outdegree(Digraph.java:195)
+	at PageRank.getPR(Solution.java:18)
+	at PageRank.<init>(Solution.java:10)
+	at Solution.main(Solution.java:51)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -229,10 +226,7 @@ Expected Output:
 5 - 0.060240963855421686
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:662)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
 	at Solution.main(Solution.java:44)
 ----------------------------------------
 
@@ -246,11 +240,12 @@ Expected Output:
 1 - 0.5
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: ""
-	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:662)
-	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at Solution.main(Solution.java:44)
+Exception in thread "main" java.lang.IllegalArgumentException: vertex 2 is not between 0 and 1
+	at Digraph.validateVertex(Digraph.java:156)
+	at Digraph.outdegree(Digraph.java:195)
+	at PageRank.getPR(Solution.java:18)
+	at PageRank.<init>(Solution.java:10)
+	at Solution.main(Solution.java:51)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -288,9 +283,9 @@ Expected Output:
 0
 
 Your Output: 
-Exception in thread "main" java.lang.NumberFormatException: For input string: ""
+Exception in thread "main" java.lang.NumberFormatException: For input string: "q=network"
 	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
-	at java.base/java.lang.Integer.parseInt(Integer.java:662)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
 	at java.base/java.lang.Integer.parseInt(Integer.java:770)
 	at Solution.main(Solution.java:44)
 ----------------------------------------
