@@ -23,6 +23,7 @@ public class WordNet {
         	String[] input = s1.nextLine().split(",");
         	hm2.put(Integer.parseInt(input[0]),input[1]);
         	String[] words = input[1].split(" ");
+            System.out.println(Arrays.toString(words));
         	for(int i = 0; i < words.length; i++) {
         		if(hm.containsKey(words[i])) {
         			ArrayList<Integer> arr = hm.get(words[i]);
