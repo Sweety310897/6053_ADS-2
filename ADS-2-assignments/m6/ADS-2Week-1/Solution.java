@@ -5,11 +5,12 @@ class PageRank {
 	double pr;
 	PageRank(Digraph g) {
 		dg = g;
+		System.out.println("im");
 		pr = 1/dg.V();
 		for(int i = 0; i < dg.V()-1; i++) {
 			getPR(dg.V());
 		}
-		System.out.println("im");
+		
 		//System.out.println(pr);
 	}
 	public double getPR(int v) {
