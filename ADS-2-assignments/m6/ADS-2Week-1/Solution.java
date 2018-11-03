@@ -6,7 +6,7 @@ class PageRank {
 	PageRank(Digraph g) {
 		dg = g;
 		pr = 1/dg.V();
-		for(int i = 0; i < dg.V(); i++) {
+		for(int i = 0; i < dg.V()-1; i++) {
 			getPR(dg.V());
 		}
 		System.out.println("im");

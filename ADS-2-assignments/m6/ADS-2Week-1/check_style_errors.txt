@@ -295,18 +295,20 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:6:18: Parameter g should be final. [FinalParameters]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:8:23: '/' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:8:24: '/' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:9:20: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:9:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:9:42: '-' is not preceded with whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:9:43: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:15:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:15:29: Parameter v should be final. [FinalParameters]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:17:24: 'pr' hides a field. [HiddenField]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:17:30: '/' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:17:31: '/' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:18:20: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:18:20: 'for' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:18:36: '1000' is a magic number. [MagicNumber]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:19:32: '/' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:19:33: '/' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:23:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:26:20: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:26:20: 'for' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:26:42: '-' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:26:43: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:33: Missing a Javadoc comment. [JavadocType]
@@ -327,7 +329,7 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:71: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Solution.java:76: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 43 errors.
+Checkstyle ends with 45 errors.
 Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]
