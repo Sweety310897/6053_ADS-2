@@ -18,6 +18,7 @@ Expected Output:
 14: 13
 
 Your Output: 
+hi
 java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets15.txt"
 ----------------------------------------
 
@@ -27,6 +28,7 @@ distance = 7, ancestor = entity
 distance = 10, ancestor = entity
 
 Your Output: 
+hi
 java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets100-subgraph.txt"
 ----------------------------------------
 
@@ -40,6 +42,7 @@ distance = 7, ancestor = lipid lipide lipoid
 distance = 1, ancestor = animal_oil
 
 Your Output: 
+hi
 java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets500-subgraph.txt"
 ----------------------------------------
 
@@ -50,6 +53,7 @@ distance = 13, ancestor = thing
 distance = 2, ancestor = wax
 
 Your Output: 
+hi
 java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets1000-subgraph.txt"
 ----------------------------------------
 
@@ -62,6 +66,7 @@ distance = 0, ancestor = e
 distance = 0, ancestor = f
 
 Your Output: 
+hi
 java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets6.txt"
 ----------------------------------------
 
@@ -79,6 +84,7 @@ distance = 2, ancestor = j
 distance = 1, ancestor = k
 
 Your Output: 
+hi
 java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets11.txt"
 ----------------------------------------
 
@@ -93,6 +99,7 @@ distance = 3, ancestor = h
 distance = 1, ancestor = h
 
 Your Output: 
+hi
 java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets8.txt"
 ----------------------------------------
 
@@ -110,6 +117,7 @@ distance = 3, ancestor = f
 distance = 4, ancestor = f
 
 Your Output: 
+hi
 java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets11.txt"
 ----------------------------------------
 
@@ -126,6 +134,7 @@ Expected Output:
 7:
 
 Your Output: 
+hi
 java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets8.txt"
 ----------------------------------------
 
@@ -134,6 +143,7 @@ Expected Output:
 Multiple roots
 
 Your Output: 
+hi
 java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets6.txt"
 ----------------------------------------
 
@@ -142,6 +152,7 @@ Expected Output:
 Multiple roots
 
 Your Output: 
+hi
 java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets6.txt"
 ----------------------------------------
 
@@ -150,6 +161,7 @@ Expected Output:
 IllegalArgumentException
 
 Your Output: 
+hi
 java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets15.txt"
 ----------------------------------------
 
@@ -158,6 +170,7 @@ Expected Output:
 IllegalArgumentException
 
 Your Output: 
+hi
 java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets15.txt"
 ----------------------------------------
 
@@ -182,6 +195,7 @@ distance = 0, ancestor = era epoch
 distance = 8, ancestor = abstraction abstract_entity
 
 Your Output: 
+hi
 java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets.txt"
 ----------------------------------------
 
@@ -190,6 +204,7 @@ Expected Output:
 Cycle detected
 
 Your Output: 
+hi
 java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets3.txt"
 ----------------------------------------
 
