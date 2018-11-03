@@ -96,10 +96,9 @@ public class Solution {
 		while (s.hasNext()) {
             String[] n2 = s.nextLine().split(" ");//"0" "5"
             //System.out.println(Arrays.toString(n2));
-            for(int i = 0; i < n2.length-1; i++) {
-            graph.addEdge(Integer.parseInt(n2[i]),//0,5
-                Integer.parseInt(n2[0]));
-        	}
+
+            graph.addEdge(Integer.parseInt(n2[0]),//0,5
+                Integer.parseInt(n2[1]));
         }
         System.out.println(graph.toString());
     	//graph.matRep(vertices);
