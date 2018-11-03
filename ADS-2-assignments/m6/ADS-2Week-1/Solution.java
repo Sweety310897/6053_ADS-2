@@ -17,6 +17,7 @@ class PageRank {
 		for(int i = 0; i < 1000; i++) {
 			pr = pr/dg.outdegree(v);
 		}
+		System.out.println(pr);
 		return pr;
 	}
 	public String toString() {
@@ -48,12 +49,12 @@ public class Solution {
                 Integer.parseInt(n2[1]));
         }
         System.out.println(graph.toString());
-    	System.out.println("hi");
+    	//System.out.println("hi");
 		// iterate count of vertices times 
 		// to read the adjacency list from std input
 		// and build the graph
 		PageRank page = new PageRank(graph);
-		System.out.println("hi");
+		//System.out.println("hi");
 		//page.toString();
 		//System.out.println(page);
 		// Create page rank object and pass the graph object to the constructor

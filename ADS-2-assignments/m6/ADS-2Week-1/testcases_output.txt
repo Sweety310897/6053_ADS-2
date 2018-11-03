@@ -18,12 +18,11 @@ Your Output:
 2: 0 
 3: 2 
 
-hi
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
 	at Digraph.outdegree(Digraph.java:196)
 	at PageRank.getPR(Solution.java:18)
 	at PageRank.<init>(Solution.java:10)
-	at Solution.main(Solution.java:55)
+	at Solution.main(Solution.java:56)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -46,12 +45,11 @@ Your Output:
 2: 0 
 3: 0 
 
-hi
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
 	at Digraph.outdegree(Digraph.java:196)
 	at PageRank.getPR(Solution.java:18)
 	at PageRank.<init>(Solution.java:10)
-	at Solution.main(Solution.java:55)
+	at Solution.main(Solution.java:56)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -74,12 +72,11 @@ Your Output:
 2: 0 
 3: 0 
 
-hi
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
 	at Digraph.outdegree(Digraph.java:196)
 	at PageRank.getPR(Solution.java:18)
 	at PageRank.<init>(Solution.java:10)
-	at Solution.main(Solution.java:55)
+	at Solution.main(Solution.java:56)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -114,12 +111,11 @@ Your Output:
 6: 0 
 7: 0 
 
-hi
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
 	at Digraph.outdegree(Digraph.java:196)
 	at PageRank.getPR(Solution.java:18)
 	at PageRank.<init>(Solution.java:10)
-	at Solution.main(Solution.java:55)
+	at Solution.main(Solution.java:56)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -141,7 +137,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:47)
+	at Solution.main(Solution.java:48)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -167,7 +163,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:47)
+	at Solution.main(Solution.java:48)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -190,12 +186,11 @@ Your Output:
 2: 3 
 3: 0 
 
-hi
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
 	at Digraph.outdegree(Digraph.java:196)
 	at PageRank.getPR(Solution.java:18)
 	at PageRank.<init>(Solution.java:10)
-	at Solution.main(Solution.java:55)
+	at Solution.main(Solution.java:56)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -217,7 +212,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:47)
+	at Solution.main(Solution.java:48)
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -240,12 +235,11 @@ Your Output:
 2: 0 
 3: 0 
 
-hi
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
 	at Digraph.outdegree(Digraph.java:196)
 	at PageRank.getPR(Solution.java:18)
 	at PageRank.<init>(Solution.java:10)
-	at Solution.main(Solution.java:55)
+	at Solution.main(Solution.java:56)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -267,7 +261,7 @@ Expected Output:
 
 Your Output: 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:47)
+	at Solution.main(Solution.java:48)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -284,12 +278,11 @@ Your Output:
 0: 1 
 1: 0 
 
-hi
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
 	at Digraph.outdegree(Digraph.java:196)
 	at PageRank.getPR(Solution.java:18)
 	at PageRank.<init>(Solution.java:10)
-	at Solution.main(Solution.java:55)
+	at Solution.main(Solution.java:56)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -331,6 +324,6 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "q
 	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
 	at java.base/java.lang.Integer.parseInt(Integer.java:652)
 	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at Solution.main(Solution.java:47)
+	at Solution.main(Solution.java:48)
 ----------------------------------------
 
