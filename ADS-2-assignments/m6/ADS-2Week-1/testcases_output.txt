@@ -20,7 +20,7 @@ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
 	at Digraph.outdegree(Digraph.java:196)
 	at PageRank.getPR(Solution.java:18)
 	at PageRank.<init>(Solution.java:10)
-	at Solution.main(Solution.java:52)
+	at Solution.main(Solution.java:53)
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -45,7 +45,7 @@ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
 	at Digraph.outdegree(Digraph.java:196)
 	at PageRank.getPR(Solution.java:18)
 	at PageRank.<init>(Solution.java:10)
-	at Solution.main(Solution.java:52)
+	at Solution.main(Solution.java:53)
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -70,7 +70,7 @@ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
 	at Digraph.outdegree(Digraph.java:196)
 	at PageRank.getPR(Solution.java:18)
 	at PageRank.<init>(Solution.java:10)
-	at Solution.main(Solution.java:52)
+	at Solution.main(Solution.java:53)
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -107,7 +107,7 @@ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
 	at Digraph.outdegree(Digraph.java:196)
 	at PageRank.getPR(Solution.java:18)
 	at PageRank.<init>(Solution.java:10)
-	at Solution.main(Solution.java:52)
+	at Solution.main(Solution.java:53)
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -135,7 +135,7 @@ Your Output:
 [4, 0]
 [5]
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:45)
+	at Solution.main(Solution.java:46)
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -166,7 +166,7 @@ Your Output:
 [3, 0, 4, 5, 6, 7]
 [4]
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:45)
+	at Solution.main(Solution.java:46)
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -191,7 +191,7 @@ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
 	at Digraph.outdegree(Digraph.java:196)
 	at PageRank.getPR(Solution.java:18)
 	at PageRank.<init>(Solution.java:10)
-	at Solution.main(Solution.java:52)
+	at Solution.main(Solution.java:53)
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -219,7 +219,7 @@ Your Output:
 [4, 0]
 [5]
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:45)
+	at Solution.main(Solution.java:46)
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -244,7 +244,7 @@ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
 	at Digraph.outdegree(Digraph.java:196)
 	at PageRank.getPR(Solution.java:18)
 	at PageRank.<init>(Solution.java:10)
-	at Solution.main(Solution.java:52)
+	at Solution.main(Solution.java:53)
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -272,7 +272,7 @@ Your Output:
 [4, 0]
 [5]
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:45)
+	at Solution.main(Solution.java:46)
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -291,7 +291,7 @@ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
 	at Digraph.outdegree(Digraph.java:196)
 	at PageRank.getPR(Solution.java:18)
 	at PageRank.<init>(Solution.java:10)
-	at Solution.main(Solution.java:52)
+	at Solution.main(Solution.java:53)
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -346,6 +346,6 @@ Exception in thread "main" java.lang.NumberFormatException: For input string: "q
 	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
 	at java.base/java.lang.Integer.parseInt(Integer.java:652)
 	at java.base/java.lang.Integer.parseInt(Integer.java:770)
-	at Solution.main(Solution.java:45)
+	at Solution.main(Solution.java:46)
 ----------------------------------------
 

@@ -21,6 +21,7 @@ class PageRank {
 	}
 	public String toString() {
 		String str = "";
+		System.out.println("hi");
 		for(int i = 0; i < dg.V()-1; i++) {
 			str = str + dg.V() + "-" + getPR(dg.V()) + "\n";
 		}
