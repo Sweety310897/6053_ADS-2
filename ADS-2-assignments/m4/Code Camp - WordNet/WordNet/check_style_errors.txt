@@ -352,9 +352,9 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\SAP.java:19: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\SAP.java:21:76: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\SAP.java:22:76: ',' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\SAP.java:23:12: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\SAP.java:24:15: 'if' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\SAP.java:26:19: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\SAP.java:23:12: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\SAP.java:24:15: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\SAP.java:26:19: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\SAP.java:35: Line is longer than 80 characters (found 104). [LineLength]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\SAP.java:36:5: Class 'SAP' looks like designed for extension (can be subclassed), but the method 'length' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'SAP' final or making the method 'length' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\SAP.java:36:5: Missing a Javadoc comment. [JavadocMethod]
@@ -366,8 +366,8 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\SAP.java:42:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\SAP.java:42:25: Parameter v should be final. [FinalParameters]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\SAP.java:42:46: Parameter w should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\SAP.java:44:12: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\SAP.java:45:16: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\SAP.java:44:12: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\SAP.java:45:16: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\SAP.java:46:35: ',' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
 Checkstyle ends with 40 errors.

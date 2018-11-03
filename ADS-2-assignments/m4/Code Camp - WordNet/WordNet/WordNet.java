@@ -19,14 +19,14 @@ public class WordNet {
         // Scanner s1 = new Scanner(new File("Files/" + synsets));
         // Scanner s2 = new Scanner(new File("Files/" + hypernyms));
         while(s1.hasNextLine()) {
-            System.out.println("hi");
+            //System.out.println("hi");
         	String[] input = s1.nextLine().split(",");
         	hm2.put(Integer.parseInt(input[0]),input[1]);
         	String[] words = input[1].split(" ");
         	for(int i = 0; i < words.length; i++) {
         		if(hm.containsKey(words[i])) {
-        			ArrayList arr = hm.get(words[i]);
-        			arr.add(input[0]);
+        			ArrayList<Integer> arr = hm.get(words[i]);
+        			arr.add(Integer.parseInt(input[0]));
         		} else {
         			ArrayList<Integer> arr1 = new ArrayList<Integer>();
         			arr1.add(Integer.parseInt(input[0]));
