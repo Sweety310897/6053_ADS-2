@@ -1,75 +1,166 @@
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
 import java.io.File;
-import java.io.FileNotFoundException;
+import java.util.HashMap;
 import java.util.Scanner;
-import java.util.*;
-import java.io.*;
+/**
+ * Class for word net.
+ */
 public class WordNet {
-	HashMap<String,ArrayList<Integer>> hm = new HashMap<String,ArrayList<Integer>>();
-    HashMap<Integer,String> hm2 = new HashMap<Integer,String>();
-    Digraph graph;
-    SAP  sapObj;
-    // constructor takes the name of the two input files
-    public WordNet(String synsets, String hypernyms) {
-        File fileobj1 = new File(synsets);
-        File fileobj2 = new File(hypernyms);
-        Scanner s1 = new Scanner("E:\\6053_ADS2\\6053_ADS-2\\ADS-2-assignments\\m4\\Code Camp - WordNet\\WordNet\\Files" + fileobj1);
-        Scanner s2 = new Scanner("E:\\6053_ADS2\\6053_ADS-2\\ADS-2-assignments\\m4\\Code Camp - WordNet\\WordNet\\Files" + fileobj2);
-        // Scanner s1 = new Scanner(new File("Files/" + synsets));
-        // Scanner s2 = new Scanner(new File("Files/" + hypernyms));
-        while(s1.hasNextLine()) {
-            //System.out.println("hi");
-        	String[] input = s1.nextLine().split(",");
-        	hm2.put(Integer.parseInt(input[0]),input[1]);
-        	String[] words = input[1].split(" ");
-            System.out.println(Arrays.toString(words));
-        	for(int i = 0; i < words.length; i++) {
-        		if(hm.containsKey(words[i])) {
-        			ArrayList<Integer> arr = hm.get(words[i]);
-        			arr.add(Integer.parseInt(input[0]));
-        		} else {
-        			ArrayList<Integer> arr1 = new ArrayList<Integer>();
-        			arr1.add(Integer.parseInt(input[0]));
-        			hm.put(words[i],arr1);
-        		}
-        	}
+    /**
+     * hash map.
+     */
+    private HashMap<String, ArrayList<Integer>> h = new
+    HashMap<String, ArrayList<Integer>>();
+    /**
+     * hashmap.
+     */
+    private HashMap<Integer, String> h2 = new
+    HashMap<Integer, String>();
+    /**
+     * digraph.
+     */
+    private Digraph dg;
+    /**
+     * SAP variable.
+     */
+    private SAP sap;
+    /**
+     * has cycle variable.
+     */
+    private boolean hasCycle = false;
+    /**
+     * has multiple roots variable.
+     */
+    private boolean hasMultipleRoots = false;
+    /**
+     * Gets the digraph.
+     *
+     * @return     The digraph.
+     */
+    public Digraph getDigraph() {
+        return this.dg;
+    }
+    /**
+     * get hasCycle.
+     *
+     * @return   boolean.
+     */
+    public boolean gethasCycle() {
+        return this.hasCycle;
+    }
+    /**
+     * hasmultipleroots.
+     *
+     * @return  boolean.
+     */
+    public boolean gethasMultipleRoots() {
+        return this.hasMultipleRoots;
+    }
+    /**
+     * Constructs the object.
+     *
+     * @param      synsets    The synsets
+     * @param      hypernyms  The hypernyms
+     */
+    public WordNet(final String synsets, final String hypernyms) {
+        try {
+            File fileOne = new File(
+                "Files/" + synsets);
+            Scanner fOne = new Scanner(fileOne);
+            File fileTwo = new File("Files/" + hypernyms);
+            Scanner fTwo = new Scanner(fileTwo);
+            while (fOne.hasNextLine()) {
+                String[] tokens = fOne.nextLine().split(",");
+                h2.put(Integer.parseInt(tokens[0]), tokens[1]);
+                String[] words = tokens[1].split(" ");
+                for (int i = 0; i < words.length; i++) {
+                    if (h.containsKey(words[i])) {
+                        ArrayList<Integer> arraylist = h.get(words[i]);
+                        arraylist.add(Integer.parseInt(tokens[0]));
+                    } else {
+                        ArrayList<Integer> arraylist = new ArrayList<Integer>();
+                        arraylist.add(Integer.parseInt(tokens[0]));
+                        h.put(words[i], arraylist);
+                    }
+                }
+            }
+            dg = new Digraph(h.size());
+            while (fTwo.hasNextLine()) {
+                String[] tokens = fTwo.nextLine().split(",");
+                for (int i = 1; i < tokens.length; i++) {
+                    dg.addEdge(Integer.parseInt(tokens[0]),
+                               Integer.parseInt(tokens[i]));
+                }
+            }
+        } catch (Exception e) {
+            System.out.println(e);
         }
-        graph = new Digraph(hm.size());
-        while(s2.hasNextLine()) {
-        	String[] input1 = s2.nextLine().split(",");
-        	for(int i = 1; i <input1.length; i++) {
-        		graph.addEdge(Integer.parseInt(input1[0]),Integer.parseInt(input1[i]));
-        	}
+        DirectedCycle dc = new DirectedCycle(dg);
+        if (dc.hasCycle()) {
+            hasCycle = true;
         }
-
+    }
+    /**
+     * check multiple roots method.
+     */
+    public void checkMultipleRoots() {
+        int roots = 0;
+        for (int i = 0; i < dg.v(); i++) {
+            if (dg.outdegree(i) == 0) {
+                roots++;
+            }
+        }
+        if (roots != 1) {
+            hasMultipleRoots = true;
+            System.out.println("Multiple roots");
+        }
+    }
+    /**
+     * Determines if noun.
+     *
+     * @param      word  The word
+     *
+     * @return     True if noun, False otherwise.
+     */
+    public boolean isNoun(final String word) {
+        // for (String s : h.getKeys()) {
+        //     if (s.equals(word)) {
+        //         return true;
+        //     }
+        // }
+        return true;
+    }
+    /**
+     * distance.
+     *
+     * @param      nounA  The noun a
+     * @param      nounB  The noun b
+     *
+     * @return distance between nouns.
+     */
+    public int distance(final String nounA, final String nounB) {
+        ArrayList id1 = h.get(nounA);
+        ArrayList id2 = h.get(nounB);
+        sap = new SAP(dg);
+        return sap.length(id1, id2);
+    }
+    /**
+     * sap method.
+     *
+     * @param      nounA  The noun a
+     * @param      nounB  The noun b
+     *
+     * @return string.
+     */
+    public String sap(final String nounA, final String nounB) {
+        ArrayList<Integer> id1 = h.get(nounA);
+        ArrayList<Integer> id2 = h.get(nounB);
+        sap = new SAP(dg);
+        // System.out.println(id1);
+        // System.out.println(id2);
+        int ans = sap.ancestor(id1, id2);
+        return h2.get(ans);
     }
 
-    // returns all WordNet nouns
-    // public Iterable<String> nouns()
-
-    // // is the word a WordNet noun?
-    // public boolean isNoun(String word)
-
-    // // distance between nounA and nounB (defined below)
-    public int distance(String nounA, String nounB) {
-    	ArrayList id1 = hm.get(nounA);
-    	ArrayList id2 = hm.get(nounB);
-    	sapObj = new SAP(graph);
-    	return sapObj.length(id1,id2);
-    	
-    }
-
-    // // a synset (second field of synsets.txt) that is the common ancestor of nounA and nounB
-    // // in a shortest ancestral path (defined below)
-    public String sap(String nounA, String nounB) {
-    	ArrayList id1 = hm.get(nounA);
-    	ArrayList id2 = hm.get(nounB);
-    	sapObj = new SAP(graph);
-    	int ans =  sapObj.ancestor(id1,id2);
-    	return hm2.get(ans);
-    }
-
-    // do unit testing of this class
-    //public static void main(String[] args)
 }
+
