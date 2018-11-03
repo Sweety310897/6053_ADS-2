@@ -13,8 +13,8 @@ Expected Output:
 
 Your Output: 
 4 vertices, 5 edges 
-0: 1 0 
-1: 1 
+0: 0 
+1: 1 0 
 2: 2 
 3: 3 
 
@@ -38,9 +38,9 @@ Expected Output:
 
 Your Output: 
 4 vertices, 6 edges 
-0: 0 
-1: 0 1 
-2: 0 2 
+0: 2 1 0 
+1: 1 
+2: 2 
 3: 3 
 
 4im cou
@@ -63,10 +63,10 @@ Expected Output:
 
 Your Output: 
 4 vertices, 8 edges 
-0: 0 
-1: 0 1 
-2: 1 0 2 
-3: 0 3 
+0: 3 2 1 0 
+1: 2 1 
+2: 2 
+3: 3 
 
 4im cou
 0.0
@@ -96,13 +96,13 @@ Expected Output:
 
 Your Output: 
 8 vertices, 14 edges 
-0: 2 1 0 
-1: 1 
-2: 2 
-3: 6 5 4 0 3 
-4: 4 
-5: 5 
-6: 6 
+0: 3 0 
+1: 1 0 
+2: 2 0 
+3: 3 
+4: 4 3 
+5: 5 3 
+6: 6 3 
 7: 7 
 
 8im cou
@@ -129,10 +129,10 @@ Expected Output:
 
 Your Output: 
 6 vertices, 8 edges 
-0: 2 1 0 
-1: 1 
-2: 2 
-3: 0 3 
+0: 3 0 
+1: 1 0 
+2: 2 0 
+3: 3 
 4: 4 
 5: 
 
@@ -164,13 +164,13 @@ Expected Output:
 
 Your Output: 
 8 vertices, 10 edges 
-0: 2 1 0 
-1: 1 
-2: 2 
-3: 6 5 4 0 3 
-4: 
-5: 
-6: 
+0: 3 0 
+1: 1 0 
+2: 2 0 
+3: 3 
+4: 3 
+5: 3 
+6: 3 
 7: 
 
 8im cou
@@ -222,10 +222,10 @@ Expected Output:
 
 Your Output: 
 6 vertices, 6 edges 
-0: 0 
+0: 3 0 
 1: 1 
 2: 2 
-3: 0 3 
+3: 3 
 4: 4 
 5: 
 
@@ -249,10 +249,10 @@ Expected Output:
 
 Your Output: 
 4 vertices, 12 edges 
-0: 2 1 0 
-1: 2 0 1 
-2: 1 0 2 
-3: 1 0 3 
+0: 3 2 1 0 
+1: 3 2 1 0 
+2: 2 1 0 
+3: 3 
 
 4im cou
 0.0
@@ -278,10 +278,10 @@ Expected Output:
 
 Your Output: 
 6 vertices, 14 edges 
-0: 2 1 0 
-1: 2 0 1 
-2: 3 1 0 2 
-3: 1 0 3 
+0: 3 2 1 0 
+1: 3 2 1 0 
+2: 2 1 0 
+3: 3 2 
 4: 4 
 5: 
 
@@ -345,17 +345,17 @@ Expected Output:
 
 Your Output: 
 12 vertices, 22 edges 
-0: 2 1 0 
-1: 1 
-2: 2 
-3: 10 9 8 7 6 5 4 0 3 
-4: 4 
-5: 5 
-6: 6 
-7: 7 
-8: 8 
-9: 9 
-10: 10 
+0: 3 0 
+1: 1 0 
+2: 2 0 
+3: 3 
+4: 4 3 
+5: 5 3 
+6: 6 3 
+7: 7 3 
+8: 8 3 
+9: 9 3 
+10: 10 3 
 11: 11 
 
 12im cou
