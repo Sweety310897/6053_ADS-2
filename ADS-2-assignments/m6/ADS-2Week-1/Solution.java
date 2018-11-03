@@ -39,15 +39,11 @@ public class Solution {
 		Scanner s = new Scanner(System.in);
 		int vertices = s.nextInt();
 		Digraph graph = new Digraph(vertices);
-		for(int i =0; i < vertices; i++) {
-			String[] temp = s.nextLine().split(" ");
-			graph.addEdge(Integer.parseInt(temp[0]),Integer.parseInt(temp[1]));
-			//System.out.println(Arrays.toString(temp));
-			//for(int j = i+1)
-			 // for(int j = i+1; j < temp.length; j++) {
-			 // 	g.addEdge(Integer.parseInt(temp[i]),Integer.parseInt(temp[j]));
-			 // }
-		}
+		while (s.hasNext()) {
+            String[] n2 = s.nextLine().split(" ");//"0" "5"
+            graph.addEdge(Integer.parseInt(n2[0]),//0,5
+                Integer.parseInt(n2[1]));
+        }
     
 		// iterate count of vertices times 
 		// to read the adjacency list from std input
