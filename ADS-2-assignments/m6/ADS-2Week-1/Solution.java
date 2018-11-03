@@ -46,6 +46,7 @@ public class Solution {
             graph.addEdge(Integer.parseInt(n2[0]),//0,5
                 Integer.parseInt(n2[1]));
         }
+        System.out.println(graph.toString());
     
 		// iterate count of vertices times 
 		// to read the adjacency list from std input
