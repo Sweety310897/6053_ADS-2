@@ -42,7 +42,7 @@ public class Solution {
 		Digraph graph = new Digraph(vertices);
 		while (s.hasNext()) {
             String[] n2 = s.nextLine().split(" ");//"0" "5"
-            System.out.println(Arrays.toString(n2));
+            //System.out.println(Arrays.toString(n2));
             graph.addEdge(Integer.parseInt(n2[0]),//0,5
                 Integer.parseInt(n2[1]));
         }
@@ -51,6 +51,7 @@ public class Solution {
 		// to read the adjacency list from std input
 		// and build the graph
 		PageRank page = new PageRank(graph);
+		page.toString();
 		//System.out.println(page);
 		// Create page rank object and pass the graph object to the constructor
 		
