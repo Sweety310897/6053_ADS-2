@@ -9,7 +9,8 @@ class PageRank {
 		for(int i = 0; i < dg.V(); i++) {
 			getPR(dg.V());
 		}
-		System.out.println(pr);
+		System.out.println("im");
+		//System.out.println(pr);
 	}
 	public double getPR(int v) {
 
@@ -17,7 +18,6 @@ class PageRank {
 		for(int i = 0; i < 1000; i++) {
 			pr = pr/dg.outdegree(v);
 		}
-		System.out.println(pr);
 		return pr;
 	}
 	public String toString() {

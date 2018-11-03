@@ -20,7 +20,7 @@ Your Output:
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
 	at Digraph.outdegree(Digraph.java:196)
-	at PageRank.getPR(Solution.java:18)
+	at PageRank.getPR(Solution.java:19)
 	at PageRank.<init>(Solution.java:10)
 	at Solution.main(Solution.java:56)
 ----------------------------------------
@@ -47,7 +47,7 @@ Your Output:
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
 	at Digraph.outdegree(Digraph.java:196)
-	at PageRank.getPR(Solution.java:18)
+	at PageRank.getPR(Solution.java:19)
 	at PageRank.<init>(Solution.java:10)
 	at Solution.main(Solution.java:56)
 ----------------------------------------
@@ -74,7 +74,7 @@ Your Output:
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
 	at Digraph.outdegree(Digraph.java:196)
-	at PageRank.getPR(Solution.java:18)
+	at PageRank.getPR(Solution.java:19)
 	at PageRank.<init>(Solution.java:10)
 	at Solution.main(Solution.java:56)
 ----------------------------------------
@@ -113,7 +113,7 @@ Your Output:
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 8
 	at Digraph.outdegree(Digraph.java:196)
-	at PageRank.getPR(Solution.java:18)
+	at PageRank.getPR(Solution.java:19)
 	at PageRank.<init>(Solution.java:10)
 	at Solution.main(Solution.java:56)
 ----------------------------------------
@@ -188,7 +188,7 @@ Your Output:
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
 	at Digraph.outdegree(Digraph.java:196)
-	at PageRank.getPR(Solution.java:18)
+	at PageRank.getPR(Solution.java:19)
 	at PageRank.<init>(Solution.java:10)
 	at Solution.main(Solution.java:56)
 ----------------------------------------
@@ -237,7 +237,7 @@ Your Output:
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 4
 	at Digraph.outdegree(Digraph.java:196)
-	at PageRank.getPR(Solution.java:18)
+	at PageRank.getPR(Solution.java:19)
 	at PageRank.<init>(Solution.java:10)
 	at Solution.main(Solution.java:56)
 ----------------------------------------
@@ -280,7 +280,7 @@ Your Output:
 
 Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 2
 	at Digraph.outdegree(Digraph.java:196)
-	at PageRank.getPR(Solution.java:18)
+	at PageRank.getPR(Solution.java:19)
 	at PageRank.<init>(Solution.java:10)
 	at Solution.main(Solution.java:56)
 ----------------------------------------
