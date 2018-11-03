@@ -1,0 +1,75 @@
+import java.util.Scanner;
+import java.util.Arrays;
+class PageRank {
+	Digraph dg;
+	double pr;
+	PageRank(Digraph g) {
+		dg = g;
+		pr = 1/dg.V();
+		for(int i = 0; i < dg.V(); i++) {
+			getPR(dg.V());
+		}
+		System.out.println(pr);
+	}
+	public double getPR(int v) {
+
+		double pr = 1/v;
+		for(int i = 0; i < 1000; i++) {
+			pr = pr/dg.outdegree(v);
+		}
+		return pr;
+	}
+	public String toString() {
+		String str = "";
+		for(int i = 0; i < dg.V()-1; i++) {
+			str = str + dg.V() + "-" + getPR(dg.V()) + "\n";
+		}
+		return str;
+	}
+}
+
+class WebSearch {
+
+}
+
+
+public class Solution {
+	public static void main(String[] args) {
+		// read the first line of the input to get the number of vertices
+		Scanner s = new Scanner(System.in);
+		int vertices = s.nextInt();
+		Digraph graph = new Digraph(vertices);
+		for(int i =0; i < vertices; i++) {
+			String[] temp = s.nextLine().split(" ");
+			graph.addEdge(Integer.parseInt(temp[0]),Integer.parseInt(temp[1]));
+			//System.out.println(Arrays.toString(temp));
+			//for(int j = i+1)
+			 // for(int j = i+1; j < temp.length; j++) {
+			 // 	g.addEdge(Integer.parseInt(temp[i]),Integer.parseInt(temp[j]));
+			 // }
+		}
+    
+		// iterate count of vertices times 
+		// to read the adjacency list from std input
+		// and build the graph
+		PageRank page = new PageRank(graph);
+		System.out.println(page);
+		// Create page rank object and pass the graph object to the constructor
+		
+		// print the page rank object
+		
+		// This part is only for the final test case
+		
+		// File path to the web content
+		String file = "WebContent.txt";
+		
+		// instantiate web search object
+		// and pass the page rank object and the file path to the constructor
+		
+		// read the search queries from std in
+		// remove the q= prefix and extract the search word
+		// pass the word to iAmFeelingLucky method of web search
+		// print the return value of iAmFeelingLucky
+		
+	}
+}
