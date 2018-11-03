@@ -18,10 +18,7 @@ Expected Output:
 14: 13
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at WordNet.<init>(WordNet.java:23)
-	at Solution.main(Solution.java:9)
+java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets15.txt"
 ----------------------------------------
 
 ########## Testcase 1: Failed ##########
@@ -30,10 +27,7 @@ distance = 7, ancestor = entity
 distance = 10, ancestor = entity
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at WordNet.<init>(WordNet.java:23)
-	at Solution.main(Solution.java:9)
+java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets100-subgraph.txt"
 ----------------------------------------
 
 ########## Testcase 2: Failed ##########
@@ -46,10 +40,7 @@ distance = 7, ancestor = lipid lipide lipoid
 distance = 1, ancestor = animal_oil
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at WordNet.<init>(WordNet.java:23)
-	at Solution.main(Solution.java:9)
+java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets500-subgraph.txt"
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -59,10 +50,7 @@ distance = 13, ancestor = thing
 distance = 2, ancestor = wax
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at WordNet.<init>(WordNet.java:23)
-	at Solution.main(Solution.java:9)
+java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets1000-subgraph.txt"
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -74,10 +62,7 @@ distance = 0, ancestor = e
 distance = 0, ancestor = f
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at WordNet.<init>(WordNet.java:23)
-	at Solution.main(Solution.java:9)
+java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets6.txt"
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -94,10 +79,7 @@ distance = 2, ancestor = j
 distance = 1, ancestor = k
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at WordNet.<init>(WordNet.java:23)
-	at Solution.main(Solution.java:9)
+java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets11.txt"
 ----------------------------------------
 
 ########## Testcase 6: Failed ##########
@@ -111,10 +93,7 @@ distance = 3, ancestor = h
 distance = 1, ancestor = h
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at WordNet.<init>(WordNet.java:23)
-	at Solution.main(Solution.java:9)
+java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets8.txt"
 ----------------------------------------
 
 ########## Testcase 7: Failed ##########
@@ -131,10 +110,7 @@ distance = 3, ancestor = f
 distance = 4, ancestor = f
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at WordNet.<init>(WordNet.java:23)
-	at Solution.main(Solution.java:9)
+java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets11.txt"
 ----------------------------------------
 
 ########## Testcase 8: Failed ##########
@@ -150,10 +126,7 @@ Expected Output:
 7:
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at WordNet.<init>(WordNet.java:23)
-	at Solution.main(Solution.java:9)
+java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets8.txt"
 ----------------------------------------
 
 ########## Testcase 9: Failed ##########
@@ -161,10 +134,7 @@ Expected Output:
 Multiple roots
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at WordNet.<init>(WordNet.java:23)
-	at Solution.main(Solution.java:9)
+java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets6.txt"
 ----------------------------------------
 
 ########## Testcase 10: Failed ##########
@@ -172,10 +142,7 @@ Expected Output:
 Multiple roots
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at WordNet.<init>(WordNet.java:23)
-	at Solution.main(Solution.java:9)
+java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets6.txt"
 ----------------------------------------
 
 ########## Testcase 11: Failed ##########
@@ -183,10 +150,7 @@ Expected Output:
 IllegalArgumentException
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at WordNet.<init>(WordNet.java:23)
-	at Solution.main(Solution.java:9)
+java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets15.txt"
 ----------------------------------------
 
 ########## Testcase 12: Failed ##########
@@ -194,10 +158,7 @@ Expected Output:
 IllegalArgumentException
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at WordNet.<init>(WordNet.java:23)
-	at Solution.main(Solution.java:9)
+java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets15.txt"
 ----------------------------------------
 
 ########## Testcase 13: Failed ##########
@@ -221,10 +182,7 @@ distance = 0, ancestor = era epoch
 distance = 8, ancestor = abstraction abstract_entity
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at WordNet.<init>(WordNet.java:23)
-	at Solution.main(Solution.java:9)
+java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets.txt"
 ----------------------------------------
 
 ########## Testcase 14: Failed ##########
@@ -232,9 +190,6 @@ Expected Output:
 Cycle detected
 
 Your Output: 
-Exception in thread "main" java.util.NoSuchElementException: No line found
-	at java.base/java.util.Scanner.nextLine(Scanner.java:1651)
-	at WordNet.<init>(WordNet.java:23)
-	at Solution.main(Solution.java:9)
+java.lang.NumberFormatException: For input string: "E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m4\Code Camp - WordNet\WordNet\Filessynsets3.txt"
 ----------------------------------------
 
