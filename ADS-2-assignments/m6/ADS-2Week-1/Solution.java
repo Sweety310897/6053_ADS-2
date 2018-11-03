@@ -48,7 +48,7 @@ public class Solution {
                 Integer.parseInt(n2[1]));
         }
         System.out.println(graph.toString());
-    
+    	System.out.println("hi");
 		// iterate count of vertices times 
 		// to read the adjacency list from std input
 		// and build the graph
