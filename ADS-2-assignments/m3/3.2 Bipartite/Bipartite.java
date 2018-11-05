@@ -26,7 +26,7 @@ public class Bipartite {
     /**
      * Determines whether an undirected graph is bipartite and finds either a
      * bipartition or an odd-length cycle.
-     *
+     * time complexity - O(V).
      * @param  g the graph
      */
     Bipartite(final Graph g) {
@@ -72,7 +72,7 @@ public class Bipartite {
 
     /**
      * Returns true if the graph is bipartite.
-     *
+     * time complexity - O(1).
      * @return boolean value.
      */
     public boolean isBipartite() {
@@ -81,7 +81,7 @@ public class Bipartite {
 
     /**
      * Returns the side of the bipartite that vertex is on.
-     *
+     * time complexity - O(1).
      * @param      v     Integer variable,
      *
      * @return     Boolean
