@@ -28,7 +28,7 @@ public class Solution {
 			else {
 					for(int j = 0; j < temp.length; j++) {
 						//System.out.println(temp.length + "templen");
-						System.out.println("i" + i +" " +j +"jva");
+						//System.out.println("i" + i +" " +j +"jva");
 						//System.out.println(temp[0] + "temp0" + " " + temp[j] + "tempj");
 						dg.addEdge(Integer.parseInt(temp[0]),Integer.parseInt(temp[j]));
 					}	

@@ -308,17 +308,14 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\Updated Solution\ADS-2Week-1\Solution.java:27:25: '}' at column 4 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\Updated Solution\ADS-2Week-1\Solution.java:29:44: 'for' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\Updated Solution\ADS-2Week-1\Solution.java:30: Line is longer than 80 characters (found 94). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\Updated Solution\ADS-2Week-1\Solution.java:31: Line is longer than 80 characters (found 91). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\Updated Solution\ADS-2Week-1\Solution.java:31:77: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\Updated Solution\ADS-2Week-1\Solution.java:31:82: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\Updated Solution\ADS-2Week-1\Solution.java:31:85: '+' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\Updated Solution\ADS-2Week-1\Solution.java:31: Line is longer than 80 characters (found 93). [LineLength]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\Updated Solution\ADS-2Week-1\Solution.java:32: Line is longer than 80 characters (found 114). [LineLength]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\Updated Solution\ADS-2Week-1\Solution.java:33: Line is longer than 80 characters (found 112). [LineLength]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\Updated Solution\ADS-2Week-1\Solution.java:33:86: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\Updated Solution\ADS-2Week-1\Solution.java:34: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\Updated Solution\ADS-2Week-1\Solution.java:36: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 34 errors.
+Checkstyle ends with 31 errors.
 Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\Updated Solution\ADS-2Week-1\Stack.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m6\Updated Solution\ADS-2Week-1\Stack.java:13: Line has trailing spaces. [RegexpSingleline]

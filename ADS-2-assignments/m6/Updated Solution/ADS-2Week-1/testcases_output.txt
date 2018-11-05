@@ -12,15 +12,6 @@ Expected Output:
 3 - 0.0
 
 Your Output: 
-i0 0jva
-i0 1jva
-i0 2jva
-i1 0jva
-i1 1jva
-i2 0jva
-i2 1jva
-i3 0jva
-i3 1jva
 4 vertices, 9 edges 
 0: 2 1 0 
 1: 2 1 
@@ -42,16 +33,6 @@ Expected Output:
 3 - 0.09090909090909086
 
 Your Output: 
-i0 0jva
-i0 1jva
-i1 0jva
-i1 1jva
-i1 2jva
-i2 0jva
-i2 1jva
-i2 2jva
-i3 0jva
-i3 1jva
 4 vertices, 10 edges 
 0: 1 0 
 1: 2 0 1 
@@ -73,18 +54,6 @@ Expected Output:
 3 - 0.07692307692307687
 
 Your Output: 
-i0 0jva
-i0 1jva
-i1 0jva
-i1 1jva
-i1 2jva
-i2 0jva
-i2 1jva
-i2 2jva
-i2 3jva
-i3 0jva
-i3 1jva
-i3 2jva
 4 vertices, 12 edges 
 0: 1 0 
 1: 2 0 1 
@@ -114,28 +83,6 @@ Expected Output:
 7 - 0.02941176470588232
 
 Your Output: 
-i0 0jva
-i0 1jva
-i0 2jva
-i0 3jva
-i1 0jva
-i1 1jva
-i2 0jva
-i2 1jva
-i3 0jva
-i3 1jva
-i3 2jva
-i3 3jva
-i3 4jva
-i3 5jva
-i4 0jva
-i4 1jva
-i5 0jva
-i5 1jva
-i6 0jva
-i6 1jva
-i7 0jva
-i7 1jva
 8 vertices, 22 edges 
 0: 3 2 1 0 
 1: 0 1 
@@ -165,19 +112,6 @@ Expected Output:
 5 - 0.07936507936507975
 
 Your Output: 
-i0 0jva
-i0 1jva
-i0 2jva
-i0 3jva
-i1 0jva
-i1 1jva
-i2 0jva
-i2 1jva
-i3 0jva
-i3 1jva
-i3 2jva
-i4 0jva
-i4 1jva
 6 vertices, 19 edges 
 0: 3 2 1 0 
 1: 0 1 
@@ -209,20 +143,6 @@ Expected Output:
 7 - 0.051470588235294074
 
 Your Output: 
-i0 0jva
-i0 1jva
-i0 2jva
-i0 3jva
-i1 0jva
-i1 1jva
-i2 0jva
-i2 1jva
-i3 0jva
-i3 1jva
-i3 2jva
-i3 3jva
-i3 4jva
-i3 5jva
 8 vertices, 46 edges 
 0: 3 2 1 0 
 1: 0 1 
@@ -248,14 +168,6 @@ Expected Output:
 3 - 0.25
 
 Your Output: 
-i0 0jva
-i0 1jva
-i1 0jva
-i1 1jva
-i2 0jva
-i2 1jva
-i3 0jva
-i3 1jva
 4 vertices, 8 edges 
 0: 1 0 
 1: 2 1 
@@ -281,17 +193,6 @@ Expected Output:
 5 - 0.12499999999999999
 
 Your Output: 
-i0 0jva
-i0 1jva
-i1 0jva
-i1 1jva
-i2 0jva
-i2 1jva
-i3 0jva
-i3 1jva
-i3 2jva
-i4 0jva
-i4 1jva
 6 vertices, 17 edges 
 0: 1 0 
 1: 2 1 
@@ -315,22 +216,6 @@ Expected Output:
 3 - 0.25
 
 Your Output: 
-i0 0jva
-i0 1jva
-i0 2jva
-i0 3jva
-i1 0jva
-i1 1jva
-i1 2jva
-i1 3jva
-i2 0jva
-i2 1jva
-i2 2jva
-i2 3jva
-i3 0jva
-i3 1jva
-i3 2jva
-i3 3jva
 4 vertices, 16 edges 
 0: 3 2 1 0 
 1: 3 2 0 1 
@@ -356,25 +241,6 @@ Expected Output:
 5 - 0.060240963855421686
 
 Your Output: 
-i0 0jva
-i0 1jva
-i0 2jva
-i0 3jva
-i1 0jva
-i1 1jva
-i1 2jva
-i1 3jva
-i2 0jva
-i2 1jva
-i2 2jva
-i2 3jva
-i2 4jva
-i3 0jva
-i3 1jva
-i3 2jva
-i3 3jva
-i4 0jva
-i4 1jva
 6 vertices, 25 edges 
 0: 3 2 1 0 
 1: 3 2 0 1 
@@ -394,10 +260,6 @@ Expected Output:
 1 - 0.5
 
 Your Output: 
-i0 0jva
-i0 1jva
-i1 0jva
-i1 1jva
 2 vertices, 4 edges 
 0: 1 0 
 1: 0 1
@@ -438,40 +300,6 @@ Expected Output:
 0
 
 Your Output: 
-i0 0jva
-i0 1jva
-i0 2jva
-i0 3jva
-i1 0jva
-i1 1jva
-i2 0jva
-i2 1jva
-i3 0jva
-i3 1jva
-i3 2jva
-i3 3jva
-i3 4jva
-i3 5jva
-i3 6jva
-i3 7jva
-i3 8jva
-i3 9jva
-i4 0jva
-i4 1jva
-i5 0jva
-i5 1jva
-i6 0jva
-i6 1jva
-i7 0jva
-i7 1jva
-i8 0jva
-i8 1jva
-i9 0jva
-i9 1jva
-i10 0jva
-i10 1jva
-i11 0jva
-i11 1jva
 12 vertices, 34 edges 
 0: 3 2 1 0 
 1: 0 1 
