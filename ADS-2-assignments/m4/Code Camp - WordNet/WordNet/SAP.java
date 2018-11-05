@@ -24,7 +24,7 @@ public class SAP {
     }
     /**
      * length.
-     *
+     * time complexity - O(1).
      * @param      v    integer variable.
      * @param      w    integer variable.
      *
@@ -39,7 +39,7 @@ public class SAP {
      *
      * @param      v  integer variable.
      * @param      w  integer variable.
-     *
+     * time complexity - O(V+E).
      * @return    ancestor.
      */
     public int ancestor(final int v, final int w) {
@@ -73,7 +73,7 @@ public class SAP {
      *
      * @param      v   integer variable.
      * @param      w   integer variable.
-     *
+     * time complexity - O(V+E).
      * @return ancestor.
      */
     public int ancestor(final Iterable<Integer> v, final Iterable<Integer> w) {

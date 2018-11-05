@@ -102,6 +102,7 @@ public class WordNet {
     }
     /**
      * check multiple roots method.
+     * time complexity - O(V).
      */
     public void checkMultipleRoots() {
         int roots = 0;
@@ -119,7 +120,7 @@ public class WordNet {
      * Determines if noun.
      *
      * @param      word  The word
-     *
+     * time complexity - O(1).
      * @return     True if noun, False otherwise.
      */
     public boolean isNoun(final String word) {
@@ -149,7 +150,7 @@ public class WordNet {
      *
      * @param      nounA  The noun a
      * @param      nounB  The noun b
-     *
+     * time complexity - O(1).
      * @return string.
      */
     public String sap(final String nounA, final String nounB) {

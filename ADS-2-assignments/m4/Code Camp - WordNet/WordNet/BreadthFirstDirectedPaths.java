@@ -24,6 +24,7 @@ public class BreadthFirstDirectedPaths {
      *  {@code s} and every other vertex in graph {@code G}.
      * @param g the digraph
      * @param s the source vertex
+     * time complexity - O(V+E).
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public BreadthFirstDirectedPaths(final Digraph g, final int s) {
@@ -42,6 +43,7 @@ public class BreadthFirstDirectedPaths {
      * any one of the source vertices in {@code sources}
      * to every other vertex in graph {@code G}.
      * @param g the digraph
+     * time complexity - O(V+E).
      * @param sources the source vertices
      * @throws IllegalArgumentException unless each vertex {@code v} in
      *         {@code sources} satisfies {@code 0 <= v < V}
@@ -59,7 +61,7 @@ public class BreadthFirstDirectedPaths {
     }
     /**
      * bfs method.
-     *
+     * time complexity - O(V+E).
      * @param      g    digraph.
      * @param      s    integer variable.
      */
@@ -82,7 +84,7 @@ public class BreadthFirstDirectedPaths {
     }
     /**
      * bfs method.
-     *
+     * time complexity - O(V+E).
      * @param      g  digraph.
      * @param      sources  The sources
      */
@@ -111,6 +113,7 @@ public class BreadthFirstDirectedPaths {
      * Is there a directed path from the
      * source {@code s} (or sources) to vertex {@code v}?
      * @param v the vertex
+     * time complexity - O(1).
      * @return {@code true} if there is a directed path, {@code false} otherwise
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
@@ -123,6 +126,7 @@ public class BreadthFirstDirectedPaths {
      * Returns the number of edges in a shortest path from the source {@code s}
      * (or sources) to vertex {@code v}?
      * @param v the vertex
+     * time complexity - O(V).
      * @return the number of edges in a shortest path
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
@@ -155,7 +159,7 @@ public class BreadthFirstDirectedPaths {
 
     /**
      * validate vertex method.
-     *
+     * time complexity - O(1).
      * @param      v   integer variable.
      */
     private void validateVertex(final int v) {
@@ -167,7 +171,7 @@ public class BreadthFirstDirectedPaths {
     }
     /**
      * validate vertices.
-     *
+     * time complexity - O(V).
      * @param      vertices  The vertices
      */
     private void validateVertices(final Iterable<Integer> vertices) {
