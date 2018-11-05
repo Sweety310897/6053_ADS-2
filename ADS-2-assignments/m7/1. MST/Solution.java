@@ -6,7 +6,7 @@ public class Solution {
 		int edges = Integer.parseInt(s.nextLine());
 		EdgeWeightedGraph ewgraph = new EdgeWeightedGraph(vertices);
 		//KruskalMST kruskal = new KruskalMST();
-		s.nextLine();
+		//s.nextLine();
 		while(s.hasNext()) {
 			String[] temp = s.nextLine().split(" ");
 			Edge edge = new Edge(Integer.parseInt(temp[0]),Integer.parseInt(temp[1]),

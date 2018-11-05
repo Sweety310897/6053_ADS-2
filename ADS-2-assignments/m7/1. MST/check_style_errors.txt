@@ -294,7 +294,7 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\Solution.java:3:33: Parameter args should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\Solution.java:10:22: 'while' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\Solution.java:10:22: 'while' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\Solution.java:12: Line is longer than 80 characters (found 97). [LineLength]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\Solution.java:12:72: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\Solution.java:17:42: ',' is not followed by whitespace. [WhitespaceAfter]
