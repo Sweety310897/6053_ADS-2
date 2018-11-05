@@ -208,7 +208,7 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\Solution.java:3:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\Solution.java:3:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\Solution.java:3:33: Parameter args should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\Solution.java:11:22: 'while' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\Solution.java:11:22: 'while' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\Solution.java:13: Line is longer than 80 characters (found 97). [LineLength]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\Solution.java:13:72: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\Solution.java:16: Line has trailing spaces. [RegexpSingleline]
@@ -221,18 +221,4 @@ Checkstyle ends with 14 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\UF.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\UF.java:22: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\UF.java:29: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\UF.java:40: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\UF.java:43: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\UF.java:63: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\UF.java:69: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\UF.java:77: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\UF.java:79: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\UF.java:90: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\UF.java:94:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\UF.java:97:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\UF.java:112: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 13 errors.
