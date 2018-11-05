@@ -138,12 +138,8 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\MinPQ.java:91: Line is longer than 80 characters (found 84). [LineLength]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\MinPQ.java:96:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\MinPQ.java:96:25: Parameter capacity should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\MinPQ.java:110:24: Parameter x should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\MinPQ.java:135: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\MinPQ.java:135:48: '4' is a magic number. [MagicNumber]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\MinPQ.java:244:9: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
-Checkstyle ends with 27 errors.
+Checkstyle ends with 23 errors.
 Starting audit...
 Audit done.
 Starting audit...

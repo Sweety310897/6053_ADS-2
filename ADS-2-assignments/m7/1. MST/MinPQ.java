@@ -107,7 +107,7 @@ public class MinPQ<Key> implements Iterable<Key> {
      *
      * @param  x the key to add to this priority queue
      */
-    public void insert(Key x) {
+    public void insert(final Key x) {
         // double size of array if necessary
         if (n == pq.length - 1) {
             resize(2 * pq.length);
@@ -127,12 +127,15 @@ public class MinPQ<Key> implements Iterable<Key> {
         if (isEmpty()) {
             throw new NoSuchElementException("Priority queue underflow");
         }
+        final int four = 4;
         Key min = pq[1];
         exch(1, n--);
         sink(1);
         pq[n + 1] = null;
         // to avoid loiterig and help with garbage collection
-        if ((n > 0) && (n == (pq.length - 1) / 4)) resize(pq.length / 2);
+        if ((n > 0) && (n == (pq.length - 1) / four)) {
+            resize(pq.length / 2);
+        }
         assert isMinHeap();
         return min;
     }
@@ -239,8 +242,9 @@ public class MinPQ<Key> implements Iterable<Key> {
          * copy.
          */
         private MinPQ<Key> copy;
-        // add all items to copy of heap
-        // takes linear time since already in heap order so no keys move
+        /**
+         * Constructs the object.
+         */
         HeapIterator() {
             if (comparator == null) {
                 copy = new MinPQ<Key>(size());
