@@ -22,7 +22,6 @@ public class MinPQ<Key> implements Iterable<Key> {
     public MinPQ() {
         this(1);
     }
-
     /**
      * Initializes an empty priority queue with the given initial capacity,
      * using the given comparator.
@@ -30,7 +29,7 @@ public class MinPQ<Key> implements Iterable<Key> {
      * @param  initCapacity the initial capacity of this priority queue
      * @param  comparator the order in which to compare the keys
      */
-    public MinPQ(int initCapacity, Comparator<Key> comparator) {
+    public MinPQ(final int initCapacity, final Comparator<Key> comparator) {
         this.comparator = comparator;
         pq = (Key[]) new Object[initCapacity + 1];
         n = 0;
