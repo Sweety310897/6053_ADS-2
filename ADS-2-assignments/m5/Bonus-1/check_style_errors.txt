@@ -31,11 +31,9 @@ Starting audit...
 Audit done.
 Checkstyle ends with 27 errors.
 Starting audit...
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m5\Bonus-1\Graph.java:17:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m5\Bonus-1\Graph.java:112: Expected @return tag. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m5\Bonus-1\Graph.java:114:16: Name 'NEWLINE' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m5\Bonus-1\Graph.java:142:5: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m5\Bonus-1\Graph.java:153: Expected @return tag. [JavadocMethod]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m5\Bonus-1\Graph.java:153:47: Expected @param tag for 'v'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 4 errors.
+Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.

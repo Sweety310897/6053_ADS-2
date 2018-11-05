@@ -14,6 +14,9 @@ class Graph {
      * array of bag type.
      */
     private Bag<Integer>[] adj;
+    /**
+     * marked.
+     */
     private boolean[] marked;
     /**
      * Constructs the object.
@@ -109,16 +112,21 @@ class Graph {
     /**
      * Return a string representation of the graph.
      */
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         StringBuilder s = new StringBuilder();
-        String NEWLINE = System.getProperty("line.separator");
-        s.append(vertices + " vertices, " + edges + " edges " + NEWLINE);
+        String temp = System.getProperty("line.separator");
+        s.append(vertices + " vertices, " + edges + " edges " + temp);
         for (int v = 0; v < vertices; v++) {
             s.append(v + ": ");
             for (int w : adj[v]) {
                 s.append(w + " ");
             }
-            s.append(NEWLINE);
+            s.append(temp);
         }
         return s.toString();
     }
@@ -139,6 +147,9 @@ class Graph {
     }
     // does this graph have two parallel edges?
     // side effect: initialize cycle to be two parallel edges
+    /**
+     * hasparallel method.
+     */
     public boolean hasParallelEdges(final int v) {
         marked = new boolean[vertex()];
         for (int w : adj(v)) {
