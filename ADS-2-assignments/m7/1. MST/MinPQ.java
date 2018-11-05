@@ -52,13 +52,15 @@ public class MinPQ<Key> implements Iterable<Key> {
      *
      * @param  keys the array of keys
      */
-    public MinPQ(Key[] keys) {
+    public MinPQ(final Key[] keys) {
         n = keys.length;
         pq = (Key[]) new Object[keys.length + 1];
-        for (int i = 0; i < n; i++)
-            pq[i+1] = keys[i];
-        for (int k = n/2; k >= 1; k--)
+        for (int i = 0; i < n; i++) {
+            pq[i + 1] = keys[i];
+        }
+        for (int k = n / 2; k >= 1; k--) {
             sink(k);
+        }
         assert isMinHeap();
     }
 
@@ -88,12 +90,17 @@ public class MinPQ<Key> implements Iterable<Key> {
      * @throws NoSuchElementException if this priority queue is empty
      */
     public Key min() {
-        if (isEmpty()) throw new NoSuchElementException("Priority queue underflow");
+        if (isEmpty()) {
+            throw new NoSuchElementException("Priority queue underflow");
+        }
         return pq[1];
     }
-
-    // helper function to double the size of the heap array
-    private void resize(int capacity) {
+    /**
+     * resize.
+     *
+     * @param      capacity  The capacity
+     */
+    private void resize(final int capacity) {
         assert capacity > n;
         Key[] temp = (Key[]) new Object[capacity];
         for (int i = 1; i <= n; i++) {
