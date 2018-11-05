@@ -31,9 +31,8 @@ Starting audit...
 Audit done.
 Checkstyle ends with 27 errors.
 Starting audit...
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m5\Bonus-1\Graph.java:153: Expected @return tag. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m5\Bonus-1\Graph.java:153:47: Expected @param tag for 'v'. [JavadocMethod]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m5\Bonus-1\Graph.java:159: Expected @return tag. [JavadocMethod]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.

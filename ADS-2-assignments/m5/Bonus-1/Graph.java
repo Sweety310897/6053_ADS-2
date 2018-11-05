@@ -117,6 +117,11 @@ class Graph {
      *
      * @return     String representation of the object.
      */
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         StringBuilder s = new StringBuilder();
         String temp = System.getProperty("line.separator");
@@ -149,6 +154,7 @@ class Graph {
     // side effect: initialize cycle to be two parallel edges
     /**
      * hasparallel method.
+     * @param      v     { parameter_description }
      */
     public boolean hasParallelEdges(final int v) {
         marked = new boolean[vertex()];
