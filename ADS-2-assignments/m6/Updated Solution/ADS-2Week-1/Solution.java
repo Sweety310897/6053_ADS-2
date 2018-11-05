@@ -20,7 +20,7 @@ class PageRank {
 	}
 	public double getPR(int v) {
 		double pr = 1/v;
-		for(int i = 0; i < 1000; i++) {
+		for(int i = 1; i < 1000; i++) {
 			pr = pr/graph.outdegree(v);
 		}
 		//System.out.println(pr);
