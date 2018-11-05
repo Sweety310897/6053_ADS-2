@@ -8,7 +8,7 @@ class PageRank {
 	Digraph reverse;
 	PageRank(Digraph d) {
 		this.d = d;
-		value = (d.V());
+		value = (d.V());//8
 		reverse = d.reverse();
 		System.out.println(d);
 	}
@@ -30,10 +30,10 @@ class PageRank {
 		}
 		//System.out.println(Arrays.toString(new_prs));
 		for(int iteration = 0; iteration < 1000; iteration++) {
-			for(int i = 0; i < prs.length; i++) {
-				prs[i] = new_prs[i];
-			}
-			System.out.println("1stfor" + Arrays.toString(prs));
+			// for(int i = 0; i < prs.length; i++) {
+			// 	prs[i] = new_prs[i];
+			// }
+			//System.out.println("1stfor" + Arrays.toString(prs));
 			for(int j = 0; j < d.V(); j++) {
 				Iterable<Integer> it = reverse.adj(j);
 				double cal = 0.0;
