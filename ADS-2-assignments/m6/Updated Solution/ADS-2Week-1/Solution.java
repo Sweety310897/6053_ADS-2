@@ -3,37 +3,42 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.ArrayList;
 class PageRank {
-	Digraph graph;
+	Digraph d;
+	double value;
 	Digraph reverse;
-	double tempval;
-	PageRank(Digraph graph) {
-		this.graph = graph;
-		//this.reverse = graph.reverse();
-		System.out.println(graph);
-		reverse = graph.reverse();
-		for(int i = 0; i < graph.V()-1; i++) {
-			// for(int k: adj(i)) {
-			// 	getPR(k);
-			// }
-			getPR(graph.V());
-		}
-
+	PageRank(Digraph d) {
+		this.d = d;
+		value = (d.V());
+		reverse = d.reverse();
+		System.out.println(d);
 	}
-	public double getPR(int v) {
-		double pr = 1/v;
-		for(int i = 1; i < 1000; i++) {
-			pr = pr/graph.outdegree(v);
-		}
-		//System.out.println(pr);
-		return pr;
+	public double getPR(int x) {
+		double pr = 1.0/value;
+		return helperPr(pr,x);
 	}
-	public String toString() {
-		String str = "";
-		//System.out.println("hi");
-		for(int i = 0; i < graph.V()-1; i++) {
-			str = str + graph.V() + "-" + getPR(graph.V()) + "\n";
+	public double helperPr(double pr, int x) {
+		double[] prs = new double[d.V()];
+		for(int i = 0; i < prs.length; i++) {
+			prs[i] = pr;
 		}
-		return str;
+		double[] new_prs = new double[d.V()];
+		for(int i = 0; i < prs.length; i++) {
+			new_prs[i] = prs[i];
+		}
+		for(int iteration = 0; iteration < 1000; iteration++) {
+			for(int i = 0; i < prs.length; i++) {
+				prs[i] = new_prs[i];
+			}
+			for(int j = 0; j < d.V(); j++) {
+				Iterable<Integer> it = reverse.adj(j);
+				double cal = 0.0;
+				for(Integer i : it) {
+					cal += prs[i]/d.outdegree(i);
+				}
+				new_prs[j] = cal;
+			}
+		}
+		return new_prs[x];
 	}
 }
 // class WebSearch {
