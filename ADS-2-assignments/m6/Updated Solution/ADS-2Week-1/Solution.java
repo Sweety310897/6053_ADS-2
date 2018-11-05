@@ -18,14 +18,14 @@ class PageRank {
 	}
 	public double helperPr(double pr, int x) {
 		double[] prs = new double[d.V()];
-		for(int i = 0; i < prs.length; i++) {
-			prs[i] = pr;
-			//System.out.println(pr);
-		}
+		// for(int i = 0; i < prs.length; i++) {
+		// 	prs[i] = pr;
+		// 	//System.out.println(pr);
+		// }
 		double[] new_prs = new double[d.V()];
 		for(int i = 0; i < prs.length; i++) {
 			new_prs[i] = prs[i];
-			System.out.println(prs[i]);
+			//System.out.println(prs[i]);
 		}
 		for(int iteration = 0; iteration < 1000; iteration++) {
 			for(int i = 0; i < prs.length; i++) {
