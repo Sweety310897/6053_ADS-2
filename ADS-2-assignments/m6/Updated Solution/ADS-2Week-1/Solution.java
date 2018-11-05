@@ -4,12 +4,13 @@ import java.util.HashMap;
 import java.util.ArrayList;
 class PageRank {
 	Digraph graph;
-	//Digraph reverse;
+	Digraph reverse;
 	double tempval;
 	PageRank(Digraph graph) {
 		this.graph = graph;
 		//this.reverse = graph.reverse();
 		System.out.println(graph);
+		reverse = graph.reverse();
 		for(int i = 0; i < graph.V()-1; i++) {
 			// for(int k: adj(i)) {
 			// 	getPR(k);
