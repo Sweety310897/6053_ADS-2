@@ -32,18 +32,10 @@ Audit done.
 Checkstyle ends with 27 errors.
 Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m5\Bonus-1\Graph.java:17:5: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m5\Bonus-1\Graph.java:113: Expected @return tag. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m5\Bonus-1\Graph.java:115:16: Name 'NEWLINE' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m5\Bonus-1\Graph.java:127:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m5\Bonus-1\Graph.java:127:32: Parameter v should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m5\Bonus-1\Graph.java:137:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m5\Bonus-1\Graph.java:137:37: Parameter v should be final. [FinalParameters]
-Audit done.
-Checkstyle ends with 7 errors.
-Starting audit...
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m5\Bonus-1\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m5\Bonus-1\Solution.java:30: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m5\Bonus-1\Solution.java:51: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m5\Bonus-1\Solution.java:59: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m5\Bonus-1\Graph.java:112: Expected @return tag. [JavadocMethod]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m5\Bonus-1\Graph.java:114:16: Name 'NEWLINE' must match pattern '^[a-z][a-zA-Z0-9]*$'. [LocalVariableName]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m5\Bonus-1\Graph.java:142:5: Missing a Javadoc comment. [JavadocMethod]
 Audit done.
 Checkstyle ends with 4 errors.
+Starting audit...
+Audit done.

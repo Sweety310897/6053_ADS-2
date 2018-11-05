@@ -106,7 +106,6 @@ class Graph {
     public Bag[] list() {
         return adj;
     }
-
     /**
      * Return a string representation of the graph.
      */
@@ -123,8 +122,14 @@ class Graph {
         }
         return s.toString();
     }
-
-    public boolean hasSelfLoop(int v) {
+    /**
+     * Determines if it has self loop.
+     *
+     * @param      v     { parameter_description }
+     *
+     * @return     True if has self loop, False otherwise.
+     */
+    public boolean hasSelfLoop(final int v) {
         for (int w : adj(v)) {
             if (v == w) {
                 return true;
@@ -134,7 +139,7 @@ class Graph {
     }
     // does this graph have two parallel edges?
     // side effect: initialize cycle to be two parallel edges
-    public boolean hasParallelEdges(int v) {
+    public boolean hasParallelEdges(final int v) {
         marked = new boolean[vertex()];
         for (int w : adj(v)) {
             if (marked[w]) {
