@@ -11,7 +11,7 @@ public class Solution {
 		while(s.hasNext()) {
 			String[] temp = s.nextLine().split(" ");
 			Edge edge = new Edge(Integer.parseInt(temp[0]),Integer.parseInt(temp[1]),
-				Integer.parseInt(temp[2]));
+				Float.parseFloat(temp[2]));
 			ewgraph.addEdge(edge);
 		} 
 	}catch(Exception e) {

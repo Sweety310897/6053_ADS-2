@@ -6,22 +6,20 @@ Your Output:
 614708.00000
 ----------------------------------------
 
-########## Testcase 1: Failed ##########
+########## Testcase 1: Passed ##########
 Expected Output: 
 1.81000
 
 Your Output: 
-Exception occured in wile
-0.00000
+1.81000
 ----------------------------------------
 
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 10.46351
 
 Your Output: 
-Exception occured in wile
-0.00000
+10.46351
 ----------------------------------------
 
 ########## Testcase 3: Passed ##########
