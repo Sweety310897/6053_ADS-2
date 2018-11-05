@@ -94,5 +94,8 @@ public class Solution {
 			
 		}
 		PageRank pg = new PageRank(dg);
+		for(int i = 0; i < vertices; i++) {
+			System.out.println(i + " - " + pg.getPR(i));
+		}
 	}
 }
