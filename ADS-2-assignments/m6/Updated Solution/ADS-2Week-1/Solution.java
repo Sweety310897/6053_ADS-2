@@ -18,7 +18,7 @@ class PageRank {
 	}
 	public double helperPr(double pr, int x) {
 		double[] prs = new double[d.V()];
-		for(int i = 0; i < prs.length; i++) {
+		for(int i = 0; i < d.V(); i++) {
 			prs[i] = pr;
 			//System.out.println(pr);
 		}
