@@ -8,11 +8,13 @@ import java.util.Arrays;
 class PageRank {
 	Digraph dg;
 	double pr;
+	Digraph rev;
 	PageRank(Digraph g) {
 		dg = g;
+		System.out.println(dg.reverse());
 		System.out.println(dg.V() + "im cou");
 		pr = (1/dg.V());
-		System.out.println(pr);
+		//System.out.println(pr);
 		//dg.matRep();
 		//System.out.println("hel");
 		//return false;
@@ -100,7 +102,7 @@ public class Solution {
             graph.addEdge(Integer.parseInt(n2[0]),//0,5
                 Integer.parseInt(n2[1]));
         }
-        System.out.println(graph.toString());
+        //System.out.println(graph.toString());
     	//graph.matRep(vertices);
     	//System.out.println("hi");
 		// iterate count of vertices times 
