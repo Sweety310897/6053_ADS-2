@@ -124,8 +124,8 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\MinPQ.java:33:18: Parameter initCapacity should be final. [FinalParameters]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\MinPQ.java:33:36: Parameter comparator should be final. [FinalParameters]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\MinPQ.java:33:52: 'comparator' hides a field. [HiddenField]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\MinPQ.java:44:18: Parameter comparator should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\MinPQ.java:44:34: 'comparator' hides a field. [HiddenField]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\MinPQ.java:42:8: Unused @param tag for 'comparator'. [JavadocMethod]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\MinPQ.java:44:40: Expected @param tag for 'comparator1'. [JavadocMethod]
 Audit done.
 Checkstyle ends with 11 errors.
 Starting audit...

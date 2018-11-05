@@ -39,10 +39,10 @@ public class MinPQ<Key> implements Iterable<Key> {
     /**
      * Initializes an empty priority queue using the given comparator.
      *
-     * @param  comparator the order in which to compare the keys
+     * @param  comparator1 the order in which to compare the keys
      */
-    public MinPQ(Comparator<Key> comparator) {
-        this(1, comparator);
+    public MinPQ(final Comparator<Key> comparator1) {
+        this(1, comparator1);
     }
 
     /**
