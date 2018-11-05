@@ -179,14 +179,9 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\MinPQ.java:207: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\MinPQ.java:226:9: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\MinPQ.java:229:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\MinPQ.java:229:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\MinPQ.java:230: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\MinPQ.java:231: 'else' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\MinPQ.java:232: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\MinPQ.java:240: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\MinPQ.java:246: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\MinPQ.java:232:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
 Audit done.
-Checkstyle ends with 70 errors.
+Checkstyle ends with 65 errors.
 Starting audit...
 Audit done.
 Starting audit...

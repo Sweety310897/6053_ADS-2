@@ -226,24 +226,29 @@ public class MinPQ<Key> implements Iterable<Key> {
         private MinPQ<Key> copy;
         // add all items to copy of heap
         // takes linear time since already in heap order so no keys move
-        public HeapIterator() {
-            if (comparator == null) copy = new MinPQ<Key>(size());
-            else                    copy = new MinPQ<Key>(size(), comparator);
-            for (int i = 1; i <= n; i++)
+        HeapIterator() {
+            if (comparator == null) {
+                copy = new MinPQ<Key>(size());
+            }
+            else {
+                copy = new MinPQ<Key>(size(), comparator);
+            }
+            for (int i = 1; i <= n; i++) {
                 copy.insert(pq[i]);
+            }
         }
         /**
          * Determines if it has next.
          *
          * @return     True if has next, False otherwise.
          */
-        public boolean hasNext() { 
+        public boolean hasNext() {
             return !copy.isEmpty();
         }
         /**
          * remove.
          */
-        public void remove() { 
+        public void remove() {
             throw new UnsupportedOperationException();
         }
         /**
