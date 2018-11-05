@@ -1,9 +1,27 @@
+/**
+ * Class for cc.
+ */
 public class CC {
-    private boolean[] marked;   // marked[v] = has vertex v been marked?
-    private int[] id;           // id[v] = id of connected component containing v
-    private int[] size;         // size[id] = number of vertices in given component
-    private int count;          // number of connected components
-
+    /**
+     * marked.
+     */
+    private boolean[] marked;
+    // marked[v] = has vertex v been marked?
+    /**
+     * id.
+     */
+    private int[] id;
+    // id[v] = id of connected component containing v
+    /**
+     * size.
+     */
+    private int[] size;
+    // size[id] = number of vertices in given component
+    /**
+     * count.
+     */
+    private int count;
+    // number of connected components
     /**
      * Computes the connected components of the undirected graph {@code G}.
      *
@@ -37,7 +55,6 @@ public class CC {
     //         }
     //     }
     // }
-
     // depth-first search for a Graph
     private void dfs(Graph G, int v) {
         marked[v] = true;

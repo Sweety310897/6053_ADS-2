@@ -1,10 +1,20 @@
-import java.util.*;
+import java.util.Scanner;
+/**
+ * Solution.
+ */
 final class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
         //Empty constructor.
     }
-
-    public static void main(String[] args) {
+    /**
+     * main.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String[] val = sc.nextLine().split(" ");
         int vertex = Integer.parseInt(val[0]);
@@ -45,7 +55,6 @@ final class Solution {
         // System.out.println(count);
         //System.out.println(finalcnt);
         System.out.println(count + finalcnt);
-
         }
         
     }
