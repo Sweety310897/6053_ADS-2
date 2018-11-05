@@ -48,7 +48,8 @@ public class MinPQ<Key> implements Iterable<Key> {
     /**
      * Initializes a priority queue from the array of keys.
      * <p>
-     * Takes time proportional to the number of keys, using sink-based heap construction.
+     * Takes time proportional to the number of keys,
+     * using sink-based heap construction.
      *
      * @param  keys the array of keys
      */
