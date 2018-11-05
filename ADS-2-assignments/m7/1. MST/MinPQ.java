@@ -1,17 +1,33 @@
 import java.util.Comparator;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
+/**
+ * Class for minimum pq.
+ *
+ * @param      <Key>  The key
+ */
 public class MinPQ<Key> implements Iterable<Key> {
-    private Key[] pq;                    // store items at indices 1 to n
-    private int n;                       // number of items on priority queue
-    private Comparator<Key> comparator;  // optional comparator
-
+    /**
+     * pq.
+     */
+    private Key[] pq;
+    // store items at indices 1 to n
+    /**
+     * n.
+     */
+    private int n;
+    // number of items on priority queue
+    /**
+     * comparator.
+     */
+    private Comparator<Key> comparator;
+    // optional comparator
     /**
      * Initializes an empty priority queue with the given initial capacity.
      *
      * @param  initCapacity the initial capacity of this priority queue
      */
-    public MinPQ(int initCapacity) {
+    public MinPQ(final int initCapacity) {
         pq = (Key[]) new Object[initCapacity + 1];
         n = 0;
     }
