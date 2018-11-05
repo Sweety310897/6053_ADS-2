@@ -36,6 +36,7 @@ class PageRank {
 			//System.out.println("1stfor" + Arrays.toString(prs));
 			for(int j = 0; j < d.V(); j++) {
 				Iterable<Integer> it = reverse.adj(j);
+				System.out.println(it);
 				double cal = 0.0;
 				for(Integer i : it) {
 					cal += prs[i]/d.outdegree(i);
