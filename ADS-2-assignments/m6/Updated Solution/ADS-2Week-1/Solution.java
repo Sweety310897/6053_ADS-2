@@ -26,7 +26,7 @@ public class Solution {
 				}
 			}
 			else {
-					for(int j = 0; j < temp.length; j++) {
+					for(int j = 1; j < temp.length; j++) {
 						//System.out.println(temp.length + "templen");
 						//System.out.println("i" + i +" " +j +"jva");
 						//System.out.println(temp[0] + "temp0" + " " + temp[j] + "tempj");
