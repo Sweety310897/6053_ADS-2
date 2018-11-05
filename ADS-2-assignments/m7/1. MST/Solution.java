@@ -21,15 +21,11 @@ public class Solution {
 		EdgeWeightedGraph ewgraph = new EdgeWeightedGraph(vertices);
 		//KruskalMST kruskal = new KruskalMST();
 		//s.nextLine();
-		try {
 		while(s.hasNext()) {
 			String[] temp = s.nextLine().split(" ");
 			Edge edge = new Edge(Integer.parseInt(temp[0]),Integer.parseInt(temp[1]),
 				Float.parseFloat(temp[2]));
 			ewgraph.addEdge(edge);
-		} 
-	}catch(Exception e) {
-			System.out.println("Exception occured in wile");
 		}
 		LazyPrimMST prim = new LazyPrimMST(ewgraph);
 		System.out.format("%.5f",prim.weight());
