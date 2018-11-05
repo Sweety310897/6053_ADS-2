@@ -23,11 +23,11 @@ class PageRank {
 			//System.out.println(pr);
 		}
 		//System.out.println(Arrays.toString(prs));
-		double[] new_prs = new double[d.V()];
-		for(int i = 0; i < prs.length; i++) {
-			new_prs[i] = prs[i];
-			//System.out.println(prs[i]);
-		}
+		// double[] new_prs = new double[d.V()];
+		// for(int i = 0; i < prs.length; i++) {
+		// 	new_prs[i] = prs[i];
+		// 	//System.out.println(prs[i]);
+		// }
 		//System.out.println(Arrays.toString(new_prs));
 		for(int iteration = 0; iteration < 1000; iteration++) {
 			// for(int i = 0; i < prs.length; i++) {
@@ -36,15 +36,15 @@ class PageRank {
 			//System.out.println("1stfor" + Arrays.toString(prs));
 			for(int j = 0; j < d.V(); j++) {
 				Iterable<Integer> it = reverse.adj(j);
-				System.out.println(it);
+				//System.out.println(it);
 				double cal = 0.0;
 				for(Integer i : it) {
 					cal += prs[i]/d.outdegree(i);
 				}
-				new_prs[j] = cal;
+				prs[j] = cal;
 			}
 		}
-		return new_prs[x];
+		return prs[x];
 	}
 }
 // class WebSearch {
