@@ -1,5 +1,7 @@
 import java.util.Scanner;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.ArrayList;
 class PageRank {
 	Digraph graph;
 	//Digraph reverse;
@@ -8,9 +10,59 @@ class PageRank {
 		this.graph = graph;
 		//this.reverse = graph.reverse();
 		System.out.println(graph);
+		for(int i = 0; i < graph.V()-1; i++) {
+			// for(int k: adj(i)) {
+			// 	getPR(k);
+			// }
+			getPR(graph.V());
+		}
 
 	}
+	public double getPR(int v) {
+		double pr = 1/v;
+		for(int i = 0; i < 1000; i++) {
+			pr = pr/graph.outdegree(v);
+		}
+		//System.out.println(pr);
+		return pr;
+	}
+	public String toString() {
+		String str = "";
+		//System.out.println("hi");
+		for(int i = 0; i < graph.V()-1; i++) {
+			str = str + graph.V() + "-" + getPR(graph.V()) + "\n";
+		}
+		return str;
+	}
 }
+// class WebSearch {
+// 	HashMap<String, ArrayList<Integer>> h = new HashMap<String, ArrayList<Integer>>();
+// 	WebSearch(PageRank rank, String filename) throws Exception {
+// 		try {
+// 		File obj = new File("WebContent/" + filename);
+//         Scanner fOne = new Scanner(obj);
+//         while(fOne.hasNextLine()) {
+//         	String[] tokens = fOne.nextLine().split(":");
+//         	String[] words = tokens[1].split(" ");
+//             for (int i = 0; i < words.length; i++) {
+//                 if (h.containsKey(words[i])) {
+//                         ArrayList<Integer> arraylist = h.get(words[i]);
+//                         arraylist.add(Integer.parseInt(tokens[0]));
+//                 } else {
+//                         ArrayList<Integer> arraylist = new ArrayList<Integer>();
+//                         arraylist.add(Integer.parseInt(tokens[0]));
+//                         h.put(words[i], arraylist);
+//                  }
+//             }
+
+//         }
+//     }catch(Exception e) {
+//     	System.out.println("Exception");
+//     }
+// 	}
+// }
+
+
 public class Solution {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
