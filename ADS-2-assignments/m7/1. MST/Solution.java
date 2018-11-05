@@ -13,6 +13,6 @@ public class Solution {
 			ewgraph.addEdge(edge);
 		}
 		LazyPrimMST prim = new LazyPrimMST(ewgraph);
-		System.out.println(prim.weight());
+		System.out.format("%.5f",prim.weight());
 	}
 }
