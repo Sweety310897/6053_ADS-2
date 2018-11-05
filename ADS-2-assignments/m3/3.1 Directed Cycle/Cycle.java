@@ -26,7 +26,7 @@ public class Cycle {
      */
     /**
      * Constructs the object.
-     *
+     * time complexity - O(V+E).
      * @param      gph     { parameter_description }
      */
     public Cycle(final Digraph gph) {
@@ -41,7 +41,7 @@ public class Cycle {
     }
     /**
      * dfs.
-     *
+     * time complexity - O(V+E).
      * @param      gph1     { parameter_description }
      * @param      v     { parameter_description }
      */
@@ -68,6 +68,7 @@ public class Cycle {
     /**
      * Does the digraph have a directed cycle?
      * @return true or false
+     * time complexity - O(1).
      */
     public boolean hasCycle() {
         return cycle != null;

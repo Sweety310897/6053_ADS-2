@@ -93,7 +93,7 @@ public class Digraph {
 
     /**
      * Adds the directed edge v→w to this digraph.
-     * time complexity - O(n).
+     * time complexity - O(1).
      * @param      v     the tail vertex
      * @param      w     the head vertex
      */
@@ -121,7 +121,7 @@ public class Digraph {
     /**
      * Returns the number of directed edges incident from vertex.
      * This is known as the outdegree of vertex.
-     *
+     * time complexity - O(V).
      * @param  v the vertex
      * @return the outdegree of vertex.
      */
@@ -133,7 +133,7 @@ public class Digraph {
     /**
      * Returns the number of directed edges incident to vertex.
      * This is known as the indegree of vertex.
-     * time complexity
+     * time complexity - O(V).
      * @param  v the vertex
      * @return the indegree of vertex
      */
@@ -144,7 +144,7 @@ public class Digraph {
 
     /**
      * Returns the reverse of the digraph.
-     *
+     * time complexity - O(V+E).
      * @return the reverse of the digraph
      */
     public Digraph reverse() {
@@ -159,7 +159,7 @@ public class Digraph {
 
     /**
      * Returns a string representation of the graph.
-     *
+     * time complexity - O(n^2).
      * @return the number of vertices <em>V</em>,
      *  followed by the number of edges,
      *  followed by the adjacency lists
