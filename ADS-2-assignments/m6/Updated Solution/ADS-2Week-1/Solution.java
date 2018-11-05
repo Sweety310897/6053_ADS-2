@@ -2,11 +2,11 @@ import java.util.Scanner;
 import java.util.Arrays;
 class PageRank {
 	Digraph graph;
-	Digraph reverse;
+	//Digraph reverse;
 	double tempval;
 	PageRank(Digraph graph) {
 		this.graph = graph;
-		this.reverse = graph.reverse();
+		//this.reverse = graph.reverse();
 		System.out.println(graph);
 
 	}
