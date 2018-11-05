@@ -116,7 +116,6 @@ public class MinPQ<Key> implements Iterable<Key> {
         swim(n);
         assert isMinHeap();
     }
-
     /**
      * Removes and returns a smallest key on this priority queue.
      *
@@ -133,19 +132,22 @@ public class MinPQ<Key> implements Iterable<Key> {
         assert isMinHeap();
         return min;
     }
-
-
-   /***************************************************************************
-    * Helper functions to restore the heap invariant.
-    ***************************************************************************/
-
+    /**
+     * swim.
+     *
+     * @param      k     { parameter_description }
+     */
     private void swim(int k) {
         while (k > 1 && greater(k/2, k)) {
             exch(k, k/2);
             k = k/2;
         }
     }
-
+    /**
+     * sink.
+     *
+     * @param      k     { parameter_description }
+     */
     private void sink(int k) {
         while (2*k <= n) {
             int j = 2*k;
@@ -155,10 +157,14 @@ public class MinPQ<Key> implements Iterable<Key> {
             k = j;
         }
     }
-
-   /***************************************************************************
-    * Helper functions for compares and swaps.
-    ***************************************************************************/
+    /**
+     * { function_description }
+     *
+     * @param      i     { parameter_description }
+     * @param      j     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
     private boolean greater(int i, int j) {
         if (comparator == null) {
             return ((Comparable<Key>) pq[i]).compareTo(pq[j]) > 0;
@@ -167,19 +173,32 @@ public class MinPQ<Key> implements Iterable<Key> {
             return comparator.compare(pq[i], pq[j]) > 0;
         }
     }
-
+    /**
+     * exch.
+     *
+     * @param      i     { parameter_description }
+     * @param      j     { parameter_description }
+     */
     private void exch(int i, int j) {
         Key swap = pq[i];
         pq[i] = pq[j];
         pq[j] = swap;
     }
-
-    // is pq[1..N] a min heap?
+    /**
+     * Determines if minimum heap.
+     *
+     * @return     True if minimum heap, False otherwise.
+     */
     private boolean isMinHeap() {
         return isMinHeap(1);
     }
-
-    // is subtree of pq[1..n] rooted at k a min heap?
+    /**
+     * Determines if minimum heap.
+     *
+     * @param      k     { parameter_description }
+     *
+     * @return     True if minimum heap, False otherwise.
+     */
     private boolean isMinHeap(int k) {
         if (k > n) return true;
         int left = 2*k;
@@ -188,8 +207,6 @@ public class MinPQ<Key> implements Iterable<Key> {
         if (right <= n && greater(k, right)) return false;
         return isMinHeap(left) && isMinHeap(right);
     }
-
-
     /**
      * Returns an iterator that iterates over the keys on this priority queue
      * in ascending order.
@@ -201,11 +218,12 @@ public class MinPQ<Key> implements Iterable<Key> {
     public Iterator<Key> iterator() {
         return new HeapIterator();
     }
-
+    /**
+     * Class for heap iterator.
+     */
     private class HeapIterator implements Iterator<Key> {
         // create a new pq
         private MinPQ<Key> copy;
-
         // add all items to copy of heap
         // takes linear time since already in heap order so no keys move
         public HeapIterator() {
@@ -214,29 +232,30 @@ public class MinPQ<Key> implements Iterable<Key> {
             for (int i = 1; i <= n; i++)
                 copy.insert(pq[i]);
         }
-
-        public boolean hasNext()  { return !copy.isEmpty();                     }
-        public void remove()      { throw new UnsupportedOperationException();  }
-
+        /**
+         * Determines if it has next.
+         *
+         * @return     True if has next, False otherwise.
+         */
+        public boolean hasNext() { 
+            return !copy.isEmpty();
+        }
+        /**
+         * remove.
+         */
+        public void remove() { 
+            throw new UnsupportedOperationException();
+        }
+        /**
+         * key.
+         *
+         * @return     { description_of_the_return_value }
+         */
         public Key next() {
-            if (!hasNext()) throw new NoSuchElementException();
+            if (!hasNext()) {
+                throw new NoSuchElementException();
+            }
             return copy.delMin();
         }
     }
-
-    /**
-     * Unit tests the {@code MinPQ} data type.
-     *
-     * @param args the command-line arguments
-     */
-    // public static void main(String[] args) {
-    //     MinPQ<String> pq = new MinPQ<String>();
-    //     while (!StdIn.isEmpty()) {
-    //         String item = StdIn.readString();
-    //         if (!item.equals("-")) pq.insert(item);
-    //         else if (!pq.isEmpty()) StdOut.print(pq.delMin() + " ");
-    //     }
-    //     StdOut.println("(" + pq.size() + " left on pq)");
-    // }
-
 }
