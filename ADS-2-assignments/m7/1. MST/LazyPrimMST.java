@@ -1,9 +1,26 @@
+/**
+ * Class for lazy primitive mst.
+ */
 public class LazyPrimMST {
+    /**
+     * { var_description }
+     */
     private static final double FLOATING_POINT_EPSILON = 1E-12;
-
+    /**
+     * { var_description }
+     */
     private double weight;       // total weight of MST
+    /**
+     * { var_description }
+     */
     private Queue<Edge> mst;     // edges in the MST
+    /**
+     * { var_description }
+     */
     private boolean[] marked;    // marked[v] = true iff v on tree
+    /**
+     * { var_description }
+     */
     private MinPQ<Edge> pq;      // edges with one endpoint in tree
 
     /**
