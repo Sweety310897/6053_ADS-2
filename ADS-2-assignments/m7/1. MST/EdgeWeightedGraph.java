@@ -26,18 +26,18 @@ public class EdgeWeightedGraph {
      * Initializes an empty edge-weighted graph with {@code V}
      * vertices and 0 edges.
      *
-     * @param  vertices the number of vertices
+     * @param  vertices1 the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
-    public EdgeWeightedGraph(final int vertices) {
-        if (vertices < 0) {
+    public EdgeWeightedGraph(final int vertices1) {
+        if (vertices1 < 0) {
             throw new IllegalArgumentException(
                 "Number of vertices must be nonnegative");
         }
-        this.vertices = vertices;
+        this.vertices = vertices1;
         this.edges = 0;
         adj = (Bag<Edge>[]) new Bag[vertices];
-        for (int v = 0; v < vertices; v++) {
+        for (int v = 0; v < vertices1; v++) {
             adj[v] = new Bag<Edge>();
         }
     }
@@ -47,9 +47,9 @@ public class EdgeWeightedGraph {
      * @param  g1 the edge-weighted graph to copy
      */
     public EdgeWeightedGraph(final EdgeWeightedGraph g1) {
-        this(g1.V());
-        this.edges = g1.E();
-        for (int v = 0; v < g1.V(); v++) {
+        this(g1.vertices());
+        this.edges = g1.edges1();
+        for (int v = 0; v < g1.vertices(); v++) {
             // reverse so that adjacency list is in same order as original
             Stack<Edge> reverse = new Stack<Edge>();
             for (Edge e : g1.adj[v]) {
@@ -65,7 +65,7 @@ public class EdgeWeightedGraph {
      *
      * @return the number of vertices in this edge-weighted graph
      */
-    public int V() {
+    public int vertices() {
         return vertices;
     }
     /**
@@ -73,7 +73,7 @@ public class EdgeWeightedGraph {
      *
      * @return the number of edges in this edge-weighted graph
      */
-    public int E() {
+    public int edges1() {
         return edges;
     }
     /**
