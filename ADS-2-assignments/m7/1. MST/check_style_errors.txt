@@ -75,21 +75,10 @@ Audit done.
 Checkstyle ends with 40 errors.
 Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\LazyPrimMST.java:5: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\LazyPrimMST.java:9: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\LazyPrimMST.java:13: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\LazyPrimMST.java:17: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\LazyPrimMST.java:21: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\LazyPrimMST.java:30:24: Parameter G should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\LazyPrimMST.java:30:42: Name 'G' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\LazyPrimMST.java:34: 'for' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\LazyPrimMST.java:35: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\LazyPrimMST.java:44:8: Unused @param tag for 'G'. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\LazyPrimMST.java:47:47: Expected @param tag for 'g3'. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\LazyPrimMST.java:56: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\LazyPrimMST.java:61: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\LazyPrimMST.java:63: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\LazyPrimMST.java:31:8: Unused @param tag for 'G'. [JavadocMethod]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\LazyPrimMST.java:33:48: Expected @param tag for 'g5'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 14 errors.
+Checkstyle ends with 3 errors.
 Starting audit...
 Audit done.
 Starting audit...

@@ -7,41 +7,48 @@ public class LazyPrimMST {
      */
     private static final double FLOATING_POINT_EPSILON = 1E-12;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private double weight;       // total weight of MST
     /**
-     * { var_description }
+     * { var_description }.
      */
-    private Queue<Edge> mst;     // edges in the MST
+    private Queue<Edge> mst;
+    // edges in the MST.
     /**
-     * { var_description }
+     * { var_description }.
      */
-    private boolean[] marked;    // marked[v] = true iff v on tree
+    private boolean[] marked;
+    // marked[v] = true iff v on tree.
     /**
-     * { var_description }
+     * { var_description }.
      */
-    private MinPQ<Edge> pq;      // edges with one endpoint in tree
+    private MinPQ<Edge> pq;
+    // edges with one endpoint in tree.
 
     /**
      * Compute a minimum spanning tree (or forest) of an edge-weighted graph.
      * @param G the edge-weighted graph
      */
-    public LazyPrimMST(EdgeWeightedGraph G) {
+    public LazyPrimMST(final EdgeWeightedGraph g5) {
         mst = new Queue<Edge>();
         pq = new MinPQ<Edge>();
-        marked = new boolean[G.V()];
-        for (int v = 0; v < G.V(); v++)     // run Prim from all vertices to
-            if (!marked[v]) prim(G, v);     // get a minimum spanning forest
-
+        marked = new boolean[g5.V()];
+        for (int v = 0; v < g5.V(); v++) {
+        // run Prim from all vertices to
+            if (!marked[v]) {
+                prim(g5, v);
+            }
+            // get a minimum spanning forest
+        }
         // check optimality conditions
-        assert check(G);
+        assert check(g5);
     }
     // run Prim's algorithm.
     /**
      * prim.
      *
-     * @param      G     { parameter_description }
+     * @param      g3     { parameter_description }
      * @param      s     { parameter_description }
      */
     private void prim(final EdgeWeightedGraph g3, final int s) {
@@ -53,14 +60,20 @@ public class LazyPrimMST {
             int v = e.either(), w = e.other(v);
             // two endpoints
             assert marked[v] || marked[w];
-            if (marked[v] && marked[w]) continue;
+            if (marked[v] && marked[w]) {
+                continue;
+            }
             // lazy, both v and w already scanned
             mst.enqueue(e);
             // add e to MST
             weight += e.weight();
-            if (!marked[v]) scan(g3, v);
+            if (!marked[v]) {
+                scan(g3, v);
+            }
             // v becomes part of tree
-            if (!marked[w]) scan(g3, w);
+            if (!marked[w]) {
+                scan(g3, w);
+            }
             // w becomes part of tree
         }
     }
