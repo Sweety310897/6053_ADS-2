@@ -77,9 +77,15 @@ public class LazyPrimMST {
     public double weight() {
         return weight;
     }
-
     // check optimality conditions (takes time proportional to E V lg* V)
-    private boolean check(EdgeWeightedGraph g1) {
+    /**
+     * check.
+     *
+     * @param      g1    The g 1
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private boolean check(final EdgeWeightedGraph g1) {
 
         // check weight
         double totalWeight = 0.0;
@@ -87,7 +93,8 @@ public class LazyPrimMST {
             totalWeight += e.weight();
         }
         if (Math.abs(totalWeight - weight()) > FLOATING_POINT_EPSILON) {
-            System.err.printf("Weight of edges does not equal weight(): %f vs. %f\n",
+            System.err.printf(
+                "Weight of edges does not equal weight():%f vs. %f\n",
                 totalWeight, weight());
             return false;
         }
@@ -130,8 +137,8 @@ public class LazyPrimMST {
                 int x = f.either(), y = f.other(x);
                 if (!uf.connected(x, y)) {
                     if (f.weight() < e.weight()) {
-                        System.err.println("Edge " + f +
-                            " violates cut optimality conditions");
+                        System.err.println("Edge " + f
+                            + " violates cut optimality conditions");
                         return false;
                     }
                 }
