@@ -29,6 +29,7 @@ public class LazyPrimMST {
     /**
      * Compute a minimum spanning tree (or forest) of an edge-weighted graph.
      * @param g5 the edge-weighted graph
+     * time complexity - O(E log V).
      */
     public LazyPrimMST(final EdgeWeightedGraph g5) {
         mst = new Queue<Edge>();
@@ -47,7 +48,7 @@ public class LazyPrimMST {
     // run Prim's algorithm.
     /**
      * prim.
-     *
+     * time complexity - O(E log V).
      * @param      g3     { parameter_description }
      * @param      s     { parameter_description }
      */
@@ -97,6 +98,7 @@ public class LazyPrimMST {
     /**
      * Returns the edges in a minimum spanning tree (or forest).
      * @return the edges in a minimum spanning tree (or forest) as
+     * time complexity - O(E).
      *    an iterable of edges
      */
     public Iterable<Edge> edges() {
@@ -104,6 +106,7 @@ public class LazyPrimMST {
     }
 
     /**
+     *time complexity - O(1).
      * Returns the sum of the edge weights
      * in a minimum spanning tree (or forest).
      * @return the sum of the edge weights in a
@@ -115,7 +118,7 @@ public class LazyPrimMST {
     // check optimality conditions (takes time proportional to E V lg* V)
     /**
      * check.
-     *
+     * time complexity - O(E log V).
      * @param      g1    The g 1
      *
      * @return     { description_of_the_return_value }
@@ -183,19 +186,4 @@ public class LazyPrimMST {
 
         return true;
     }
-    /**
-     * Unit tests the {@code LazyPrimMST} data type.
-     *
-     * @param args the command-line arguments
-     */
-    // public static void main(String[] args) {
-    //     In in = new In(args[0]);
-    //     EdgeWeightedGraph G = new EdgeWeightedGraph(in);
-    //     LazyPrimMST mst = new LazyPrimMST(G);
-    //     for (Edge e : mst.edges()) {
-    //         StdOut.println(e);
-    //     }
-    //     StdOut.printf("%.5f\n", mst.weight());
-    // }
-
 }
