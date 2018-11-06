@@ -33,8 +33,8 @@ public class LazyPrimMST {
     public LazyPrimMST(final EdgeWeightedGraph g5) {
         mst = new Queue<Edge>();
         pq = new MinPQ<Edge>();
-        marked = new boolean[g5.V()];
-        for (int v = 0; v < g5.V(); v++) {
+        marked = new boolean[g5.vertices()];
+        for (int v = 0; v < g5.vertices(); v++) {
         // run Prim from all vertices to
             if (!marked[v]) {
                 prim(g5, v);
@@ -135,7 +135,7 @@ public class LazyPrimMST {
         }
 
         // check that it is acyclic
-        UF uf = new UF(g1.V());
+        UF uf = new UF(g1.vertices());
         for (Edge e : edges()) {
             int v = e.either(), w = e.other(v);
             if (uf.connected(v, w)) {
@@ -159,7 +159,7 @@ public class LazyPrimMST {
         for (Edge e : edges()) {
 
             // all edges in MST except e
-            uf = new UF(g1.V());
+            uf = new UF(g1.vertices());
             for (Edge f : mst) {
                 int x = f.either(), y = f.other(x);
                 if (f != e) {
