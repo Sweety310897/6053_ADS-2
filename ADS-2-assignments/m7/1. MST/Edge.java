@@ -26,7 +26,7 @@ public class Edge implements Comparable<Edge> {
      *         is a negative integer
      * @throws IllegalArgumentException if {@code weight} is {@code NaN}
      */
-    public Edge(final int v, final int w, final double weight) {
+    public Edge(final int v, final int w, final double weight1) {
         if (v < 0) {
             throw new IllegalArgumentException(
                 "vertex index must be a nonnegative integer");
@@ -35,12 +35,12 @@ public class Edge implements Comparable<Edge> {
             throw new IllegalArgumentException(
                 "vertex index must be a nonnegative integer");
         }
-        if (Double.isNaN(weight)) {
+        if (Double.isNaN(weight1)) {
             throw new IllegalArgumentException("Weight is NaN");
         }
         this.v = v;
         this.w = w;
-        this.weight = weight;
+        this.weight = weight1;
     }
 
     /**
@@ -62,7 +62,8 @@ public class Edge implements Comparable<Edge> {
     }
 
     /**
-     * Returns the endpoint of this edge that is different from the given vertex.
+     * Returns the endpoint of this edge that
+     * is different from the given vertex.
      *
      * @param  vertex one endpoint of this edge
      * @return the other endpoint of this edge
@@ -74,7 +75,7 @@ public class Edge implements Comparable<Edge> {
             return w;
         } else if (vertex == w) {
             return v;
-        } else { 
+        } else {
             throw new IllegalArgumentException("Illegal endpoint");
         }
     }
@@ -82,10 +83,12 @@ public class Edge implements Comparable<Edge> {
     /**
      * Compares two edges by weight.
      * Note that {@code compareTo()} is not consistent with {@code equals()},
-     * which uses the reference equality implementation inherited from {@code Object}.
+     * which uses the reference equality implementation
+     * inherited from {@code Object}.
      *
      * @param  that the other edge
-     * @return a negative integer, zero, or positive integer depending on whether
+     * @return a negative integer, zero, or positive integer
+     * depending on whether
      *         the weight of this is less than, equal to, or greater than the
      *         argument edge
      */
