@@ -18,12 +18,15 @@ public class EdgeWeightedGraph {
      * { var_description }.
      */
     private Bag<Edge>[] adj;
+    /**
+     * g.
+     */
     private EdgeWeightedGraph g;
     /**
      * Initializes an empty edge-weighted graph with {@code V}
      * vertices and 0 edges.
      *
-     * @param  V the number of vertices
+     * @param  vertices the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
     public EdgeWeightedGraph(final int vertices) {
