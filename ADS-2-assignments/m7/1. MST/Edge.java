@@ -1,17 +1,17 @@
 /**
  * Class for edge.
  */
-public class Edge implements Comparable<Edge> { 
+public class Edge implements Comparable<Edge> {
     /**
-     * { var_description }
+     * { var_description }.
      */
     private final int v;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private final int w;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private final double weight;
 
@@ -22,7 +22,7 @@ public class Edge implements Comparable<Edge> {
      * @param  v1 one vertex
      * @param  w1 the other vertex
      * @param  weight1 the weight of this edge
-     * @throws IllegalArgumentException if either {@code v} or {@code w} 
+     * @throws IllegalArgumentException if either {@code v} or {@code w}
      *         is a negative integer
      * @throws IllegalArgumentException if {@code weight} is {@code NaN}
      */
@@ -106,3 +106,9 @@ public class Edge implements Comparable<Edge> {
         return String.format("%d-%d %.5f", v, w, weight);
     }
 }
+
+
+
+
+
+
