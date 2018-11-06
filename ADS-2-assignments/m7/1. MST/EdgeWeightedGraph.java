@@ -3,19 +3,19 @@
  */
 public class EdgeWeightedGraph {
     /**
-     * { var_description }
+     * { var_description }.
      */
     private static final String NEWLINE = System.getProperty("line.separator");
     /**
-     * { var_description }
+     * { var_description }.
      */
     private final int V;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private int E;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private Bag<Edge>[] adj;
     /**
@@ -116,7 +116,7 @@ public class EdgeWeightedGraph {
      * Returns the degree of vertex {@code v}.
      *
      * @param  v the vertex
-     * @return the degree of vertex {@code v}      
+     * @return the degree of vertex {@code v}
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public int degree(final int v) {
