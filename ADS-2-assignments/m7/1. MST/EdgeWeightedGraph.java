@@ -25,7 +25,9 @@ public class EdgeWeightedGraph {
      * @throws IllegalArgumentException if {@code V < 0}
      */
     public EdgeWeightedGraph(final int V) {
-        if (V < 0) throw new IllegalArgumentException("Number of vertices must be nonnegative");
+        if (V < 0) {
+            throw new IllegalArgumentException("Number of vertices must be nonnegative");
+        }
         this.V = V;
         this.E = 0;
         adj = (Bag<Edge>[]) new Bag[V];
@@ -33,30 +35,10 @@ public class EdgeWeightedGraph {
             adj[v] = new Bag<Edge>();
         }
     }
-
-    /**
-     * Initializes a random edge-weighted graph with {@code V} vertices and <em>E</em> edges.
-     *
-     * @param  V the number of vertices
-     * @param  E the number of edges
-     * @throws IllegalArgumentException if {@code V < 0}
-     * @throws IllegalArgumentException if {@code E < 0}
-     */
-    // public EdgeWeightedGraph(int V, int E) {
-    //     this(V);
-    //     if (E < 0) throw new IllegalArgumentException("Number of edges must be nonnegative");
-    //     for (int i = 0; i < E; i++) {
-    //         int v = StdRandom.uniform(V);
-    //         int w = StdRandom.uniform(V);
-    //         double weight = Math.round(100 * StdRandom.uniform()) / 100.0;
-    //         Edge e = new Edge(v, w, weight);
-    //         addEdge(e);
-    //     }
-    // }
     /**
      * Initializes a new edge-weighted graph that is a deep copy of {@code G}.
      *
-     * @param  G the edge-weighted graph to copy
+     * @param  g1 the edge-weighted graph to copy
      */
     public EdgeWeightedGraph(final EdgeWeightedGraph g1) {
         this(g1.V());
@@ -88,11 +70,15 @@ public class EdgeWeightedGraph {
     public int E() {
         return E;
     }
-    // throw an IllegalArgumentException unless {@code 0 <= v < V}
+    /**
+     * validate.
+     *
+     * @param      v     { parameter_description }
+     */
     private void validateVertex(final int v) {
         if (v < 0 || v >= V) {
             throw new IllegalArgumentException("vertex "
-                + v + " is not between 0 and " + (V-1));
+                + v + " is not between 0 and " + (V - 1));
         }
     }
 
@@ -128,7 +114,7 @@ public class EdgeWeightedGraph {
      * Returns the degree of vertex {@code v}.
      *
      * @param  v the vertex
-     * @return the degree of vertex {@code v}               
+     * @return the degree of vertex {@code v}            
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public int degree(final int v) {
@@ -138,7 +124,8 @@ public class EdgeWeightedGraph {
 
     /**
      * Returns all edges in this edge-weighted graph.
-     * To iterate over the edges in this edge-weighted graph, use foreach notation:
+     * To iterate over the edges in this edge-weighted graph,
+     * use foreach notation:
      * {@code for (Edge e : G.edges())}.
      *
      * @return all edges in this edge-weighted graph, as an iterable
@@ -150,10 +137,7 @@ public class EdgeWeightedGraph {
             for (Edge e : adj(v)) {
                 if (e.other(v) > v) {
                     list.add(e);
-                }
-                // add only one copy of each self loop
-                //(self loops will be consecutive)
-                else if (e.other(v) == v) {
+                } else if (e.other(v) == v) {
                     if (selfLoops % 2 == 0) {
                         list.add(e);
                     }
