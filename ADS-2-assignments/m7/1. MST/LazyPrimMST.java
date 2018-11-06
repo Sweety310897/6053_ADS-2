@@ -3,7 +3,7 @@
  */
 public class LazyPrimMST {
     /**
-     * { var_description }
+     * { var_description }.
      */
     private static final double FLOATING_POINT_EPSILON = 1E-12;
     /**
@@ -28,7 +28,7 @@ public class LazyPrimMST {
 
     /**
      * Compute a minimum spanning tree (or forest) of an edge-weighted graph.
-     * @param G the edge-weighted graph
+     * @param g5 the edge-weighted graph
      */
     public LazyPrimMST(final EdgeWeightedGraph g5) {
         mst = new Queue<Edge>();
