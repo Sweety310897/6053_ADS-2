@@ -19,14 +19,16 @@ public class EdgeWeightedGraph {
      */
     private Bag<Edge>[] adj;
     /**
-     * Initializes an empty edge-weighted graph with {@code V} vertices and 0 edges.
+     * Initializes an empty edge-weighted graph with {@code V}
+     * vertices and 0 edges.
      *
      * @param  V the number of vertices
      * @throws IllegalArgumentException if {@code V < 0}
      */
     public EdgeWeightedGraph(final int V) {
         if (V < 0) {
-            throw new IllegalArgumentException("Number of vertices must be nonnegative");
+            throw new IllegalArgumentException(
+                "Number of vertices must be nonnegative");
         }
         this.V = V;
         this.E = 0;
@@ -114,7 +116,7 @@ public class EdgeWeightedGraph {
      * Returns the degree of vertex {@code v}.
      *
      * @param  v the vertex
-     * @return the degree of vertex {@code v}            
+     * @return the degree of vertex {@code v}      
      * @throws IllegalArgumentException unless {@code 0 <= v < V}
      */
     public int degree(final int v) {

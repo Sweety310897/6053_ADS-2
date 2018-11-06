@@ -37,15 +37,13 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:13: First sentence should end with a period. [JavadocStyle]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:16:17: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MemberName]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:17: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:22: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:27:40: 'V' hides a field. [HiddenField]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:27:40: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:29: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:62:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:70:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:117: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:28:40: 'V' hides a field. [HiddenField]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:28:40: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [ParameterName]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:64:16: Name 'V' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:72:16: Name 'E' must match pattern '^[a-z][a-zA-Z0-9]*$'. [MethodName]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m7\1. MST\EdgeWeightedGraph.java:119: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 13 errors.
+Checkstyle ends with 11 errors.
 Starting audit...
 Audit done.
 Starting audit...
