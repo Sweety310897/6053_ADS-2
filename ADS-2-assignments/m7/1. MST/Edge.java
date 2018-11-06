@@ -18,7 +18,7 @@ public class Edge implements Comparable<Edge> {
     /**
      * Initializes an edge between vertices {@code v} and {@code w} of
      * the given {@code weight}.
-     *
+     * time complexity - O(1).
      * @param  v1 one vertex
      * @param  w1 the other vertex
      * @param  weight1 the weight of this edge
@@ -45,7 +45,7 @@ public class Edge implements Comparable<Edge> {
 
     /**
      * Returns the weight of this edge.
-     *
+     * time complexity - O(1).
      * @return the weight of this edge
      */
     public double weight() {
@@ -54,7 +54,7 @@ public class Edge implements Comparable<Edge> {
 
     /**
      * Returns either endpoint of this edge.
-     *
+     * time complexity - O(1).
      * @return either endpoint of this edge
      */
     public int either() {
@@ -64,7 +64,7 @@ public class Edge implements Comparable<Edge> {
     /**
      * Returns the endpoint of this edge that
      * is different from the given vertex.
-     *
+     * time complexity - O(1).
      * @param  vertex one endpoint of this edge
      * @return the other endpoint of this edge
      * @throws IllegalArgumentException if the vertex is not one of the
