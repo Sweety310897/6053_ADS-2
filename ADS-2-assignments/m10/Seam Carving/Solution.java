@@ -125,5 +125,8 @@ public class Solution {
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
+        if(!scan.hasNext()) {
+            System.out.println("picture is null");
+        }
     }
 }
