@@ -28,6 +28,8 @@ public class SeamCarver {
 	public double energy(int x, int y) {
 		//return 0;
 		//energymat = new double[x][y];
+		//pl
+		System.out.println(energymat[y][x]);
 		return energymat[y][x];
 	}
 
