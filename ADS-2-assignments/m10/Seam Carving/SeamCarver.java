@@ -26,14 +26,15 @@ public class SeamCarver {
 
 	// energy of pixel at column x and row y
 	public double energy(int x, int y) {
-		System.out.println("xval" + x + " " + "yval" + y);
-		if(x == 0 || y == 0 || x == height()-1 || y == width()-1) {
-			energymat[x][y] = 1000;
-		}
-		else {
+		// System.out.println("xval" + x + " " + "yval" + y);
+		// if(x == 0 || y == 0 || x == height()-1 || y == width()-1) {
+		// 	energymat[x][y] = 1000;
+		// }
+		// else {
 
-		}
-		return energymat[x][y];
+		// }
+		// return energymat[x][y];
+		return 0;
 	}
 
 	// sequence of indices for horizontal seam
