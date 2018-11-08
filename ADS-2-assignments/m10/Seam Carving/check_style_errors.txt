@@ -243,7 +243,7 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:28:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:28:30: Parameter x should be final. [FinalParameters]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:28:37: Parameter y should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:30:19: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:30:19: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:30:54: '-' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:30:55: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:30:75: '-' is not preceded with whitespace. [WhitespaceAround]
@@ -340,10 +340,10 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:29:36: Expression can be simplified. [SimplifyBooleanExpression]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:43:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:43:29: Parameter args should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:76: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:84: Line is longer than 80 characters (found 89). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:102: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:128:11: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:47:11: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:79: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:87: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:105: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
 Checkstyle ends with 21 errors.
 Starting audit...
