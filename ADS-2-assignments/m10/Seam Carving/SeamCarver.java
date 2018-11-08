@@ -4,7 +4,7 @@ public class SeamCarver {
 	Picture p;
 	private int width;
 	private int height;
-	int[][] energyvar;
+	int[][] energymat;
 	public SeamCarver(Picture picture) {
 		this.p = picture;
 		this.width = p.width();
@@ -27,10 +27,8 @@ public class SeamCarver {
 	// energy of pixel at column x and row y
 	public double energy(int x, int y) {
 		//return 0;
-		//int[][] matrix = new int[x][y];
-		//if()
-		return energyvar[y][x];
-		
+		//energymat = new double[x][y];
+		return energymat[y][x];
 	}
 
 	// sequence of indices for horizontal seam
