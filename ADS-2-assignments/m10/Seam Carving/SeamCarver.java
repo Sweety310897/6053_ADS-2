@@ -15,7 +15,7 @@ public class SeamCarver {
 		if(p == null) {
 			throw new IllegalArgumentException("picture is null");
 		}
-		return p;
+		return this.p;
 	}
 	// width of current picture
 	public int width() {
