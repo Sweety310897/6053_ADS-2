@@ -243,7 +243,7 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:28:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:28:30: Parameter x should be final. [FinalParameters]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:28:37: Parameter y should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:30:19: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:30:19: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:30:53: '-' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:30:54: '-' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:30:71: '-' is not preceded with whitespace. [WhitespaceAround]
