@@ -47,6 +47,7 @@ public class SeamCarver {
 		tempx = Math.pow(xtemp1red - xtemp2red, 2) + Math.pow(xtemp1blue - xtemp2blue, 2) +Math.pow(xtemp1green - xtemp2green , 2);
 		tempy = Math.pow(ytemp1red - ytemp2red, 2) + Math.pow(ytemp1blue - ytemp2blue, 2) +Math.pow(ytemp1green - ytemp2green , 2);
 		double energysum = Math.sqrt(tempx + tempy);
+		System.out.println(energysum);
 		return energysum;
 		//return 0;
 	}
