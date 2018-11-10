@@ -25,7 +25,7 @@ public class Solution {
 		switch (caseToGo) {
 		case "Graph":
 			//Print the Graph Object.
-			ewgraph.toString();
+			System.out.println(ewgraph.toString());
 			break;
 
 		case "DirectedPaths":
