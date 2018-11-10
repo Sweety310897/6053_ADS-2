@@ -37,6 +37,4 @@ Checkstyle ends with 18 errors.
 Starting audit...
 Audit done.
 Starting audit...
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\UF.java:50:21: Parameter p should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 1 errors.
