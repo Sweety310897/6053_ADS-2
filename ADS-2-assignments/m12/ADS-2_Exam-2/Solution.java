@@ -9,9 +9,10 @@ public class Solution {
 		Scanner s = new Scanner(System.in);
 		int vertices = Integer.parseInt(s.nextLine());
 		int edges = Integer.parseInt(s.nextLine());
-		System.out.println(vertices + " " + "vertices" + " " + edges + " " + "edges");
+		//System.out.println(vertices + " " + "vertices" + " " + edges + " " + "edges");
 		//EdgeWeightedGraph g = new EdgeWeightedGraph(vertices);
 		EdgeWeightedGraph ewgraph = new EdgeWeightedGraph(vertices);
+		//EdgeWeightedDiGraph ewdigraph = new EdgeWeightedDiGraph(vertices);
 		for (int i = 0; i < edges; i++) {
 
 			String[] temp = s.nextLine().split(" ");
@@ -21,6 +22,15 @@ public class Solution {
             ewgraph.addEdge(edge);
 
 		}
+		// for (int i = 0; i < edges; i++) {
+
+		// 	String[] temp = s.nextLine().split(" ");
+		// 	Edge edge = new Edge(Integer.parseInt(temp[0]),
+  //               Integer.parseInt(temp[1]),
+  //               Float.parseFloat(temp[2]));
+  //           ewdigraph.addEdge(edge);
+
+		// }
 		LazyPrimMST prim = new LazyPrimMST(ewgraph);
 		//String temp = s.nextLine();
 		String caseToGo = s.nextLine();
@@ -32,17 +42,17 @@ public class Solution {
 
 		case "DirectedPaths":
 
-			// String[] temp5 = s.nextLine().split(" ");
-			// DijkstraSP dj = new DijkstraSP(ewgraph,temp5[0]);
-			// //EdgeWeightedDigraph G = new EdgeWeightedDigraph();
-   //          if (dj.hasPathTo(Integer.parseInt(temp5[1]))) {
-   //              StdOut.printf("%d to %d (%.2f)  ", s, t, sp.distTo(t));
-   //              //StdOut.println();
-   //          }
-   //          else {
-   //              //StdOut.printf("%d to %d         no path\n", s, t);
-   //              System.out.println("no path found");
-   //          }
+			String[] temp5 = s.nextLine().split(" ");
+
+			DijkstraUndirectedSP dj = new DijkstraUndirectedSP(ewgraph,Integer.parseInt(temp5[0]));
+            if (dj.hasPathTo(Integer.parseInt(temp5[1]))) {
+                //StdOut.println("%d to %d (%.2f)  ", s, t, dj.distTo(t));
+                System.out.println(dj.distTo(Integer.parseInt(temp5[1])));
+            }
+            else {
+                //StdOut.printf("%d to %d         no path\n", s, t);
+                System.out.println("no path found");
+            }
         
 			
         

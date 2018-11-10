@@ -59,8 +59,8 @@ public class DirectedEdge {
      *
      * @param args the command-line arguments
      */
-    public static void main(String[] args) {
-        DirectedEdge e = new DirectedEdge(12, 34, 5.67);
-        StdOut.println(e);
-    }
+    // public static void main(String[] args) {
+    //     DirectedEdge e = new DirectedEdge(12, 34, 5.67);
+    //     StdOut.println(e);
+    // }
 }
