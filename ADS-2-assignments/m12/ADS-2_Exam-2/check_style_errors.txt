@@ -1,0 +1,22 @@
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+Audit done.
+Starting audit...
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:3: Missing a Javadoc comment. [JavadocType]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:3:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:5:1: File contains tab characters (this is the first instance). [FileTabCharacter]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:5:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:5:33: Parameter args should be final. [FinalParameters]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:32: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:39: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:40: Line is longer than 80 characters (found 110). [LineLength]
+Audit done.
+Checkstyle ends with 9 errors.
+Starting audit...
+Audit done.
