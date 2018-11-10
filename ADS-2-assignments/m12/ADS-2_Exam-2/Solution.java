@@ -21,6 +21,7 @@ public class Solution {
             ewgraph.addEdge(edge);
 
 		}
+		LazyPrimMST prim = new LazyPrimMST(ewgraph);
 		//String temp = s.nextLine();
 		String caseToGo = s.nextLine();
 		switch (caseToGo) {
@@ -30,6 +31,11 @@ public class Solution {
 			break;
 
 		case "DirectedPaths":
+			boolean temp1 = prim.check(ewgraph);
+			if(temp1 == false) {
+				System.out.println("no path foud");
+			}
+        	System.out.format("%.5f", prim.weight());
 			// Handle the case of DirectedPaths, where two integers are given.
 			// First is the source and second is the destination.
 			// If the path exists print the distance between them.

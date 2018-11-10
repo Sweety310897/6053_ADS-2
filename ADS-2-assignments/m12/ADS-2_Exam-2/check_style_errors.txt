@@ -7,6 +7,15 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
+Audit done.
+Starting audit...
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\MinPQ.java:170:23: Parameter k should be final. [FinalParameters]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\MinPQ.java:181:23: Parameter k should be final. [FinalParameters]
+Audit done.
+Checkstyle ends with 2 errors.
+Starting audit...
+Audit done.
+Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:3: Missing a Javadoc comment. [JavadocType]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:3:1: Utility classes should not have a public or default constructor. [HideUtilityClassConstructor]
@@ -14,10 +23,16 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:5:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:5:33: Parameter args should be final. [FinalParameters]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:12: Line is longer than 80 characters (found 94). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:33: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:40: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:41: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:35:27: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:35:34: Expression can be simplified. [SimplifyBooleanExpression]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:39: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:46: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:47: Line is longer than 80 characters (found 110). [LineLength]
 Audit done.
-Checkstyle ends with 10 errors.
+Checkstyle ends with 12 errors.
 Starting audit...
 Audit done.
+Starting audit...
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\UF.java:50:21: Parameter p should be final. [FinalParameters]
+Audit done.
+Checkstyle ends with 1 errors.

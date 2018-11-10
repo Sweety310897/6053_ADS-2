@@ -52,6 +52,7 @@ No Path Found.
 
 Your Output: 
 6 vertices 6 edges
+7.00000
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -60,6 +61,7 @@ Expected Output:
 
 Your Output: 
 10 vertices 10 edges
+1146.00000
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
