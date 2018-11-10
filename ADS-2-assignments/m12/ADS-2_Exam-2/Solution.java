@@ -9,6 +9,7 @@ public class Solution {
 		Scanner s = new Scanner(System.in);
 		int vertices = Integer.parseInt(s.nextLine());
 		int edges = Integer.parseInt(s.nextLine());
+		System.out.println(vertices + " " + "vertices" + " " + edges + " " + "edges");
 		//EdgeWeightedGraph g = new EdgeWeightedGraph(vertices);
 		EdgeWeightedGraph ewgraph = new EdgeWeightedGraph(vertices);
 		for (int i = 0; i < edges; i++) {

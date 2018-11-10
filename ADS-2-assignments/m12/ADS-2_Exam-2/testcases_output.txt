@@ -9,6 +9,7 @@ Expected Output:
 5:
 
 Your Output: 
+6 vertices 6 edges
 6 6
 0: 0-3 1.00000  0-1 2.00000  
 1: 1-2 4.00000  1-4 5.00000  0-1 2.00000  
@@ -33,6 +34,7 @@ Expected Output:
 9: 7-9 157.00000  2-9 237.00000
 
 Your Output: 
+10 vertices 11 edges
 10 11
 0: 0-7 221.00000  0-4 78.00000  
 1: 1-7 158.00000  1-7 159.00000  1-6 92.00000  
@@ -51,7 +53,7 @@ Expected Output:
 No Path Found.
 
 Your Output: 
-
+6 vertices 6 edges
 ----------------------------------------
 
 ########## Testcase 3: Failed ##########
@@ -59,7 +61,7 @@ Expected Output:
 370.0
 
 Your Output: 
-
+10 vertices 10 edges
 ----------------------------------------
 
 ########## Testcase 4: Failed ##########
@@ -67,7 +69,7 @@ Expected Output:
 No Path Found.
 
 Your Output: 
-
+6 vertices 6 edges
 ----------------------------------------
 
 ########## Testcase 5: Failed ##########
@@ -76,6 +78,6 @@ Expected Output:
 5 2 4 0 7 1
 
 Your Output: 
-
+10 vertices 10 edges
 ----------------------------------------
 
