@@ -51,7 +51,8 @@ public class Solution {
             }
             else {
                 //StdOut.printf("%d to %d         no path\n", s, t);
-                System.out.println("no path found");
+                System.out.println("No Path Found.");
+                return;
             }
         
 			

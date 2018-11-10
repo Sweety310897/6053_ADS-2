@@ -295,14 +295,14 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:47: Line is longer than 80 characters (found 111). [LineLength]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:47:84: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:51:13: '}' at column 13 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:56: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:57: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:58: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:59: Line is longer than 80 characters (found 90). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:63: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:67: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:68: Line is longer than 80 characters (found 110). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:72: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:59: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:60: Line is longer than 80 characters (found 90). [LineLength]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:64: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:68: Line is longer than 80 characters (found 87). [LineLength]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:69: Line is longer than 80 characters (found 110). [LineLength]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m12\ADS-2_Exam-2\Solution.java:73: Line has trailing spaces. [RegexpSingleline]
 Audit done.
 Checkstyle ends with 20 errors.
 Starting audit...
