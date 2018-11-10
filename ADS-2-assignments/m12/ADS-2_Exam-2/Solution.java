@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import java.util.Arrays;
 public class Solution {
 
 	public static void main(String[] args) {
@@ -31,15 +31,26 @@ public class Solution {
 			break;
 
 		case "DirectedPaths":
-			boolean temp1 = prim.check(ewgraph);
-			if(temp1 == false) {
-				System.out.println("no path foud");
-			}
-        	System.out.format("%.5f", prim.weight());
+
+			// String[] temp5 = s.nextLine().split(" ");
+			// DijkstraSP dj = new DijkstraSP(ewgraph,temp5[0]);
+			// //EdgeWeightedDigraph G = new EdgeWeightedDigraph();
+   //          if (dj.hasPathTo(Integer.parseInt(temp5[1]))) {
+   //              StdOut.printf("%d to %d (%.2f)  ", s, t, sp.distTo(t));
+   //              //StdOut.println();
+   //          }
+   //          else {
+   //              //StdOut.printf("%d to %d         no path\n", s, t);
+   //              System.out.println("no path found");
+   //          }
+        
+			
+        
 			// Handle the case of DirectedPaths, where two integers are given.
 			// First is the source and second is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
+			
 			break;
 
 		case "ViaPaths":
@@ -48,6 +59,7 @@ public class Solution {
 			// third is the destination.
 			// If the path exists print the distance between them.
 			// Other wise print "No Path Found."
+			
 			break;
 
 		default:
