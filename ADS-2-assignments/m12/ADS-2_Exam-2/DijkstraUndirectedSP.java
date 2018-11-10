@@ -6,7 +6,7 @@ public class DijkstraUndirectedSP {
     /**
      * Computes a shortest-paths tree from the source vertex {@code s} to every
      * other vertex in the edge-weighted graph {@code G}.
-     *
+     * time complexity - Elog V.
      * @param  G the edge-weighted digraph
      * @param  s the source vertex
      * @throws IllegalArgumentException if an edge weight is negative
@@ -54,7 +54,7 @@ public class DijkstraUndirectedSP {
     /**
      * Returns the length of a shortest path between the source vertex {@code s} and
      * vertex {@code v}.
-     *
+     * time complexity - O(1).
      * @param  v the destination vertex
      * @return the length of a shortest path between the source vertex {@code s} and
      *         the vertex {@code v}; {@code Double.POSITIVE_INFINITY} if no such path
@@ -68,7 +68,7 @@ public class DijkstraUndirectedSP {
     /**
      * Returns true if there is a path between the source vertex {@code s} and
      * vertex {@code v}.
-     *
+     * time complexity - ElogV.
      * @param  v the destination vertex
      * @return {@code true} if there is a path between the source vertex
      *         {@code s} to vertex {@code v}; {@code false} otherwise
@@ -103,6 +103,7 @@ public class DijkstraUndirectedSP {
     // check optimality conditions:
     // (i) for all edges e = v-w:            distTo[w] <= distTo[v] + e.weight()
     // (ii) for all edge e = v-w on the SPT: distTo[w] == distTo[v] + e.weight()
+    // time complexity - ElogV.
     private boolean check(EdgeWeightedGraph G, int s) {
 
         // check that edge weights are nonnegative
