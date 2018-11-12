@@ -3,7 +3,7 @@ import java.util.Arrays;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -11,21 +11,23 @@ public class Solution {
         //constructor.
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      fileName  The file name
      */
     public static void printEnergies(final String fileName) {
         Picture picture = new Picture(fileName);
-        StdOut.printf("image is %d pixels wide by %d pixels high.\n", picture.width(), picture.height());
+        StdOut.printf("image is %d pixels wide by %d pixels high.\n",
+            picture.width(), picture.height());
 
         SeamCarver sc = new SeamCarver(picture);
 
         StdOut.printf("Printing energy calculated for each pixel.\n");
 
         for (int row = 0; row < sc.height(); row++) {
-            for (int col = 0; col < sc.width(); col++)
+            for (int col = 0; col < sc.width(); col++) {
                 StdOut.printf("%9.0f ", sc.energy(col, row));
+            }
             StdOut.println();
         }
     }
@@ -110,7 +112,8 @@ public class Solution {
                     String file = scan.nextLine();
                     seamCarver = new SeamCarver(
                         new Picture("/Files/" + file));
-                    System.out.println(Arrays.toString(seamCarver.findHorizontalSeam()));
+                    System.out.println(Arrays.toString(
+                        seamCarver.findHorizontalSeam()));
                 }
                 break;
 
