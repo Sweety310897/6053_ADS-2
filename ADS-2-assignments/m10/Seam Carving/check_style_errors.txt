@@ -227,15 +227,10 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:67: Line is longer than 80 characters (found 85). [LineLength]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:75: First sentence should end with a period. [JavadocStyle]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:268:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:276: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\SeamCarver.java:276:50: '||' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 5 errors.
 Starting audit...
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\ShowEnergy.java:7:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\ShowEnergy.java:22: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
 Starting audit...
