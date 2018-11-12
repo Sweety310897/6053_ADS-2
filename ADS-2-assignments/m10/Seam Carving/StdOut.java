@@ -299,7 +299,7 @@ public final class StdOut {
      * the specified format string and arguments; then flushes standard output.
      *
      * @param locale the locale
-     * @param format the <a href = "http://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html#syntax">format string</a>
+     * @param format the
      * @param args   the arguments accompanying the format string
      */
     public static void printf(final Locale locale,
