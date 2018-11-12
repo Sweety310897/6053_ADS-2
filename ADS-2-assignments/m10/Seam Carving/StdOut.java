@@ -1,27 +1,15 @@
-/******************************************************************************
- *  Compilation:  javac StdOut.java
- *  Execution:    java StdOut
- *  Dependencies: none
- *
- *  Writes data of various types to standard output.
- *
- ******************************************************************************/
-
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.Locale;
-
 /**
- *  This class provides methods for printing strings and numbers to standard output.
+ *  This class provides methods for printing strings and numbers tostandard output.
  *  <p>
  *  <b>Getting started.</b>
  *  To use this class, you must have {@code StdOut.class} in your
  *  Java classpath. If you used our autoinstaller, you should be all set.
  *  Otherwise, either download
- *  <a href = "https://introcs.cs.princeton.edu/java/code/stdlib.jar">stdlib.jar</a>
  *  and add to your Java classpath or download
- *  <a href = "https://introcs.cs.princeton.edu/java/stdlib/StdOut.java">StdOut.java</a>
  *  and put a copy in your working directory.
  *  <p>
  *  Here is an example program that uses {@code StdOut}:
@@ -60,27 +48,32 @@ import java.util.Locale;
  *  @author Kevin Wayne
  */
 public final class StdOut {
-
-    // force Unicode UTF-8 encoding; otherwise it's system dependent
+    /**
+     * { var_description }
+     */
     private static final String CHARSET_NAME = "UTF-8";
-
-    // assume language = English, country = US for consistency with StdIn
+    /**
+     * { var_description }
+     */
     private static final Locale LOCALE = Locale.US;
 
-    // send output here
+    /**
+     * { var_description }
+     */
     private static PrintWriter out;
 
     // this is called before invoking any methods
     static {
         try {
-            out = new PrintWriter(new OutputStreamWriter(System.out, CHARSET_NAME), true);
-        }
-        catch (UnsupportedEncodingException e) {
+        out = new PrintWriter(new OutputStreamWriter(System.out, CHARSET_NAME),true);
+        } catch (UnsupportedEncodingException e) {
             System.out.println(e);
         }
     }
 
-    // don't instantiate
+    /**
+     * Constructs the object.
+     */
     private StdOut() { }
 
    /**
@@ -241,7 +234,7 @@ public final class StdOut {
     }
    /**
      * Prints an integer to standard output and flushes standard output.
-     * 
+     *
      * @param x the integer to print
      */
     public static void print(final int x) {
