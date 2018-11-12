@@ -5,6 +5,12 @@ import edu.princeton.cs.algs4.StdOut;
  */
 public class ShowSeams {
     /**
+     * Constructs the object.
+     */
+    private ShowSeams() {
+        //constructor.
+    }
+    /**
      * Shows the horizontal seam.
      *
      * @param      sc    The screen
@@ -33,10 +39,10 @@ public class ShowSeams {
      */
     public static void main(final String[] args) {
         Picture picture = new Picture(args[0]);
-        StdOut.printf("image is %d columns by %d rows\n", picture.width(), picture.height());
-        picture.show();        
+        StdOut.printf("image is %d columns by %d rows\n", picture.width(),
+            picture.height());
+        picture.show();
         SeamCarver sc = new SeamCarver(picture);
-        
         StdOut.printf("Displaying horizontal seam calculated.\n");
         showHorizontalSeam(sc);
 
@@ -44,3 +50,8 @@ public class ShowSeams {
         showVerticalSeam(sc);
     }
 }
+
+
+
+
+
