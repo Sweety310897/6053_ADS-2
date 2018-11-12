@@ -15,7 +15,7 @@ public class SeamCarver {
     /**
      * Constructs the object.
      *
-     * @param      picture  The picture
+     * @param      picture1  The picture
      */
     public SeamCarver(final Picture picture1) {
         if (picture1 == null) {
@@ -284,3 +284,8 @@ public class SeamCarver {
         return true;
     }
 }
+
+
+
+
+
