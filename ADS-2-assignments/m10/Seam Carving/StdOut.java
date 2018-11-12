@@ -3,7 +3,7 @@ import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.Locale;
 /**
- *  This class provides methods for printing strings and numbers tostandard output.
+ *  This class provides methods for printing strings.
  *  <p>
  *  <b>Getting started.</b>
  *  To use this class, you must have {@code StdOut.class} in your
@@ -49,23 +49,24 @@ import java.util.Locale;
  */
 public final class StdOut {
     /**
-     * { var_description }
+     * { var_description }.
      */
     private static final String CHARSET_NAME = "UTF-8";
     /**
-     * { var_description }
+     * { var_description }.
      */
     private static final Locale LOCALE = Locale.US;
 
     /**
-     * { var_description }
+     * { var_description }.
      */
     private static PrintWriter out;
 
     // this is called before invoking any methods
     static {
         try {
-        out = new PrintWriter(new OutputStreamWriter(System.out, CHARSET_NAME),true);
+        out = new PrintWriter(new OutputStreamWriter(System.out, CHARSET_NAME),
+            true);
         } catch (UnsupportedEncodingException e) {
             System.out.println(e);
         }
@@ -301,3 +302,9 @@ public final class StdOut {
         out.flush();
     }
 }
+
+
+
+
+
+

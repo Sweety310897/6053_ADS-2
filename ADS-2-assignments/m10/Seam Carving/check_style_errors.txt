@@ -277,19 +277,11 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:29:36: Expression can be simplified. [SimplifyBooleanExpression]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:43:5: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:43:29: Parameter args should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:47:11: 'if' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:47:11: 'if' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:80: Line is longer than 80 characters (found 87). [LineLength]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:88: Line is longer than 80 characters (found 89). [LineLength]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\Solution.java:106: Line is longer than 80 characters (found 85). [LineLength]
 Audit done.
 Checkstyle ends with 21 errors.
 Starting audit...
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\StdOut.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\StdOut.java:6: Line is longer than 80 characters (found 83). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\StdOut.java:51: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\StdOut.java:55: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\StdOut.java:60: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\StdOut.java:68: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m10\Seam Carving\StdOut.java:68:80: ',' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 7 errors.
