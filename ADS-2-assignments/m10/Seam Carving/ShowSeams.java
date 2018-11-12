@@ -3,7 +3,7 @@ import edu.princeton.cs.algs4.StdOut;
 /**
  * Class for show seams.
  */
-public class ShowSeams {
+public final class ShowSeams {
     /**
      * Constructs the object.
      */
