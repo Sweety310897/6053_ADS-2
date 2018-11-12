@@ -226,7 +226,7 @@ public final class StdOut {
      * 
      * @param x the double to print
      */
-    public static void print(double x) {
+    public static void print(final double x) {
         out.print(x);
         out.flush();
     }
@@ -236,7 +236,7 @@ public final class StdOut {
      * 
      * @param x the float to print
      */
-    public static void print(float x) {
+    public static void print(final float x) {
         out.print(x);
         out.flush();
     }
@@ -246,7 +246,7 @@ public final class StdOut {
      * 
      * @param x the integer to print
      */
-    public static void print(int x) {
+    public static void print(final int x) {
         out.print(x);
         out.flush();
     }
@@ -256,7 +256,7 @@ public final class StdOut {
      * 
      * @param x the long integer to print
      */
-    public static void print(long x) {
+    public static void print(final long x) {
         out.print(x);
         out.flush();
     }
@@ -266,7 +266,7 @@ public final class StdOut {
      * 
      * @param x the short integer to print
      */
-    public static void print(short x) {
+    public static void print(final short x) {
         out.print(x);
         out.flush();
     }
@@ -276,7 +276,7 @@ public final class StdOut {
      *
      * @param x the byte to print
      */
-    public static void print(byte x) {
+    public static void print(final byte x) {
         out.print(x);
         out.flush();
     }
@@ -286,17 +286,19 @@ public final class StdOut {
      * string and arguments, and then flushes standard output.
      *
      *
-     * @param format the <a href = "http://docs.oracle.com/javase/7/docs/api/java/util/Formatter.html#syntax">format string</a>
+     * @param format the
      * @param args   the arguments accompanying the format string
      */
-    public static void printf(String format, Object... args) {
+    public static void printf(final String format, final Object... args) {
         out.printf(LOCALE, format, args);
         out.flush();
     }
 
    /**
-     * Prints a formatted string to standard output, using the locale and
-     * the specified format string and arguments; then flushes standard output.
+     * Prints a formatted string to standard output,
+     * using the locale and
+     * the specified format string and arguments;
+     * then flushes standard output.
      *
      * @param locale the locale
      * @param format the
