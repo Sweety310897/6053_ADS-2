@@ -104,18 +104,8 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\In.java:451: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\In.java:454: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\In.java:459: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\In.java:460:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\In.java:483:57: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\In.java:483:58: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\In.java:484:42: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\In.java:484:43: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\In.java:485:39: '+' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\In.java:485:40: '+' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\In.java:540: Line is longer than 80 characters (found 81). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\In.java:554: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\In.java:561: Line has trailing spaces. [RegexpSingleline]
 Audit done.
-Checkstyle ends with 115 errors.
+Checkstyle ends with 105 errors.
 Starting audit...
 Audit done.
 Starting audit...

@@ -457,8 +457,7 @@ public final class In {
             throw new InputMismatchException(
                 "attempts to read a 'boolean' value from the input stream, "
                                            + "but the next token is \"" + token + "\"");
-        }
-        catch (NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             throw new NoSuchElementException(
                 "attempts to read a 'boolean' value from the input stream, "
                     + "but no more tokens are available");
@@ -480,9 +479,9 @@ public final class In {
         if (tokens.length == 0 || tokens[0].length() > 0) {
             return tokens;
         }
-        String[] decapitokens = new String[tokens.length-1];
-        for (int i = 0; i < tokens.length-1; i++) {
-            decapitokens[i] = tokens[i+1];
+        String[] decapitokens = new String[tokens.length - 1];
+        for (int i = 0; i < tokens.length - 1; i++) {
+            decapitokens[i] = tokens[i + 1];
         }
         return decapitokens;
     }
@@ -537,7 +536,8 @@ public final class In {
     }
 
     /**
-     * Reads all remaining tokens from this input stream, parses them as doubles,
+     * Reads all remaining tokens from this input stream,
+     * parses them as doubles,
      * and returns them as an array of doubles.
      *
      * @return all remaining lines in this input stream,
@@ -551,14 +551,13 @@ public final class In {
         }
         return vals;
     }
-    
     ///// end: section (2 of 2) of code duplicated from In to StdIn */
 
    /**
      * Closes this input stream.
      */
     public void close() {
-        scanner.close();  
+        scanner.close();
     }
 
     /**
