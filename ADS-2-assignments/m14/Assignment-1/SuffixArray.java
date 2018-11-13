@@ -2,7 +2,7 @@ import java.util.Arrays;
 /**
  * Class for suffix array.
  */
-public class SuffixArray {
+public final class SuffixArray {
     /**
      * Suffix array.
      */
@@ -37,9 +37,9 @@ public class SuffixArray {
          * @param      text   The text
          * @param      index  The index
          */
-        private Suffix(final String text, final int index) {
-            this.text = text;
-            this.index = index;
+        private Suffix(final String text1, final int index1) {
+            this.text = text1;
+            this.index = index1;
         }
         /**
          * length.
@@ -56,7 +56,7 @@ public class SuffixArray {
          *
          * @return     character.
          */
-        private char charAt(int i) {
+        private char charAt(final int i) {
             return text.charAt(index + i);
         }
         /**
@@ -66,7 +66,7 @@ public class SuffixArray {
          *
          * @return     string
          */
-        public int compareTo(Suffix that) {
+        public int compareTo(final Suffix that) {
             if (this == that) {
                 return 0;
             }
@@ -107,8 +107,10 @@ public class SuffixArray {
      * the <em>i</em>th smallest suffix
      * @throws java.lang.IllegalArgumentException unless {@code 0 <= i < n}
      */
-    public int index(int i) {
-        if (i < 0 || i >= suffixes.length) throw new IllegalArgumentException();
+    public int index(final int i) {
+        if (i < 0 || i >= suffixes.length) {
+            throw new IllegalArgumentException();
+        }
         return suffixes[i].index;
     }
 
@@ -125,7 +127,7 @@ public class SuffixArray {
         if (i < 1 || i >= suffixes.length) {
             throw new IllegalArgumentException();
         }
-        return lcpSuffix(suffixes[i], suffixes[i-1]);
+        return lcpSuffix(suffixes[i], suffixes[i - 1]);
     }
 
     /**
@@ -139,7 +141,7 @@ public class SuffixArray {
     private static int lcpSuffix(final Suffix s, final Suffix t) {
         int n = Math.min(s.length(), t.length());
         for (int i = 0; i < n; i++) {
-            if (s.charAt(i) != t.charAt(i)) { 
+            if (s.charAt(i) != t.charAt(i)) {
                 return i;
             }
         }
@@ -153,7 +155,7 @@ public class SuffixArray {
      * @throws java.lang.IllegalArgumentException unless {@code 0 <= i < n}
      */
     public String select(final int i) {
-        if (i < 0 || i >= suffixes.length) { 
+        if (i < 0 || i >= suffixes.length) {
             throw new IllegalArgumentException();
         }
         return suffixes[i].toString();
@@ -204,3 +206,9 @@ public class SuffixArray {
         return query.length() - suffix.length();
     }
 }
+
+
+
+
+
+

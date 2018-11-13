@@ -149,19 +149,12 @@ Starting audit...
 Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\SuffixArray.java:0: File does not end with a newline. [NewlineAtEndOfFile]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\SuffixArray.java:25: Class Suffix should be declared as final. [FinalClass]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\SuffixArray.java:40:37: 'text' hides a field. [HiddenField]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\SuffixArray.java:40:53: 'index' hides a field. [HiddenField]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\SuffixArray.java:59:29: Parameter i should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\SuffixArray.java:69:30: Parameter that should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\SuffixArray.java:110:22: Parameter i should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\SuffixArray.java:111: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\SuffixArray.java:128:49: '-' is not preceded with whitespace. [WhitespaceAround]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\SuffixArray.java:128:50: '-' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\SuffixArray.java:142: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\SuffixArray.java:156: Line has trailing spaces. [RegexpSingleline]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\SuffixArray.java:37:12: Unused @param tag for 'text'. [JavadocMethod]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\SuffixArray.java:38:12: Unused @param tag for 'index'. [JavadocMethod]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\SuffixArray.java:40:37: Expected @param tag for 'text1'. [JavadocMethod]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\SuffixArray.java:40:54: Expected @param tag for 'index1'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 12 errors.
+Checkstyle ends with 5 errors.
 Starting audit...
 Audit done.
