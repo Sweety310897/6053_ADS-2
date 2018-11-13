@@ -22,7 +22,7 @@ public final class SuffixArray {
     /**
      * Class for suffix.
      */
-    private static class Suffix implements Comparable<Suffix> {
+    private static final class Suffix implements Comparable<Suffix> {
         /**
          * String variable.
          */
