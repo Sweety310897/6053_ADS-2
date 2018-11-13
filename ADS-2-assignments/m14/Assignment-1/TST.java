@@ -86,10 +86,13 @@ public class TST<Value> {
             x = new Node<Value>();
             x.c = c;
         }
-        if      (c < x.c)               x.left  = put(x.left,  key, val, d);
-        else if (c > x.c)               x.right = put(x.right, key, val, d);
-        else if (d < key.length() - 1)  x.mid   = put(x.mid,   key, val, d+1);
-        else {        
+        if      (c < x.c) {
+            x.left  = put(x.left,  key, val, d);
+        } else if (c > x.c) {
+            x.right = put(x.right, key, val, d);
+        } else if (d < key.length() - 1) {
+            x.mid   = put(x.mid,   key, val, d + 1);
+        } else {
             x.val   = val;
         }
         return x;
