@@ -5,7 +5,7 @@
  */
 public class TST<Value> {
     /**
-     * { var_description }
+     * { var_description }.
      */
     private int n;              // size
     /**

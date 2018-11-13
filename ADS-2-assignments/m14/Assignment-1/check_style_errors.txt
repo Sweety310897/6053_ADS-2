@@ -188,6 +188,4 @@ Starting audit...
 Audit done.
 Checkstyle ends with 36 errors.
 Starting audit...
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\TST.java:7: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 1 errors.
