@@ -150,11 +150,7 @@ Audit done.
 Checkstyle ends with 1 errors.
 Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\SuffixArray.java:25: Class Suffix should be declared as final. [FinalClass]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\SuffixArray.java:37:12: Unused @param tag for 'text'. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\SuffixArray.java:38:12: Unused @param tag for 'index'. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\SuffixArray.java:40:37: Expected @param tag for 'text1'. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\SuffixArray.java:40:54: Expected @param tag for 'index1'. [JavadocMethod]
 Audit done.
-Checkstyle ends with 5 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
