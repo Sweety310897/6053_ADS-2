@@ -152,12 +152,22 @@ public class TST<Value> {
         collect(x.mid, new StringBuilder(prefix), queue);
         return queue;
     }
-
-    // all keys in subtrie rooted at x with given prefix
-    private void collect(Node<Value> x, StringBuilder prefix, Queue<String> queue) {
-        if (x == null) return;
+    /**
+     * collect.
+     *
+     * @param      x       { parameter_description }
+     * @param      prefix  The prefix
+     * @param      queue   The queue
+     */
+    private void collect(final Node<Value> x, final StringBuilder prefix,
+        final Queue<String> queue) {
+        if (x == null) {
+            return;
+        }
         collect(x.left,  prefix, queue);
-        if (x.val != null) queue.enqueue(prefix.toString() + x.c);
+        if (x.val != null) {
+            queue.enqueue(prefix.toString() + x.c);
+        }
         collect(x.mid,   prefix.append(x.c), queue);
         prefix.deleteCharAt(prefix.length() - 1);
         collect(x.right, prefix, queue);
@@ -171,7 +181,7 @@ public class TST<Value> {
      * @return all of the keys in the symbol table that match {@code pattern},
      *     as an iterable, where . is treated as a wildcard character.
      */
-    public Iterable<String> keysThatMatch(String pattern) {
+    public Iterable<String> keysThatMatch(final String pattern) {
         Queue<String> queue = new Queue<String>();
         collect(root, new StringBuilder(), 0, pattern, queue);
         return queue;

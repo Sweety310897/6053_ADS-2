@@ -246,13 +246,5 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\TST.java:146: Line is longer than 80 characters (found 92). [LineLength]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\TST.java:150: 'if' construct must use '{}'s. [NeedBraces]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\TST.java:151: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\TST.java:157: Line is longer than 80 characters (found 84). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\TST.java:157:5: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\TST.java:157:26: Parameter x should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\TST.java:157:41: Parameter prefix should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\TST.java:157:63: Parameter queue should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\TST.java:158: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\TST.java:160: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\TST.java:174:43: Parameter pattern should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 66 errors.
+Checkstyle ends with 58 errors.
