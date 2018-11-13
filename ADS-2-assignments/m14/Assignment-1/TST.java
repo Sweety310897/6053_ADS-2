@@ -9,7 +9,7 @@ public class TST<Value> {
      */
     private int n;              // size
     /**
-     * { var_description }
+     * { var_description }.
      */
     private Node<Value> root;   // root of TST
     /**
@@ -25,7 +25,8 @@ public class TST<Value> {
         /**
          * Node.
          */
-        private Node<Value> left, mid, right;  // left, middle, and right subtries
+        private Node<Value> left, mid, right;
+        // left, middle, and right subtries
         /**
          * val.
          */
@@ -295,3 +296,9 @@ public class TST<Value> {
         }
     }
 }
+
+
+
+
+
+
