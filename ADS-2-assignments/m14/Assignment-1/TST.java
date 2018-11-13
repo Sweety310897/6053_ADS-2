@@ -4,11 +4,31 @@
  * @param      <Value>  The value
  */
 public class TST<Value> {
+    /**
+     * { var_description }
+     */
     private int n;              // size
+    /**
+     * { var_description }
+     */
     private Node<Value> root;   // root of TST
+    /**
+     * Class for node.
+     *
+     * @param      <Value>  The value
+     */
     private static class Node<Value> {
+        /**
+         * c.
+         */
         private char c;                        // character
+        /**
+         * Node.
+         */
         private Node<Value> left, mid, right;  // left, middle, and right subtries
+        /**
+         * val.
+         */
         private Value val;                     // value associated with string
     }
 
@@ -33,7 +53,8 @@ public class TST<Value> {
      */
     public boolean contains(final String key) {
         if (key == null) {
-            throw new IllegalArgumentException("argument to contains() is null");
+            throw new IllegalArgumentException(
+                "argument to contains() is null");
         }
         return get(key) != null;
     }
@@ -41,13 +62,15 @@ public class TST<Value> {
     /**
      * Returns the value associated with the given key.
      * @param key the key
-     * @return the value associated with the given key if the key is in the symbol table
+     * @return the value associated with the given key
+     * if the key is in the symbol table
      *     and {@code null} if the key is not in the symbol table
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public Value get(final String key) {
         if (key == null) {
-            throw new IllegalArgumentException("calls get() with null argument");
+            throw new IllegalArgumentException(
+                "calls get() with null argument");
         }
         if (key.length() == 0) {
             throw new IllegalArgumentException("key must have length >= 1");
@@ -76,7 +99,7 @@ public class TST<Value> {
             throw new IllegalArgumentException("key must have length >= 1");
         }
         char c = key.charAt(d);
-        if      (c < x.c) {    
+        if      (c < x.c) {
             return get(x.left,  key, d);
         } else if (c > x.c) {
             return get(x.right, key, d);
