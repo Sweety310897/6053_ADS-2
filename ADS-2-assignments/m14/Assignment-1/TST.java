@@ -182,12 +182,16 @@ public class TST<Value> {
         char c = pattern.charAt(i);
         if (c == '.' || c < x.c) collect(x.left, prefix, i, pattern, queue);
         if (c == '.' || c == x.c) {
-            if (i == pattern.length() - 1 && x.val != null) queue.enqueue(prefix.toString() + x.c);
+            if (i == pattern.length() - 1 && x.val != null) {
+                queue.enqueue(prefix.toString() + x.c);
+            }
             if (i < pattern.length() - 1) {
-                collect(x.mid, prefix.append(x.c), i+1, pattern, queue);
+                collect(x.mid, prefix.append(x.c), i + 1, pattern, queue);
                 prefix.deleteCharAt(prefix.length() - 1);
             }
         }
-        if (c == '.' || c > x.c) collect(x.right, prefix, i, pattern, queue);
+        if (c == '.' || c > x.c) {
+            collect(x.right, prefix, i, pattern, queue);
+        }
     }
 }
