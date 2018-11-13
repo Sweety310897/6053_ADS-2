@@ -336,14 +336,12 @@ public final class In {
     public double readDouble() {
         try {
             return scanner.nextDouble();
-        }
-        catch (InputMismatchException e) {
+        } catch (InputMismatchException e) {
             String token = scanner.next();
             throw new InputMismatchException(
                 "attempts to read a 'double' value from the input stream, "
                             + "but the next token is \"" + token + "\"");
-        }
-        catch (NoSuchElementException e) {
+        } catch (NoSuchElementException e) {
             throw new NoSuchElementException(
                 "attemps to read a 'double' value from the input stream, "
                                     + "but no more tokens are available");
@@ -362,8 +360,7 @@ public final class In {
     public float readFloat() {
         try {
             return scanner.nextFloat();
-        }
-        catch (InputMismatchException e) {
+        } catch (InputMismatchException e) {
             String token = scanner.next();
             throw new InputMismatchException(
                 "attempts to read a 'float' value from the input stream, "
@@ -372,7 +369,7 @@ public final class In {
         catch (NoSuchElementException e) {
             throw new NoSuchElementException(
                 "attemps to read a 'float' value from the input stream, "
-                                           + "but no more tokens are available");
+                        + "but no more tokens are available");
         }
     }
 
@@ -459,7 +456,7 @@ public final class In {
             if ("false".equalsIgnoreCase(token)) {
                 return false;
             }
-            if ("1".equals(token)) {  
+            if ("1".equals(token)) {
                 return true;
             }
             if ("0".equals(token)) {
