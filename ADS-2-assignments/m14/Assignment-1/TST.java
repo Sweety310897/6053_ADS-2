@@ -63,7 +63,6 @@ public class TST<Value> {
         else if (d < key.length() - 1) return get(x.mid,   key, d+1);
         else                           return x;
     }
-
     /**
      * Inserts the key-value pair into the symbol table, overwriting the old value
      * with the new value if the key is already in the symbol table.
@@ -72,15 +71,27 @@ public class TST<Value> {
      * @param val the value
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
-    public void put(String key, Value val) {
+    public void put(final String key, final Value val) {
         if (key == null) {
             throw new IllegalArgumentException("calls put() with null key");
         }
-        if (!contains(key)) n++;
+        if (!contains(key)) {
+            n++;
+        }
         root = put(root, key, val, 0);
     }
-
-    private Node<Value> put(Node<Value> x, String key, Value val, int d) {
+    /**
+     * put.
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     * @param      val   The value
+     * @param      d     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private Node<Value> put(final Node<Value> x, final String key,
+        final Value val, final int d) {
         char c = key.charAt(d);
         if (x == null) {
             x = new Node<Value>();
