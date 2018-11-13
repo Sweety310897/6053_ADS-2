@@ -1,7 +1,11 @@
+/**
+ * Class for tst.
+ *
+ * @param      <Value>  The value
+ */
 public class TST<Value> {
     private int n;              // size
     private Node<Value> root;   // root of TST
-
     private static class Node<Value> {
         private char c;                        // character
         private Node<Value> left, mid, right;  // left, middle, and right subtries
@@ -13,7 +17,6 @@ public class TST<Value> {
      */
     public TST() {
     }
-
     /**
      * Returns the number of key-value pairs in this symbol table.
      * @return the number of key-value pairs in this symbol table
@@ -21,7 +24,6 @@ public class TST<Value> {
     public int size() {
         return n;
     }
-
     /**
      * Does this symbol table contain the given key?
      * @param key the key
@@ -29,7 +31,7 @@ public class TST<Value> {
      *     {@code false} otherwise
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
-    public boolean contains(String key) {
+    public boolean contains(final String key) {
         if (key == null) {
             throw new IllegalArgumentException("argument to contains() is null");
         }
@@ -43,13 +45,17 @@ public class TST<Value> {
      *     and {@code null} if the key is not in the symbol table
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
-    public Value get(String key) {
+    public Value get(final String key) {
         if (key == null) {
             throw new IllegalArgumentException("calls get() with null argument");
         }
-        if (key.length() == 0) throw new IllegalArgumentException("key must have length >= 1");
+        if (key.length() == 0) {
+            throw new IllegalArgumentException("key must have length >= 1");
+        }
         Node<Value> x = get(root, key, 0);
-        if (x == null) return null;
+        if (x == null) {
+            return null;
+        }
         return x.val;
     }
     /**
@@ -61,19 +67,21 @@ public class TST<Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    private Node<Value> get(final Node<Value> x, final String key, final int d) {
+    private Node<Value> get(final Node<Value> x,
+        final String key, final int d) {
         if (x == null) {
             return null;
         }
-        if (key.length() == 0) throw new IllegalArgumentException(
-            "key must have length >= 1");
+        if (key.length() == 0) {
+            throw new IllegalArgumentException("key must have length >= 1");
+        }
         char c = key.charAt(d);
-        if      (c < x.c) {             
+        if      (c < x.c) {    
             return get(x.left,  key, d);
-        } else if (c > x.c) {         
+        } else if (c > x.c) {
             return get(x.right, key, d);
         } else if (d < key.length() - 1) {
-            return get(x.mid,   key, d+1);
+            return get(x.mid,   key, d + 1);
         } else {
             return x;
         }
