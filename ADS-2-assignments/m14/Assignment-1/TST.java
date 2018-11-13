@@ -52,21 +52,38 @@ public class TST<Value> {
         if (x == null) return null;
         return x.val;
     }
-
-    // return subtrie corresponding to given key
-    private Node<Value> get(Node<Value> x, String key, int d) {
-        if (x == null) return null;
-        if (key.length() == 0) throw new IllegalArgumentException("key must have length >= 1");
+    /**
+     * get.
+     *
+     * @param      x     { parameter_description }
+     * @param      key   The key
+     * @param      d     { parameter_description }
+     *
+     * @return     { description_of_the_return_value }
+     */
+    private Node<Value> get(final Node<Value> x, final String key, final int d) {
+        if (x == null) {
+            return null;
+        }
+        if (key.length() == 0) throw new IllegalArgumentException(
+            "key must have length >= 1");
         char c = key.charAt(d);
-        if      (c < x.c)              return get(x.left,  key, d);
-        else if (c > x.c)              return get(x.right, key, d);
-        else if (d < key.length() - 1) return get(x.mid,   key, d+1);
-        else                           return x;
+        if      (c < x.c) {             
+            return get(x.left,  key, d);
+        } else if (c > x.c) {         
+            return get(x.right, key, d);
+        } else if (d < key.length() - 1) {
+            return get(x.mid,   key, d+1);
+        } else {
+            return x;
+        }
     }
     /**
-     * Inserts the key-value pair into the symbol table, overwriting the old value
+     * Inserts the key-value pair into the symbol table, overwriting
+     * the old value
      * with the new value if the key is already in the symbol table.
-     * If the value is {@code null}, this effectively deletes the key from the symbol table.
+     * If the value is {@code null}, this effectively deletes the key
+     * from the symbol table.
      * @param key the key
      * @param val the value
      * @throws IllegalArgumentException if {@code key} is {@code null}
