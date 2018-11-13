@@ -378,15 +378,15 @@ public final class In {
     public long readLong() {
         try {
             return scanner.nextLong();
-        }
-        catch (InputMismatchException e) {
+        } catch (InputMismatchException e) {
             String token = scanner.next();
-            throw new InputMismatchException("attempts to read a 'long' value from the input stream, "
-                                           + "but the next token is \"" + token + "\"");
-        }
-        catch (NoSuchElementException e) {
-            throw new NoSuchElementException("attemps to read a 'long' value from the input stream, "
-                                           + "but no more tokens are available");
+            throw new InputMismatchException(
+                "attempts to read a 'long' value from the input stream, "
+                            + "but the next token is \"" + token + "\"");
+        } catch (NoSuchElementException e) {
+            throw new NoSuchElementException(
+                "attemps to read a 'long' value from the input stream, "
+                        + "but no more tokens are available");
         }
     }
 
@@ -401,15 +401,15 @@ public final class In {
     public short readShort() {
         try {
             return scanner.nextShort();
-        }
-        catch (InputMismatchException e) {
+        } catch (InputMismatchException e) {
             String token = scanner.next();
-            throw new InputMismatchException("attempts to read a 'short' value from the input stream, "
-                                           + "but the next token is \"" + token + "\"");
-        }
-        catch (NoSuchElementException e) {
-            throw new NoSuchElementException("attemps to read a 'short' value from the input stream, "
-                                           + "but no more tokens are available");
+            throw new InputMismatchException(
+                "attempts to read a 'short' value from the input stream, "
+                        + "but the next token is \"" + token + "\"");
+        } catch (NoSuchElementException e) {
+            throw new NoSuchElementException(
+                "attemps to read a 'short' value from the input stream, "
+                                + "but no more tokens are available");
         }
     }
 
@@ -421,17 +421,15 @@ public final class In {
     public byte readByte() {
         try {
             return scanner.nextByte();
-        }
-        catch (InputMismatchException e) {
+        } catch (InputMismatchException e) {
             String token = scanner.next();
             throw new InputMismatchException(
                 "attempts to read a 'byte' value from the input stream, "
-                                           + "but the next token is \"" + token + "\"");
-        }
-        catch (NoSuchElementException e) {
+                        + "but the next token is \"" + token + "\"");
+        } catch (NoSuchElementException e) {
             throw new NoSuchElementException(
                 "attemps to read a 'byte' value from the input stream, "
-                                           + "but no more tokens are available");
+                            + "but no more tokens are available");
         }
     }
     /**
@@ -448,15 +446,15 @@ public final class In {
             if ("false".equalsIgnoreCase(token)) {
                 return false;
             }
-            if ("1".equals(token)) {           
+            if ("1".equals(token)) {      
                 return true;
             }
-            if ("0".equals(token)) {  
+            if ("0".equals(token)) {
                 return false;
             }
             throw new InputMismatchException(
                 "attempts to read a 'boolean' value from the input stream, "
-                                           + "but the next token is \"" + token + "\"");
+                                + "but the next token is \"" + token + "\"");
         } catch (NoSuchElementException e) {
             throw new NoSuchElementException(
                 "attempts to read a 'boolean' value from the input stream, "
