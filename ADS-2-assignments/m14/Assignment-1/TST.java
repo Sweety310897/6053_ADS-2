@@ -89,33 +89,45 @@ public class TST<Value> {
         if      (c < x.c)               x.left  = put(x.left,  key, val, d);
         else if (c > x.c)               x.right = put(x.right, key, val, d);
         else if (d < key.length() - 1)  x.mid   = put(x.mid,   key, val, d+1);
-        else                            x.val   = val;
+        else {        
+            x.val   = val;
+        }
         return x;
     }
-
     /**
-     * Returns the string in the symbol table that is the longest prefix of {@code query},
+     * Returns the string in the symbol table that is the longest prefix of
+     * {@code query},
      * or {@code null}, if no such string.
      * @param query the query string
-     * @return the string in the symbol table that is the longest prefix of {@code query},
-     *     or {@code null} if no such string
+     * @return the string in the symbol table that is the longest prefix
+     * of {@code query},
+     * or {@code null} if no such string
      * @throws IllegalArgumentException if {@code query} is {@code null}
      */
-    public String longestPrefixOf(String query) {
+    public String longestPrefixOf(final String query) {
         if (query == null) {
-            throw new IllegalArgumentException("calls longestPrefixOf() with null argument");
+            throw new IllegalArgumentException(
+                "calls longestPrefixOf() with null argument");
         }
-        if (query.length() == 0) return null;
+        if (query.length() == 0) {
+            return null;
+        }
         int length = 0;
         Node<Value> x = root;
         int i = 0;
         while (x != null && i < query.length()) {
             char c = query.charAt(i);
-            if      (c < x.c) x = x.left;
-            else if (c > x.c) x = x.right;
+            if      (c < x.c) {
+                x = x.left;
+            }
+            else if (c > x.c) {
+                x = x.right;
+            }
             else {
                 i++;
-                if (x.val != null) length = i;
+                if (x.val != null) {
+                    length = i;
+                }
                 x = x.mid;
             }
         }
