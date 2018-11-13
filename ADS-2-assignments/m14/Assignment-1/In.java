@@ -414,78 +414,86 @@ public final class In {
     }
 
    /**
-     * Reads the next token from this input stream, parses it as a {@code byte},
-     * and returns the {@code byte}.
-     * <p>
-     * To read binary data, use {@link BinaryIn}.
-     *
-     * @return the next {@code byte} in this input stream
-     * @throws NoSuchElementException if the input stream is empty
-     * @throws InputMismatchException if the next token cannot be parsed as a {@code byte}
-     */
+    * Reads a byte.
+    *
+    * @return     { description_of_the_return_value }
+    */
     public byte readByte() {
         try {
             return scanner.nextByte();
         }
         catch (InputMismatchException e) {
             String token = scanner.next();
-            throw new InputMismatchException("attempts to read a 'byte' value from the input stream, "
+            throw new InputMismatchException(
+                "attempts to read a 'byte' value from the input stream, "
                                            + "but the next token is \"" + token + "\"");
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("attemps to read a 'byte' value from the input stream, "
+            throw new NoSuchElementException(
+                "attemps to read a 'byte' value from the input stream, "
                                            + "but no more tokens are available");
         }
     }
-
     /**
-     * Reads the next token from this input stream, parses it as a {@code boolean}
-     * (interpreting either {@code "true"} or {@code "1"} as {@code true},
-     * and either {@code "false"} or {@code "0"} as {@code false}).
+     * Reads a boolean.
      *
-     * @return the next {@code boolean} in this input stream
-     * @throws NoSuchElementException if the input stream is empty
-     * @throws InputMismatchException if the next token cannot be parsed as a {@code boolean}
+     * @return     { description_of_the_return_value }
      */
     public boolean readBoolean() {
         try {
             String token = readString();
-            if ("true".equalsIgnoreCase(token))  return true;
-            if ("false".equalsIgnoreCase(token)) return false;
-            if ("1".equals(token))               return true;
-            if ("0".equals(token))               return false;
-            throw new InputMismatchException("attempts to read a 'boolean' value from the input stream, "
+            if ("true".equalsIgnoreCase(token)) {
+                return true;
+            }
+            if ("false".equalsIgnoreCase(token)) {
+                return false;
+            }
+            if ("1".equals(token)) {           
+                return true;
+            }
+            if ("0".equals(token)) {  
+                return false;
+            }
+            throw new InputMismatchException(
+                "attempts to read a 'boolean' value from the input stream, "
                                            + "but the next token is \"" + token + "\"");
         }
         catch (NoSuchElementException e) {
-            throw new NoSuchElementException("attempts to read a 'boolean' value from the input stream, "
-                                           + "but no more tokens are available");
+            throw new NoSuchElementException(
+                "attempts to read a 'boolean' value from the input stream, "
+                    + "but no more tokens are available");
         }
     }
 
     /**
-     * Reads all remaining tokens from this input stream and returns them as
+     * Reads all remaining tokens from this input stream and
+     * returns them as
      * an array of strings.
      *
-     * @return all remaining tokens in this input stream, as an array of strings
+     * @return all remaining tokens in this input stream,
+     * as an array of strings
      */
     public String[] readAllStrings() {
         // we could use readAll.trim().split(), but that's not consistent
         // since trim() uses characters 0x00..0x20 as whitespace
         String[] tokens = WHITESPACE_PATTERN.split(readAll());
-        if (tokens.length == 0 || tokens[0].length() > 0)
+        if (tokens.length == 0 || tokens[0].length() > 0) {
             return tokens;
+        }
         String[] decapitokens = new String[tokens.length-1];
-        for (int i = 0; i < tokens.length-1; i++)
+        for (int i = 0; i < tokens.length-1; i++) {
             decapitokens[i] = tokens[i+1];
+        }
         return decapitokens;
     }
 
     /**
-     * Reads all remaining lines from this input stream and returns them as
+     * Reads all remaining lines from this input stream
+     * and returns them as
      * an array of strings.
      *
-     * @return all remaining lines in this input stream, as an array of strings
+     * @return all remaining lines in this input stream,
+     * as an array of strings
      */
     public String[] readAllLines() {
         ArrayList<String> lines = new ArrayList<String>();
@@ -494,33 +502,37 @@ public final class In {
         }
         return lines.toArray(new String[lines.size()]);
     }
-
-
     /**
-     * Reads all remaining tokens from this input stream, parses them as integers,
+     * Reads all remaining tokens from this input stream,
+     * parses them as integers,
      * and returns them as an array of integers.
      *
-     * @return all remaining lines in this input stream, as an array of integers
+     * @return all remaining lines in this input stream,
+     * as an array of integers
      */
     public int[] readAllInts() {
         String[] fields = readAllStrings();
         int[] vals = new int[fields.length];
-        for (int i = 0; i < fields.length; i++)
+        for (int i = 0; i < fields.length; i++) {
             vals[i] = Integer.parseInt(fields[i]);
+        }
         return vals;
     }
 
     /**
-     * Reads all remaining tokens from this input stream, parses them as longs,
+     * Reads all remaining tokens from this input stream,
+     * parses them as longs,
      * and returns them as an array of longs.
      *
-     * @return all remaining lines in this input stream, as an array of longs
+     * @return all remaining lines in this input stream,
+     * as an array of longs
      */
     public long[] readAllLongs() {
         String[] fields = readAllStrings();
         long[] vals = new long[fields.length];
-        for (int i = 0; i < fields.length; i++)
+        for (int i = 0; i < fields.length; i++) {
             vals[i] = Long.parseLong(fields[i]);
+        }
         return vals;
     }
 
@@ -528,13 +540,15 @@ public final class In {
      * Reads all remaining tokens from this input stream, parses them as doubles,
      * and returns them as an array of doubles.
      *
-     * @return all remaining lines in this input stream, as an array of doubles
+     * @return all remaining lines in this input stream,
+     * as an array of doubles
      */
     public double[] readAllDoubles() {
         String[] fields = readAllStrings();
         double[] vals = new double[fields.length];
-        for (int i = 0; i < fields.length; i++)
+        for (int i = 0; i < fields.length; i++) {
             vals[i] = Double.parseDouble(fields[i]);
+        }
         return vals;
     }
     
@@ -553,10 +567,10 @@ public final class In {
      *
      * @param      filename the name of the file
      * @return     the integers in the file
-     * @deprecated Replaced by {@code new In(filename)}.{@link #readAllInts()}.
+     * @deprecated Replaced by {@code new In(filename)}.
      */
     @Deprecated
-    public static int[] readInts(String filename) {
+    public static int[] readInts(final String filename) {
         return new In(filename).readAllInts();
     }
 
@@ -566,10 +580,10 @@ public final class In {
      *
      * @param      filename the name of the file
      * @return     the doubles in the file
-     * @deprecated Replaced by {@code new In(filename)}.{@link #readAllDoubles()}.
+     * @deprecated Replaced by {@code new In(filename)}.
      */
     @Deprecated
-    public static double[] readDoubles(String filename) {
+    public static double[] readDoubles(final String filename) {
         return new In(filename).readAllDoubles();
     }
 
@@ -579,10 +593,10 @@ public final class In {
      *
      * @param      filename the name of the file
      * @return     the strings in the file
-     * @deprecated Replaced by {@code new In(filename)}.{@link #readAllStrings()}.
+     * @deprecated Replaced by {@code new In(filename)}.
      */
     @Deprecated
-    public static String[] readStrings(String filename) {
+    public static String[] readStrings(final String filename) {
         return new In(filename).readAllStrings();
     }
 
