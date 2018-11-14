@@ -21,20 +21,35 @@ public final class In {
     ///// begin: section (1 of 2) of code duplicated from In to StdIn.
     
     // assume Unicode UTF-8 encoding
+
+    /**
+     * { var_description }
+     */
     private static final String CHARSET_NAME = "UTF-8";
 
     // assume language = English, country = US for consistency with System.out.
-    private static final Locale LOCALE = Locale.US;
 
-    // the default token separator; we maintain the invariant that this value 
-    // is held by the scanner's delimiter between calls
+    /**
+     * { var_description }
+     */
+    private static final Locale LOCALE = Locale.US;
+    /**
+     * { var_description }
+     */
     private static final Pattern WHITESPACE_PATTERN = Pattern.compile(
         "\\p{javaWhitespace}+");
 
-    // makes whitespace characters significant 
+    /**
+     * { var_description }
+     */
     private static final Pattern EMPTY_PATTERN = Pattern.compile("");
-
+    /**
+     * { var_description }
+     */
     private static final Pattern EVERYTHING_PATTERN = Pattern.compile("\\A");
+    /**
+     * { var_description }
+     */
     private Scanner scanner;
 
    /**
@@ -72,7 +87,7 @@ public final class In {
      * @throws IllegalArgumentException if cannot open {@code url}
      * @throws IllegalArgumentException if {@code url} is {@code null}
      */
-    public In(URL url) {
+    public In(final URL url) {
         if (url == null) {
             throw new IllegalArgumentException("url argument is null");
         }
@@ -95,7 +110,7 @@ public final class In {
      * @throws IllegalArgumentException if {@code file} is {@code null}
      */
     public In(final File file) {
-        if (file == null) { 
+        if (file == null) {
             throw new IllegalArgumentException("file argument is null");
         }
         try {
@@ -158,7 +173,7 @@ public final class In {
      *
      * @param      scanner1  The scanner
      */
-    public In(Scanner scanner1) {
+    public In(final Scanner scanner1) {
         if (scanner1 == null) {
             throw new IllegalArgumentException("scanner argument is null");
         }
