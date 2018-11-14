@@ -156,14 +156,15 @@ public final class In {
      *
      * @param      scanner  The scanner
      */
-    public In(Scanner scanner) {
-        if (scanner == null) throw new IllegalArgumentException(
-            "scanner argument is null");
-        this.scanner = scanner;
+    public In(Scanner scanner1) {
+        if (scanner1 == null) {
+            throw new IllegalArgumentException("scanner argument is null");
+        }
+        this.scanner = scanner1;
     }
 
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @return     { description_of_the_return_value }
      */
@@ -232,7 +233,7 @@ public final class In {
                 "attempts to read a 'char' value from the input stream, "
                             + "but no more tokens are available");
         }
-    }  
+    }
 
 
    /**
@@ -241,8 +242,9 @@ public final class In {
      * @return the remainder of this input stream, as a string
      */
     public String readAll() {
-        if (!scanner.hasNextLine())
+        if (!scanner.hasNextLine()) {
             return "";
+        }
 
         String result = scanner.useDelimiter(EVERYTHING_PATTERN).next();
         // not that important to reset delimeter, since now scanner is empty
