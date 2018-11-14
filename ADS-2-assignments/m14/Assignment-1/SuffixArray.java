@@ -10,6 +10,7 @@ public final class SuffixArray {
     /**
      * Initializes a suffix array for the given string.
      * @param text the input string
+     * time complexity - L+logN
      */
     public SuffixArray(final String text) {
         int n = text.length();
@@ -21,6 +22,7 @@ public final class SuffixArray {
     }
     /**
      * Class for suffix.
+     * time complexity - L+logN.
      */
     private static final class Suffix implements Comparable<Suffix> {
         /**

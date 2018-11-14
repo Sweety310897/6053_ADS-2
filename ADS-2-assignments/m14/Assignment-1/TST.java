@@ -35,6 +35,7 @@ public class TST<Value> {
 
     /**
      * Initializes an empty string symbol table.
+     * time complexity - L+logN.
      */
     public TST() {
     }
@@ -66,6 +67,7 @@ public class TST<Value> {
      * @return the value associated with the given key
      * if the key is in the symbol table
      *     and {@code null} if the key is not in the symbol table
+     * time complexity - L+logN.
      * @throws IllegalArgumentException if {@code key} is {@code null}
      */
     public Value get(final String key) {
@@ -88,7 +90,7 @@ public class TST<Value> {
      * @param      x     { parameter_description }
      * @param      key   The key
      * @param      d     { parameter_description }
-     *
+     * time complexity - L+logN.
      * @return     { description_of_the_return_value }
      */
     private Node<Value> get(final Node<Value> x,
@@ -136,10 +138,10 @@ public class TST<Value> {
      * @param      key   The key
      * @param      val   The value
      * @param      d     { parameter_description }
-     *
+     * time complexity - L+logN.
      * @return     { description_of_the_return_value }
      */
-    private Node<Value> put(final Node<Value> x, final String key,
+    private Node<Value> put(Node<Value> x, final String key,
         final Value val, final int d) {
         char c = key.charAt(d);
         if (x == null) {
