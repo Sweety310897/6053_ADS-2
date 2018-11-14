@@ -12,15 +12,9 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\In.java:38:5: Missing a Javadoc comment. [JavadocVariable]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\In.java:75:15: Parameter url should be final. [FinalParameters]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\In.java:98: Line has trailing spaces. [RegexpSingleline]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\In.java:102: Line is longer than 80 characters (found 87). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\In.java:125: Line is longer than 80 characters (found 82). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\In.java:148:9: '}' at column 9 should be on the same line as the next part of a multi-block statement (one that directly contains multiple blocks: if/else-if/else, do/while or try/catch/finally). [RightCurly]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\In.java:150:66: '+' should be on a new line. [OperatorWrap]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\In.java:157:8: Unused @param tag for 'scanner'. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\In.java:159:15: Parameter scanner1 should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\In.java:159:23: Expected @param tag for 'scanner1'. [JavadocMethod]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\In.java:161:15: Parameter scanner1 should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 20 errors.
+Checkstyle ends with 14 errors.
 Starting audit...
 Audit done.
 Starting audit...

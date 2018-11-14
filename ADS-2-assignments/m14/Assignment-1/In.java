@@ -99,10 +99,12 @@ public final class In {
             throw new IllegalArgumentException("file argument is null");
         }
         try {
-            // for consistency with StdIn, wrap with BufferedInputStream instead of use
+            // for consistency with StdIn, wrap with BufferedInputStream
+            // instead of use
             // file as argument to Scanner
             FileInputStream fis = new FileInputStream(file);
-            scanner = new Scanner(new BufferedInputStream(fis), CHARSET_NAME);
+            scanner = new Scanner(new BufferedInputStream(fis),
+                CHARSET_NAME);
             scanner.useLocale(LOCALE);
         } catch (IOException ioe) {
             throw new IllegalArgumentException("Could not open " + file, ioe);
@@ -122,7 +124,8 @@ public final class In {
             File file = new File(name);
             if (file.exists()) {
                 FileInputStream fis = new FileInputStream(file);
-                scanner = new Scanner(new BufferedInputStream(fis), CHARSET_NAME);
+                scanner = new Scanner(new BufferedInputStream(fis),
+                    CHARSET_NAME);
                 scanner.useLocale(LOCALE);
                 return;
             }
@@ -145,16 +148,15 @@ public final class In {
             scanner            = new Scanner(new BufferedInputStream(is),
                 CHARSET_NAME);
             scanner.useLocale(LOCALE);
-        }
-        catch (IOException ioe) {
-            throw new IllegalArgumentException("Could not open " +
-                name, ioe);
+        } catch (IOException ioe) {
+            throw new IllegalArgumentException("Could not open "
+                + name, ioe);
         }
     }
     /**
      * Constructs the object.
      *
-     * @param      scanner  The scanner
+     * @param      scanner1  The scanner
      */
     public In(Scanner scanner1) {
         if (scanner1 == null) {
