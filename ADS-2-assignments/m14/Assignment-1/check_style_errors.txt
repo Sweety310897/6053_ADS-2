@@ -7,6 +7,7 @@ Audit done.
 Starting audit...
 Audit done.
 Starting audit...
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\TST.java:141: Line has trailing spaces. [RegexpSingleline]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m14\Assignment-1\TST.java:144:29: Parameter x should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 1 errors.
+Checkstyle ends with 2 errors.

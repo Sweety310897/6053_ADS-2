@@ -138,7 +138,7 @@ public class TST<Value> {
      * @param      key   The key
      * @param      val   The value
      * @param      d     { parameter_description }
-     * time complexity - L+logN.
+     * 
      * @return     { description_of_the_return_value }
      */
     private Node<Value> put(Node<Value> x, final String key,
