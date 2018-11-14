@@ -17,38 +17,36 @@ import java.util.regex.Pattern;
  * IN.
  */
 public final class In {
-    
     ///// begin: section (1 of 2) of code duplicated from In to StdIn.
     
     // assume Unicode UTF-8 encoding
-
     /**
-     * { var_description }
+     * { var_description }.
      */
     private static final String CHARSET_NAME = "UTF-8";
 
     // assume language = English, country = US for consistency with System.out.
 
     /**
-     * { var_description }
+     * { var_description }.
      */
     private static final Locale LOCALE = Locale.US;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private static final Pattern WHITESPACE_PATTERN = Pattern.compile(
         "\\p{javaWhitespace}+");
 
     /**
-     * { var_description }
+     * { var_description }.
      */
     private static final Pattern EMPTY_PATTERN = Pattern.compile("");
     /**
-     * { var_description }
+     * { var_description }.
      */
     private static final Pattern EVERYTHING_PATTERN = Pattern.compile("\\A");
     /**
-     * { var_description }
+     * { var_description }.
      */
     private Scanner scanner;
 
