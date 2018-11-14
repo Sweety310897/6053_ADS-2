@@ -141,23 +141,24 @@ public class TST<Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    private Node<Value> put(Node<Value> x, final String key,
+    private Node<Value> put(final Node<Value> x, final String key,
         final Value val, final int d) {
+        Node<Value> y = x;
         char c = key.charAt(d);
-        if (x == null) {
-            x = new Node<Value>();
-            x.c = c;
+        if (y == null) {
+            y = new Node<Value>();
+            y.c = c;
         }
-        if      (c < x.c) {
-            x.left  = put(x.left,  key, val, d);
-        } else if (c > x.c) {
-            x.right = put(x.right, key, val, d);
+        if (c < y.c) {
+            y.left  = put(y.left,  key, val, d);
+        } else if (c > y.c) {
+            y.right = put(y.right, key, val, d);
         } else if (d < key.length() - 1) {
-            x.mid   = put(x.mid,   key, val, d + 1);
+            y.mid   = put(y.mid,   key, val, d + 1);
         } else {
-            x.val   = val;
+            y.val   = val;
         }
-        return x;
+        return y;
     }
     /**
      * Returns the string in the symbol table that is the longest prefix of
