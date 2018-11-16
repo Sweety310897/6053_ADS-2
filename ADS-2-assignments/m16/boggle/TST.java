@@ -140,7 +140,7 @@ public class TST<Value> {
      */
     boolean hasPrefix(final String str) {
         Node<Value> x = get(root, str, 0);
-        if (x==null) {
+        if (x == null) {
             return false;
         }
         return true;
