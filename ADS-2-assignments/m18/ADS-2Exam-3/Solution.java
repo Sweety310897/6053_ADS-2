@@ -94,11 +94,13 @@ public class Solution {
 		for(int i = 0; i < temp.length; i++) {
 			st.put(temp[i],i);
 		}
+		int count = 0;
 		for(int i = 0; i < temp.length; i++) {
 			if (st.get(temp[i]) == -1) {
                     System.out.println("null");
             } else {
-                    System.out.println(temp[i] + " " + st.get(temp[i]));
+            		count+=1;
+                    System.out.println(temp[i] + " " + st.get(temp[i]) + " " + count);
             }
 	
 		}
