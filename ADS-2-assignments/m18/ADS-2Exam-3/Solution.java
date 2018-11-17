@@ -11,7 +11,7 @@ public final class Solution {
     }
     // Don't modify this method.
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      args  The arguments
      */
@@ -151,8 +151,10 @@ class T9 {
      */
     protected T9(final BinarySearchST<String, Integer> st) {
         // your code goes here
-        // text = new TST();
-        // for(String)
+        TST t = new TST();
+        for(String temp5:st.keys()) {
+            t.put(temp5,st.get(temp5));
+        }
     }
 
     // get all the prefixes that match with given prefix.

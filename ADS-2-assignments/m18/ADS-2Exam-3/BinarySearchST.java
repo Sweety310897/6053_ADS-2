@@ -70,7 +70,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
 	public BinarySearchST() {
 		this(INIT_CAPACITY);
 	}
-
+	//time complexity - worstcase - O(n).
 	/**
 	 * Initializes an empty symbol table with the specified initial capacity.
 	 * @param capacity the maximum capacity
