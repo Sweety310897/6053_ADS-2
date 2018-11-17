@@ -349,9 +349,8 @@ Starting audit...
 Audit done.
 Checkstyle ends with 33 errors.
 Starting audit...
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:6:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:13: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 2 errors.
+Checkstyle ends with 1 errors.
 Starting audit...
 Audit done.
