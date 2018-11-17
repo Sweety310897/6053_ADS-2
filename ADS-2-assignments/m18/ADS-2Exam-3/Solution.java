@@ -100,7 +100,7 @@ public class Solution {
                     System.out.println("null");
             } else {
             		count+=1;
-                    System.out.println(temp[i] + " " + st.get(temp[i]) + " " + count);
+                    System.out.println(st.rank(temp[i]));
             }
 	
 		}
