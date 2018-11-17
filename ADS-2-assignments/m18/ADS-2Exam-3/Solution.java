@@ -98,7 +98,7 @@ public class Solution {
 			if (st.get(temp[i]) == -1) {
                     System.out.println("null");
             } else {
-                    System.out.println(st.get(temp[i]));
+                    System.out.println(temp[i] + " " + st.get(temp[i]));
             }
 	
 		}
