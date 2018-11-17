@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import java.util.Arrays;
 
 public class Solution {
 
@@ -88,10 +88,8 @@ public class Solution {
 	public static BinarySearchST<String, Integer> loadDictionary(String file) {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		// your code goes here
-
-		for(int i = 0; i <file.length();i++) {
-			st.put(file,i);	
-		}
+		String[] s = file.split(" ");
+		System.out.println(Arrays.toString(s));
 		
 		//String[] temp = toReadFile(file);
 		return st;
