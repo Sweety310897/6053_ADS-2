@@ -95,9 +95,9 @@ public class Solution {
 			st.put(temp[i],i);
 			//st.isSorted();
 		}
-		
-		for(int i = 0; i < temp.length; i++) {
 			int count = 0;
+		for(int i = 0; i < temp.length; i++) {
+		
 			if(st.contains(temp[i])) {
 				count+=1;
 				System.out.println(temp[i] + count + " " +  " " +st.get(temp[i]));
