@@ -362,13 +362,13 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:86:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:86:70: Parameter file should be final. [FinalParameters]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:87: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:91:20: 'for' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:93:27: 'if' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:91:20: 'for' is not followed by whitespace. [WhitespaceAfter]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:93:27: 'if' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:94:46: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:94:61: '+' is not followed by whitespace. [WhitespaceAround]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:95:26: 'else' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:95:26: '}' is not followed by whitespace. [WhitespaceAround]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:95:30: 'else' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:95:30: 'else' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:95:30: '{' is not preceded with whitespace. [WhitespaceAround]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:96:46: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:102: Line is longer than 80 characters (found 98). [LineLength]
@@ -378,10 +378,7 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:122:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:122:45: Parameter prefix should be final. [FinalParameters]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:127: First sentence should end with a period. [JavadocStyle]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:148: Line is longer than 80 characters (found 85). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:148:48: Parameter words should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:156: First sentence should end with a period. [JavadocStyle]
 Audit done.
-Checkstyle ends with 32 errors.
+Checkstyle ends with 29 errors.
 Starting audit...
 Audit done.

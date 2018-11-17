@@ -131,12 +131,13 @@ class T9 {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public Iterable<String> potentialWords(final String t9Signature) {
+	public Iterable<String> potentialWords(
+		final String t9Signature) {
 		// your code goes here
 		return null;
 	}
-
-	// return all possibilities(words), find top k with highest frequency.
+	// return all possibilities(words),
+	//find top k with highest frequency.
 	/**
 	 * Gets the suggestions.
 	 *
@@ -145,7 +146,8 @@ class T9 {
 	 *
 	 * @return     The suggestions.
 	 */
-	public Iterable<String> getSuggestions(Iterable<String> words, final int k) {
+	public Iterable<String> getSuggestions(
+		final Iterable<String> words, final int k) {
 		// your code goes here
 		return null;
 	}
@@ -154,7 +156,7 @@ class T9 {
 	// Don't modify this method.
 
 	/**
-	 * { function_description }
+	 * { function_description }.
 	 *
 	 * @param      t9Signature  The t 9 signature
 	 * @param      k            { parameter_description }
