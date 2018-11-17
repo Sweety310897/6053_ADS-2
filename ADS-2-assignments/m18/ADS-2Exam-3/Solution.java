@@ -89,27 +89,26 @@ public class Solution {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		// your code goes here
 		String[] temp = toReadFile(file);
-
 		//System.out.println(Arrays.toString(temp));
-		for(int i = 0; i < temp.length; i++) {
-			st.put(temp[i],i);
-			//st.isSorted();
-		}
-			int count = 0;
-		for(int i = 0; i < temp.length; i++) {
-		
-			if(st.contains(temp[i])) {
-				count+=1;
-				System.out.println(temp[i] + count + " " +  " " +st.get(temp[i]));
+		for(String temp1: temp) {
+			temp1 = temp1.toLowerCase();
+			if(st.contains(temp1)) {
+				st.put(temp1,st.get(temp1) +1);
+			}else{
+				st.put(temp1,1);
 			}
-			if (st.get(temp[i]) == -1) {
-                    System.out.println("null");
-            }
-	
 		}
+		// for(int i = 0; i < temp.length; i++) {
+		// 	if(st.contains(temp[i])) {
+		// 		count+=1;
+		// 		System.out.println(temp[i] + count + " " +  " " +st.get(temp[i]));
+		// 	}
+		// 	if (st.get(temp[i]) == -1) {
+  		//                   System.out.println("null");
+  		//  }
+		// }
 		return st;
 	}
-
 }
 
 class T9 {
