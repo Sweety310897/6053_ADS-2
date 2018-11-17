@@ -373,12 +373,8 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:96:46: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:102: Line is longer than 80 characters (found 98). [LineLength]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:117:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:117:9: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:117:19: Parameter st should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:122:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:122:45: Parameter prefix should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:127: First sentence should end with a period. [JavadocStyle]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:117:22: Parameter st should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 29 errors.
+Checkstyle ends with 25 errors.
 Starting audit...
 Audit done.

@@ -114,18 +114,25 @@ public class Solution {
  */
 class T9 {
 
-	public T9(BinarySearchST<String, Integer> st) {
+	protected T9(BinarySearchST<String, Integer> st) {
 		// your code goes here
 	}
 
 	// get all the prefixes that match with given prefix.
-	public Iterable<String> getAllWords(String prefix) {
+	/**
+	 * Gets all words.
+	 *
+	 * @param      prefix  The prefix
+	 *
+	 * @return     All words.
+	 */
+	public Iterable<String> getAllWords(final String prefix) {
 		// your code goes here
 		return null;
 	}
 
 	/**
-	 * { function_description }
+	 * { function_description }.
 	 *
 	 * @param      t9Signature  The t 9 signature
 	 *
