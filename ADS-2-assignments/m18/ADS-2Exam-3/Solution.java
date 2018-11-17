@@ -9,7 +9,8 @@ public class Solution {
 		switch (cases) {
 		case "loadDictionary":
 			// input000.txt and output000.txt
-			BinarySearchST<String, Integer> hash = loadDictionary("/Files/t9.csv");
+			BinarySearchST<String, Integer> hash =
+			loadDictionary("/Files/t9.csv");
 			while (scan.hasNextLine()) {
 				String key = scan.nextLine();
 				System.out.println(hash.get(key));
@@ -33,7 +34,8 @@ public class Solution {
 			int count = 0;
 			while (scan.hasNextLine()) {
 				String t9Signature = scan.nextLine();
-				for (String each : t9.potentialWords(t9Signature)) {
+				for (String each :
+					t9.potentialWords(t9Signature)) {
 					count++;
 					System.out.println(each);
 				}
@@ -136,6 +138,8 @@ class T9 {
 	 */
 	protected T9(final BinarySearchST<String, Integer> st) {
 		// your code goes here
+		// text = new TST();
+		// for(String)
 	}
 
 	// get all the prefixes that match with given prefix.

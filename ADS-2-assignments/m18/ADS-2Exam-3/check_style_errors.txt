@@ -354,9 +354,8 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:4:1: File contains tab characters (this is the first instance). [FileTabCharacter]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:5:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:5:33: Parameter args should be final. [FinalParameters]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:12: Line is longer than 80 characters (found 95). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:36: Line is longer than 80 characters (found 84). [LineLength]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:37:50: ':' should be on a new line. [OperatorWrap]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 6 errors.
 Starting audit...
 Audit done.
