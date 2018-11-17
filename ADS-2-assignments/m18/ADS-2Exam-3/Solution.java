@@ -78,28 +78,44 @@ public class Solution {
 	}
 
 	// Don't modify this method.
-	public static String[] toReadFile(String file) {
+	/**
+	 * { function_description }
+	 *
+	 * @param      file  The file
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public static String[] toReadFile(final String file) {
 		In in = new In(file);
 		return in.readAllStrings();
 	}
-
-	public static BinarySearchST<String, Integer> loadDictionary(String file) {
-		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
+	/**
+	 * Loads a dictionary.
+	 *
+	 * @param      file  The file
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public static BinarySearchST<String, Integer> 
+	loadDictionary(final String file) {
+		BinarySearchST<String, Integer>  st =
+		new BinarySearchST<String, Integer>();
 		// your code goes here
 		String[] temp = toReadFile(file);
 		//System.out.println(Arrays.toString(temp));
 		for(String temp1: temp) {
 			temp1 = temp1.toLowerCase();
 			if(st.contains(temp1)) {
-				st.put(temp1,st.get(temp1) +1);
+				st.put(temp1, st.get(temp1) + 1);
 			}else{
-				st.put(temp1,1);
+				st.put(temp1, 1);
 			}
 		}
 		// for(int i = 0; i < temp.length; i++) {
 		// 	if(st.contains(temp[i])) {
 		// 		count+=1;
-		// 		System.out.println(temp[i] + count + " " +  " " +st.get(temp[i]));
+		// 		System.out.println(temp[i]
+		// 		+ count + " " +  " " +st.get(temp[i]));
 		// 	}
 		// 	if (st.get(temp[i]) == -1) {
   		//                   System.out.println("null");
@@ -113,8 +129,12 @@ public class Solution {
  * Class for t 9.
  */
 class T9 {
-
-	protected T9(BinarySearchST<String, Integer> st) {
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      st    { parameter_description }
+	 */
+	protected T9(final BinarySearchST<String, Integer> st) {
 		// your code goes here
 	}
 
