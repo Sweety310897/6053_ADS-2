@@ -89,7 +89,7 @@ public class Solution {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		// your code goes here
 		String[] s = file.split(" ");
-		System.out.println(Arrays.toString(s));
+		System.out.println(Arrays.toString(s) + "imfle");
 		
 		//String[] temp = toReadFile(file);
 		return st;
