@@ -79,7 +79,7 @@ public class Solution {
 
 	// Don't modify this method.
 	/**
-	 * { function_description }
+	 * { function_description }.
 	 *
 	 * @param      file  The file
 	 *
@@ -96,18 +96,18 @@ public class Solution {
 	 *
 	 * @return     { description_of_the_return_value }
 	 */
-	public static BinarySearchST<String, Integer> 
+	public static BinarySearchST<String, Integer>
 	loadDictionary(final String file) {
 		BinarySearchST<String, Integer>  st =
 		new BinarySearchST<String, Integer>();
 		// your code goes here
 		String[] temp = toReadFile(file);
 		//System.out.println(Arrays.toString(temp));
-		for(String temp1: temp) {
+		for (String temp1: temp) {
 			temp1 = temp1.toLowerCase();
-			if(st.contains(temp1)) {
+			if (st.contains(temp1)) {
 				st.put(temp1, st.get(temp1) + 1);
-			}else{
+			} else  {
 				st.put(temp1, 1);
 			}
 		}
