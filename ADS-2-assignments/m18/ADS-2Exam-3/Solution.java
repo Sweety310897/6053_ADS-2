@@ -88,10 +88,8 @@ public class Solution {
 	public static BinarySearchST<String, Integer> loadDictionary(String file) {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		// your code goes here
-		String[] s = file.split(" ");
-		System.out.println(Arrays.toString(s) + "imfle");
-		
-		//String[] temp = toReadFile(file);
+		String[] temp = toReadFile(file);
+		System.out.println(Arrays.toString(temp));
 		return st;
 	}
 
