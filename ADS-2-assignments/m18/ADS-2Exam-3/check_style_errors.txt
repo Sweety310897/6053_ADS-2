@@ -390,7 +390,7 @@ Starting audit...
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:88:9: Missing a Javadoc comment. [JavadocMethod]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:88:70: Parameter file should be final. [FinalParameters]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:89: Line is longer than 80 characters (found 92). [LineLength]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:92:20: 'for' is not followed by whitespace. [WhitespaceAround]
+[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:92:20: 'for' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:93:40: ',' is not followed by whitespace. [WhitespaceAfter]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:100: Missing a Javadoc comment. [JavadocType]
 [ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:102:9: Missing a Javadoc comment. [JavadocMethod]
