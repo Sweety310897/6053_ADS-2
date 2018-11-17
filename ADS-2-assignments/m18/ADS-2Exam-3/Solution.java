@@ -1,8 +1,21 @@
 import java.util.Scanner;
-public class Solution {
-
+/**
+ * Class for solution.
+ */
+public final class Solution {
+	/**
+	 * Constructs the object.
+	 */
+	private Solution() {
+		//cons.
+	}
 	// Don't modify this method.
-	public static void main(String[] args) {
+	/**
+	 * { function_description }
+	 *
+	 * @param      args  The arguments
+	 */
+	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String cases = scan.nextLine();
 
@@ -34,8 +47,8 @@ public class Solution {
 			int count = 0;
 			while (scan.hasNextLine()) {
 				String t9Signature = scan.nextLine();
-				for (String each :
-					t9.potentialWords(t9Signature)) {
+				for (String each
+					: t9.potentialWords(t9Signature)) {
 					count++;
 					System.out.println(each);
 				}
