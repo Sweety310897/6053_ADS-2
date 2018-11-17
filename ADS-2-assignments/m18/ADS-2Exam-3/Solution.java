@@ -152,8 +152,8 @@ class T9 {
     protected T9(final BinarySearchST<String, Integer> st) {
         // your code goes here
         TST t = new TST();
-        for(String temp5:st.keys()) {
-            t.put(temp5,st.get(temp5));
+        for (String temp5: st.keys()) {
+            t.put(temp5, st.get(temp5));
         }
     }
 

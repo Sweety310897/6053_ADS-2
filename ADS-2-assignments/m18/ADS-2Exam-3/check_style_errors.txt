@@ -349,9 +349,6 @@ Starting audit...
 Audit done.
 Checkstyle ends with 33 errors.
 Starting audit...
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:155:12: 'for' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] E:\6053_ADS2\6053_ADS-2\ADS-2-assignments\m18\ADS-2Exam-3\Solution.java:156:25: ',' is not followed by whitespace. [WhitespaceAfter]
 Audit done.
-Checkstyle ends with 2 errors.
 Starting audit...
 Audit done.
