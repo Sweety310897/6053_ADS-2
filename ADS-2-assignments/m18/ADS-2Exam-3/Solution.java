@@ -91,9 +91,9 @@ public class Solution {
 		String[] temp = toReadFile(file);
 		//System.out.println(Arrays.toString(temp));
 		for(int i = 0; i < temp.length; i++) {
-			st.put(temp[0],i);
+			st.put(temp[i],i);
 		}
-		
+
 		
 		return st;
 	}
