@@ -93,11 +93,14 @@ public class Solution {
 		//System.out.println(Arrays.toString(temp));
 		for(int i = 0; i < temp.length; i++) {
 			st.put(temp[i],i);
+			//st.isSorted();
 		}
-		int count = 0;
+		
 		for(int i = 0; i < temp.length; i++) {
+			int count = 0;
 			if(st.contains(temp[i])) {
-				System.out.println(temp[i] + " " +st.get(temp[i]));
+				count+=1;
+				System.out.println(temp[i] + count + " " +  " " +st.get(temp[i]));
 			}
 			if (st.get(temp[i]) == -1) {
                     System.out.println("null");
