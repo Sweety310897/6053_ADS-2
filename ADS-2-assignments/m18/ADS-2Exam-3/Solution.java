@@ -96,11 +96,11 @@ public class Solution {
 		}
 		int count = 0;
 		for(int i = 0; i < temp.length; i++) {
+			if(st.contains(temp[i])) {
+				System.out.println(temp[i] + " " +st.get(temp[i]));
+			}
 			if (st.get(temp[i]) == -1) {
                     System.out.println("null");
-            } else {
-            		count+=1;
-                    System.out.println(temp[i] + " " +st.get(temp[i]));
             }
 	
 		}
