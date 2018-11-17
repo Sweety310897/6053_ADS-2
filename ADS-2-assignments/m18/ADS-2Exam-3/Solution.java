@@ -89,6 +89,7 @@ public class Solution {
 		BinarySearchST<String, Integer>  st = new BinarySearchST<String, Integer>();
 		// your code goes here
 		String[] temp = toReadFile(file);
+		System.out.println(Arrays.toString(temp));
 		for(int i = 0; i < temp.length; i++) {
 			st.put(temp[0],i);
 		}
